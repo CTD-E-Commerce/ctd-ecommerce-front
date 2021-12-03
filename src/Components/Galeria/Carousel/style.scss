@@ -1,0 +1,44 @@
+.carousel{
+    width: 90%;
+    margin: 5rem auto 10rem ;
+  }
+  
+  /* DIV QUE CONTEM OS 3 CARDS */
+  .container-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    padding-top: 20px;
+  }
+  
+  /* DIV DE CADA CARDA */
+  .card-produto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    width: 400px;
+    height: 500px;
+  }
+  
+  /* imagem do produto */
+  .item-img{
+    width: 100%;
+    height: 60%;
+  }
+  
+  /* botao de compra */
+  .item-btn{
+    font-size: 1.6rem;
+    width: 15rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    border: none;
+    background-color: rgb(211, 216, 219);
+    margin: auto;
+  }
+
+  
+  @import "~bootstrap/scss/bootstrap";

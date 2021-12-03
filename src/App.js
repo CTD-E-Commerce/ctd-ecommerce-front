@@ -1,19 +1,22 @@
 import './App.scss';
+import { Banner } from './Components/Banner';
+import { Carrossel } from './Components/Galeria/Carousel';
 import Header from './Components/Header';
 import Categorias from './Components/Galeria/Categorias';
+
 
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <Banner />
-      <Galeria> */}
+      <Banner />
+      <Galeria>
         <Categorias />
-        {/* <Carousel />
+        <Carrossel />
       </Galeria>
       <Sobre />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
