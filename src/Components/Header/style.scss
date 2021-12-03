@@ -1,12 +1,19 @@
+/* lembrar que fixed demanda uso de margin-top de elementos seguintes, ao passo que sticky, por sua vez, não é suportado por todos os browsers 
+REALIZAR ADEQUAÇÕES AO USAR FIXED=TOP*/
+header{
+    font-family: 'Raleway', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 
-//cor ilustrativa, a ser alterada
-.bg-myGreen{
-    background-color: green;
+.bg-linen{
+    background-color: #F2E5D7;
 }
 
 nav{
     font-size: 1.8rem; //experimentando
-    padding: 5rem;
+    padding: 6.5rem; //reduzir no mobile
 }
 
 .navbar-brand{
@@ -15,11 +22,36 @@ nav{
 
 .nav-link {
     padding: 0 3rem 0 3rem !important;
+    color: #262322 !important;
+    font-weight: 500;
+    letter-spacing: .25rem;
 }
 
 .dropdown-menu.show{
-    margin-left: 3rem; //valor deve ser igual ao de padding-left do .nav-link(produtos)
+    margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile
+    font-size: 1.6rem;
+    background-color: #262322;
+    width: 20rem;
+    // padding: 1.5rem;
 }
+
+.dropdown-item{
+    color: #F2E5D7 !important; //important está gerando conflitos com hover e focus
+    line-height: 3rem;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus{
+    color: red;
+}
+
+// .dropdown-item a{
+//     :hover,
+//     :focus {
+//         color: #262322 !important;
+//         background-color: #F2E5D7 !important;
+//     }
+// }
 
 
 
