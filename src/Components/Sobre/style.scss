@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Quentin';
+    src: url('../../assets/Quentin.otf') format('truetype');
+}
+
+.container-sobre p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    color: #63372c;
+    margin-top: 2rem;
+    white-space: nowrap;
+}
+
+.container-sobre h3 {
+    font-family: 'Quentin';
+    color: #c97d60;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+}
+
+.icones {
+    width: 5rem;
+    padding: 1rem;
+    :hover {
+        filter: invert(1);
+        width: 40px;
+    }
+}
+
+.row-sobre {
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.img-sobre {
+    width: 18rem;
+}
+
+@import "~bootstrap/scss/bootstrap";
