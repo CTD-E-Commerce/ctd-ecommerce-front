@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Quentin';
+    src: url('../../../assets/Quentin.otf') format('truetype');
+  }
+
+section {
+    background-color: #FFFFFF;
+    padding: 4rem;
+    text-align: center;
+}
+
+
+.h3-categorias {
+    font-family: 'Quentin';
+    color: #EB6E92;
+    font-size: 5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.item-categorias a {
+    text-decoration: none;
+    font-family: "Quentin";
+    font-size: 4rem;
+    color: #000000;
+}
+
+.item-categorias:hover, 
+.item-categorias a:hover {
+    color: #EB6E92;    
+}
+
+
+@import "~bootstrap/scss/bootstrap";
