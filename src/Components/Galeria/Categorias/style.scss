@@ -15,7 +15,12 @@ section {
     color: #EB6E92;
     font-size: 5rem;
     font-weight: 600;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
+}
+
+.row-categorias {
+    // grid-template-columns: repeat(auto-fit, minmax(rem, 1fr));
+    gap: 4rem;
 }
 
 .item-categorias a {
@@ -28,6 +33,10 @@ section {
 .item-categorias:hover, 
 .item-categorias a:hover {
     color: #EB6E92;    
+}
+
+.item-categorias p {
+    white-space: nowrap;
 }
 
 

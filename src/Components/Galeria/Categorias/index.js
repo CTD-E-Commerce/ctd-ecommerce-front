@@ -12,7 +12,7 @@ const Categorias = () => {
         <section id="categorias">
             <Container fluid>
                 <h3 className="h3-categorias">Categorias</h3>
-                <Row>
+                <Row className="row-categorias">
                     <Col sm className="item-categorias">
                         <a href="">
                             <img src={skinCare} alt="desenho de um tubo de creme" />
