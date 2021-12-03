@@ -1,6 +1,7 @@
 import { Banner } from '../../Components/Banner';
 import { Carrossel } from '../../Components/Galeria/Carousel';
 import Categorias from '../../Components/Galeria/Categorias';
+import Sobre from '../../Components/Sobre';
 
 
 
@@ -11,9 +12,9 @@ const Home = () => {
             {/* <Galeria> */}
                 <Categorias />
                 <Carrossel />
-            {/* </Galeria>
+            {/* </Galeria> */}
             <Sobre />
-            <Footer /> */}
+            {/* <Footer /> */}
         </>
     );
 }

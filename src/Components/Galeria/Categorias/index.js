@@ -26,19 +26,19 @@ const Categorias = () => {
                         </a>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="">
+                        <a href="#">
                             <img src={hair} alt="" />
                             <p>Hair care</p>
                         </a>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="">
+                        <a href="#">
                             <img src={perfume} alt="" />
                             <p>Perfume</p>
                         </a>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="">
+                        <a href="#">
                             <img src={hipo} alt="" />
                             <p>Hipoalergênico</p>
                         </a>
