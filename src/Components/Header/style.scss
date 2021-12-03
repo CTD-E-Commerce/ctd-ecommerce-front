@@ -1,16 +1,35 @@
 
+//cor ilustrativa, a ser alterada
 .bg-myGreen{
     background-color: green;
+}
+
+nav{
+    font-size: 1.8rem; //experimentando
+    padding: 5rem;
+}
+
+.navbar-brand{
+    padding: 1.25rem !important;
+}
+
+.nav-link {
+    padding: 0 3rem 0 3rem !important;
+}
+
+.dropdown-menu.show{
+    margin-left: 3rem; //valor deve ser igual ao de padding-left do .nav-link(produtos)
 }
 
 
 
 /* -------------------------------- LOGO -------------------------------- */
 
+//meramente ilustrativo
 #logo-img{
     object-fit: fill;
-    height: 4.25rem;
-    width: 4.5rem;
+    height: 8rem;
+    width: 8rem;
     align-self: center;
     border: white solid .2rem;
     border-radius:50%;
