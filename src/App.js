@@ -11,12 +11,12 @@ function App() {
     <div className="App">
       <Header />
       <Banner />
-      <Galeria>
+      {/* <Galeria> */}
         <Categorias />
         <Carrossel />
-      </Galeria>
+      {/* </Galeria>
       <Sobre />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
