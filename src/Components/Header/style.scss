@@ -1,1 +1,20 @@
+
+.bg-myGreen{
+    background-color: green;
+}
+
+
+
+/* -------------------------------- LOGO -------------------------------- */
+
+#logo-img{
+    object-fit: fill;
+    height: 4.25rem;
+    width: 4.5rem;
+    align-self: center;
+    border: white solid .2rem;
+    border-radius:50%;
+}
+
+
 @import "~bootstrap/scss/bootstrap";
