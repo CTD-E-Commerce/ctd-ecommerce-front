@@ -1,0 +1,39 @@
+.radios {
+    text-align: left;
+    display: inline-flex;
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.radios h4 {
+    font-family: 'Quentin';
+    font-size: 4rem;
+    color: #EB6E92;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.items-radios {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.cards-produtos {
+    text-align: center;
+    margin: 0 1rem 3rem 4rem; 
+    font-size: 1.5rem;  
+}
+
+.cards-produtos button {
+    background-color: #f9d1c6;
+    border: none;
+    color: #986D5A;
+    font-size: 1.5rem;
+}
+
+.cards-produtos button:hover {
+    background-color: #986D5A;
+    color: #f9d1c6;
+}
+
+@import "~bootstrap/scss/bootstrap";
