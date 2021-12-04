@@ -12,20 +12,31 @@ header{
 }
 
 nav{
-    font-size: 1.8rem; //experimentando
     padding: 6.5rem; //reduzir no mobile
 }
 
 .navbar-brand{
-    padding: 1.25rem !important;
+    font-size: 3rem !important;
+    padding: 1.25rem !important; //revisar
+    font-family: 'Quentin';
 }
 
 .nav-link {
+    font-size: 1.8rem;
     padding: 0 3rem 0 3rem !important;
-    color: #262322 !important;
+    color: #262322 !important; //gera conflitos com hover e focus
     font-weight: 500;
     letter-spacing: .25rem;
+    // transition: font-size .5s ease-in-out !important;
 }
+
+//DECIDIR QUAIS COMPORTAMENTOS OS LINKS DA NAVBAR DEVERÃO TER QUANDO EM FOCO E/OU SELECIONADOS
+//.nav-link:hover,
+//.nav-link:focus{
+    // font-size: 2.2rem;
+    // color: red !important;
+    // background-color: blue !important;
+//}
 
 .dropdown-menu.show{
     margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile
@@ -42,30 +53,26 @@ nav{
 
 .dropdown-item:hover,
 .dropdown-item:focus{
-    color: red;
+    color: #262322 !important;
+    background-color: #F2E5D7 !important;
 }
 
-// .dropdown-item a{
-//     :hover,
-//     :focus {
-//         color: #262322 !important;
-//         background-color: #F2E5D7 !important;
-//     }
-// }
+.dropdown-divider{
+    color: #EB6E92;
+    height: .2rem;
+}
 
 
 
 /* -------------------------------- LOGO -------------------------------- */
 
-//meramente ilustrativo
 #logo-img{
-    object-fit: fill;
     height: 8rem;
     width: 8rem;
     align-self: center;
-    border: white solid .2rem;
     border-radius:50%;
 }
+
 
 
 @import "~bootstrap/scss/bootstrap";

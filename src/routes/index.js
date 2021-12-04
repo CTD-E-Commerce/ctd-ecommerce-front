@@ -12,11 +12,6 @@ const RouteList = () => (
         <Route path ="/produtos" element={<Produtos />} />
         <Route path ="/carrinho" element={<Carrinho />} />
 
-        {/* <Route path="/" element={<Home />} />
-        <Route path=":repositoryOwner/:repositoryName" element={<Repository />} />
-        <Route path="user" element={<UserDetails />} />
-        <Route path="user/:userName" element={<UserDetails />} />
-        <Route path="*" element={<NotFound />} /> */}
 
     </Routes>
 );
