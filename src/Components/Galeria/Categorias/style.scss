@@ -1,14 +1,8 @@
-@font-face {
-    font-family: 'Quentin';
-    src: url('../../../assets/Quentin.otf') format('truetype');
-}
-
 section {
     background-color: #FFFFFF;
     padding: 4rem;
     text-align: center;
 }
-
 
 .h3-categorias {
     font-family: 'Quentin';
@@ -37,6 +31,11 @@ section {
 .item-categorias p {
     white-space: nowrap;
 }
+
+.card-title.h5 {
+    font-size: 1.8rem;
+}
+
 
 
 @import "~bootstrap/scss/bootstrap";
