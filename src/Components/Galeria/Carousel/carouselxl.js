@@ -48,10 +48,7 @@ export const Carouselxl = (props) => {
 
     sortearCards(); */
 
-    /*     Object.values(props.productsArray).map((product, index) => {
-        console.log(product)
-    }) */
-    
+    //Retorna Carousel Items com dados do array retornado da api service
     return (
         <>
             {/* CARROSSEL LARGE 1 */}

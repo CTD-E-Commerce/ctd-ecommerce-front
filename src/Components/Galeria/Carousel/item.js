@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.scss'
 
-export const Item = ({id, produto, descricao, preco, imagem}) => {
+export const Item = ({ id, produto, descricao, preco, imagem }) => {
     return (
         <>
             <div className="card-produto shadow p-3 mb-5 bg-white rounded" key={id}>
