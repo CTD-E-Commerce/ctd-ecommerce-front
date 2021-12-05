@@ -1,44 +1,95 @@
-.carousel{
-    width: 90%;
-    margin: 5rem auto 10rem ;
-  }
+.carousel-lg{
+  display: block;
+}
+.carousel-md{
+  display: none;
+}
+.carousel-sm{
+  display: none;
+}
   
-  /* DIV QUE CONTEM OS 3 CARDS */
-  .container-card{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 75%;
-    margin: auto;
-    padding-top: 20px;
-  }
+/* DIV QUE CONTEM OS 3 CARDS */
+.container-card{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+}
   
-  /* DIV DE CADA CARDA */
-  .card-produto{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: white;
-    width: 400px;
-    height: 500px;
-  }
-  
-  /* imagem do produto */
-  .item-img{
-    width: 100%;
-    height: 60%;
-  }
-  
-  /* botao de compra */
-  .item-btn{
-    font-size: 1.6rem;
-    width: 15rem;
-    border-radius: 1rem;
-    padding: 1rem;
-    border: none;
-    background-color: rgb(211, 216, 219);
-    margin: auto;
-  }
+/* DIV DE CADA CARD */
+.card-produto{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  width: 28%;
+  border-radius: 1rem;
+}
 
-  
-  @import "~bootstrap/scss/bootstrap";
+/* imagem do produto */
+.item-img{
+  width: 100%;
+  height: 60%;
+}
+
+/* botao de compra */
+.item-btn{
+  font-size: 1.6rem;
+  width: 15rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  border: none;
+  background-color: rgb(211, 216, 219);
+  margin: auto;
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1279px) {
+  .carousel-lg{
+    display: none;
+  }
+  .carousel-sm{
+    display: none;
+  }
+  .carousel-md{
+    display: block;
+  }
+  /* DIV QUE CONTEM OS CARDS */
+  .container-card{
+    width: 80%;
+  }
+  /* DIV DE CADA CARD */
+  .card-produto{
+    width: 40%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .carousel-lg{
+    display: none;
+  }
+  .carousel-md{
+    display: none;
+  }
+  .carousel-sm{
+    display: block;
+    text-align: center;
+  }
+  /* DIV QUE CONTEM OS CARDS */
+  .container-card{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+  }
+  /* DIV DE CADA CARD */
+  .card-produto{
+    width: 80%;
+  }
+}
