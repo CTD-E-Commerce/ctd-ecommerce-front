@@ -50,30 +50,30 @@ export const Carouselmd = (props) => {
             <Carousel className="carousel-md">
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 2){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 2){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 2){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
@@ -85,30 +85,30 @@ export const Carouselmd = (props) => {
             <Carousel className="carousel-md">
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 2){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 2){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 2){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
