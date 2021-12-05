@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Item } from './item';
 
 
-export const Carrossel = () => {
+export const Carrossel = (props) => {
 
     /* ARRAY PARA TESTAR A PASSAGEM DE PARAMETROS PARA OS CARDS */
     const produtos =[
@@ -156,25 +156,32 @@ export const Carrossel = () => {
     primeirosCards();
 
     sortearCards();
+
+    
+/*     Object.values(props.productsArray).map((product, index) => {
+        console.log(product)
+    }) */
     
     return (
         <div>
             <Carousel >
                 <Carousel.Item >
                     <div className="container-card">
-                        {produtos1.map(({ id, produto, descricao, preco }) => {
-                            return (
-                                <Item id={id} produto={produto} descricao={descricao} preco={preco} />
-                            )
+                        {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                            if(index < 3){
+                                return (
+                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                            )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {produtos2.map(({ id, produto, descricao, preco }) => {
+                        {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                           if(index < 3){
                             return (
-                                <Item id={id} produto={produto} descricao={descricao} preco={preco} />
-                            )
+                                <Item id={id} produto={title} descricao={description} preco={price} />
+                            )}
                         })}
                     </div>
                 </Carousel.Item>
@@ -185,19 +192,21 @@ export const Carrossel = () => {
             <Carousel >
                 <Carousel.Item >
                     <div className="container-card">
-                        {produtos3.map(({ id, produto, descricao, preco }) => {
-                            return (
-                                <Item id={id} produto={produto} descricao={descricao} preco={preco} />
-                            )
+                        {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                            if(index < 3){
+                                return (
+                                 <Item id={id} produto={title} descricao={description} preco={price} />
+                            )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {produtos4.map(({ id, produto, descricao, preco }) => {
+                        {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                        if(index < 3){
                             return (
-                                <Item id={id} produto={produto} descricao={descricao} preco={preco} />
-                            )
+                                <Item id={id} produto={title} descricao={description} preco={price} />
+                            )}
                         })}
                     </div>
                 </Carousel.Item>

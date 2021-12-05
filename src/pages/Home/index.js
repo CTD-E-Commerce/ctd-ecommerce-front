@@ -5,6 +5,7 @@ import { Carrossel } from '../../Components/Galeria/Carousel';
 import Categorias from '../../Components/Galeria/Categorias';
 import api from '../../services/api';
 import Sobre from '../../Components/Sobre';
+import Swal from 'sweetalert2';
 
 const Home = () => {
   const[products, setProducts] = useState({});
@@ -25,26 +26,24 @@ const Home = () => {
         setProducts(response.data)
     } catch (error) {
         console.log(error)
-        /*       Swal.fire({
+        Swal.fire({
                 title: error.response.status,
                 icon: 'error',
                 text: error.response.data.message
-            }); */
+        });
     }
     }, [])
 
   useEffect(() => {
      loadApiData();
-  }, []);
-
-console.log(products)
+  }, [loadApiData]);
 
     return (
         <>
             <Banner />
             {/* <Galeria> */}
                 <Categorias />
-                <Carrossel />
+                <Carrossel productsArray={products}/>
             {/* </Galeria> */}
             <Sobre />
             {/* <Footer /> */}
