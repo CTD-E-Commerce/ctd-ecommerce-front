@@ -42,7 +42,7 @@ export const Carouselmd = (props) => {
     
     primeirosCards(); */
 
-    //Retorna Carousel Items com dados do array retornado da api service
+    //Retorna Carousel Items com dados array retornado da api service
     return (
         <>
             {/* CARROSSEL TELA MÉDIA 1 */}

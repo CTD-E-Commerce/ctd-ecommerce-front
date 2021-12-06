@@ -8,7 +8,7 @@ import { Item } from './item';
 
 export const Carouselsm = (props) => {
 
-    //Retorna Carousel Items com dados do array retornado da api service
+    //Retorna Carousel Items com dados array retornado da api service
     return (
         <>
             {/* CARROSSEL MOBILE 1 */}
