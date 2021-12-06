@@ -1,4 +1,4 @@
-.carousel-lg{
+.carousel-xl{
   display: block;
 }
 .carousel-md{
@@ -7,16 +7,23 @@
 .carousel-sm{
   display: none;
 }
+.cabecalho{
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .6rem;
+  color: #63372c;
+  margin-top: 6rem;
+}
   
 /* DIV QUE CONTEM OS 3 CARDS */
 .container-card{
   width: 75%;
-  margin: auto;
+  margin:  5rem auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  padding-top: 20px;
 }
   
 /* DIV DE CADA CARD */
@@ -27,12 +34,28 @@
   background-color: white;
   width: 28%;
   border-radius: 1rem;
+  font-family: 'Raleway', sans-serif;
+  div{
+    padding: 1.5rem;
+    h1{
+      font-size: 2rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    span{
+      font-weight: bold;
+      font-size: 1.5rem;
+    }
+  }
+
 }
 
 /* imagem do produto */
 .item-img{
   width: 100%;
   height: 60%;
+  border: thin #986D5A;
 }
 
 /* botao de compra */
@@ -42,15 +65,21 @@
   border-radius: 1rem;
   padding: 1rem;
   border: none;
-  background-color: rgb(211, 216, 219);
+  background-color: #f9d1c6;
   margin: auto;
+  color: #986D5A;
+  &:hover{
+    background-color: #986D5A;
+    color: #f9d1c6;
+    transition: all .4s ease-in-out;
+  }
 }
 
 
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1279px) {
-  .carousel-lg{
+  .carousel-xl{
     display: none;
   }
   .carousel-sm{
@@ -71,7 +100,7 @@
 
 
 @media screen and (max-width: 768px) {
-  .carousel-lg{
+  .carousel-xl{
     display: none;
   }
   .carousel-md{

@@ -66,7 +66,7 @@ const Produtos = () => {
                         ))}
                     </Row>
                 </Container>
-            </section>  
+            </section>
         </>
     )
 }

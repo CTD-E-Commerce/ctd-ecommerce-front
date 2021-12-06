@@ -13,6 +13,11 @@
     margin-bottom: 2rem;
 }
 
+.form-check-input:checked{
+    background-color: #d68c45;
+    border-color: #d68c45;
+}
+
 .items-radios {
     font-size: 1.6rem;
     font-family: 'Raleway', sans-serif;
