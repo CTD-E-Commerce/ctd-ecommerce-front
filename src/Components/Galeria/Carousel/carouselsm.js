@@ -20,7 +20,19 @@ export const Carouselsm = (props) => {
                             if(index < 1){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
+                        })}
+                    </div>
+                </Carousel.Item>
+                <Carousel.Item >
+                    <div className="container-card">
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
+                            if(index < 1){
+                                return (
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -31,6 +43,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -41,6 +54,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -51,6 +65,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -61,16 +76,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
-                        })}
-                    </div>
-                </Carousel.Item>
-                <Carousel.Item >
-                    <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
-                            if(index < 1){
-                                return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -87,6 +93,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -97,6 +104,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -107,6 +115,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -117,6 +126,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -127,6 +137,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -137,6 +148,7 @@ export const Carouselsm = (props) => {
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
+                            return;
                         })}
                     </div>
                 </Carousel.Item>

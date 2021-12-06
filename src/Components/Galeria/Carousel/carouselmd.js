@@ -54,7 +54,8 @@ export const Carouselmd = (props) => {
                             if(index < 2){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -64,7 +65,8 @@ export const Carouselmd = (props) => {
                             if(index < 2){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -74,7 +76,8 @@ export const Carouselmd = (props) => {
                             if(index < 2){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -89,7 +92,8 @@ export const Carouselmd = (props) => {
                             if(index < 2){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -99,7 +103,8 @@ export const Carouselmd = (props) => {
                             if(index < 2){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -109,7 +114,8 @@ export const Carouselmd = (props) => {
                             if(index < 2){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
