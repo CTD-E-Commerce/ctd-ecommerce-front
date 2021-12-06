@@ -38,4 +38,10 @@
     width: 18rem;
 }
 
+@media (max-width: 380px) {
+    .container-sobre h3 {
+        font-size: 4rem;
+    }
+}
+
 @import "~bootstrap/scss/bootstrap";
