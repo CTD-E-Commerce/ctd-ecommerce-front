@@ -1,12 +1,10 @@
 .carousel-banner{
-    width: 80%;
-    height: 70rem;
-    padding: 0;
-    margin: 5rem auto 10rem ;
+    margin: auto;
     background-color: rgb(200, 206, 202);
     img{
         width: 100%;
-        height: 70rem;
+        height: calc(100vh - 115px);
+        object-fit: cover;
     }
   }
 
@@ -16,6 +14,76 @@
     filter: invert(1);
     width: 200px;
 }
+
+  /* INDICADOR DE PAG DO CAROUSEL */
+/* .carousel-indicators [data-bs-target]{
+    background-color: black !important;
+} */
+
+.carousel-caption{
+    top: 30% !important;
+    h3{
+        font-family: 'Quentin';
+        color: #d68c45;
+        font-size: 9rem;
+    }
+    p{
+        font-family: 'Raleway', sans-serif;
+        font-size: 2.5rem;
+        color: black;
+    }
+}
+
+/* botao */
+.btn-banner{
+    font-family: 'Raleway', sans-serif;
+    width: 180px;
+    padding: 1.2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #d68c45;
+    color: white;
+    margin-top: 7rem;
+    &:hover{
+        background-color: white;
+        color:#d68c45;
+        transition: all .4s ease-in-out;
+    }
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1279px) {
+    .carousel-caption{
+        h3{
+            font-size: 7rem;
+        }
+    }
+    .btn-banner{
+        margin-top: 2rem;
+    }
+  }
+  
+  
+@media screen and (max-width: 768px) {
+    .carousel-caption{
+        h3{
+            font-size: 5rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+        .btn-banner{
+            margin-top: 2rem;
+        }
+    }
+}
+
+
+
+
+
 
 
 @import "~bootstrap/scss/bootstrap";

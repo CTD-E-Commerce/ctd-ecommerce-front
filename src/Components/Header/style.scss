@@ -1,10 +1,10 @@
 /* lembrar que fixed demanda uso de margin-top de elementos seguintes, ao passo que sticky, por sua vez, não é suportado por todos os browsers 
 REALIZAR ADEQUAÇÕES AO USAR FIXED=TOP*/
 header{
-    font-family: 'Raleway', sans-serif;
     position: sticky;
     top: 0;
     z-index: 999;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);;
 }
 
 .bg-linen{
@@ -15,10 +15,8 @@ nav{
     padding: 6.5rem; //reduzir no mobile
 }
 
-.navbar-brand{
-    font-size: 3rem !important;
-    padding: 1.25rem !important; //revisar
-    font-family: 'Quentin';
+.navbar-nav{
+    font-family: 'Raleway', sans-serif;
 }
 
 .nav-link {
@@ -63,12 +61,17 @@ nav{
 }
 
 
-
 /* -------------------------------- LOGO -------------------------------- */
 
+.navbar-brand{
+    font-size: 3rem !important;
+    padding: 1.25rem !important; //revisar
+    font-family: 'Quentin';
+}
+
 #logo-img{
-    height: 8rem;
-    width: 8rem;
+    //height: 8rem;
+    width: 20%; //investi em % para responsividade. considerar se vw não seria melhor nesse caso
     align-self: center;
     border-radius:50%;
 }
