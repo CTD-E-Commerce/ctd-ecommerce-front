@@ -1,9 +1,10 @@
 import React from 'react'
+import FichaSelecionado from '../../Components/FichaSelecionado';
 
 const ProdutoSelecionado = () => {
     return (
         <>
-            <h1>TESTE DETALHES DO PRODUTO SELECIONADO</h1>
+            <FichaSelecionado />
         </>
     )
 }

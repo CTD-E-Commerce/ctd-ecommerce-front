@@ -2,6 +2,7 @@ import { Routes, Route} from 'react-router-dom';
 import Home from "../pages/Home";
 import Produtos from "../pages/Produtos";
 import Carrinho from "../pages/Carrinho";
+import ProdutoSelecionado from "../pages/ProdutoSelecionado"
 
 
 const RouteList = () => (
@@ -12,6 +13,9 @@ const RouteList = () => (
         <Route path ="/produtos" element={<Produtos />} />
         <Route path ="/produtos/:id" element={<Produtos />} /> {/* Ir para detalhes do produto */}
         <Route path ="/carrinho" element={<Carrinho />} />
+
+        {/* rota teste para construir página-modelo para produto selecionado */}
+        <Route path ="/produtos/teste" element={<ProdutoSelecionado />} />
 
 
     </Routes>

@@ -1,7 +1,6 @@
 import Header from './Components/Header';
-// import Categorias from './Components/Galeria/Categorias';
-// import { Banner } from './Components/Banner';
-// import { Carrossel } from './Components/Galeria/Carousel';
+import ToTop from './Components/ToTop';
+//import Footer from './Components/Footer';
 
 
 
@@ -9,14 +8,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-
-      {/* <Banner /> */}
-      {/* Galeria> */}
-        {/* <Categorias />
-        <Carrossel /> */}
-      {/* <</Galeria>
-      <Sobre />
-      <Footer /> */}
+      <ToTop />
+      {/* <Footer /> */}
     </div>
   );
 }

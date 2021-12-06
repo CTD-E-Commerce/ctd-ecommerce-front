@@ -1,0 +1,41 @@
+.ficha{
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    margin: 5rem; //revisar com padrão estabelecido para a página como um todo
+}
+
+.ficha img{
+    width: 33.3%; //não deveria ser definido aqui
+    //object-fit: contain;
+}
+
+.ficha-corpo{
+    font-family: 'Raleway', sans-serif;
+    padding: 3.5rem;
+}
+
+.ficha-titulo{
+    font-size: 2.4rem !important;
+}
+
+.ficha-corpo p{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.4rem;
+}
+
+
+.ficha button {
+    background-color: #f9d1c6;
+    border: none;
+    color: #986D5A;
+    font-size: 1.5rem;
+}
+
+.ficha button:hover,
+.ficha button:focus {
+    background-color: #986D5A;
+    color: #f9d1c6;
+}
+
+
+@import "~bootstrap/scss/bootstrap";

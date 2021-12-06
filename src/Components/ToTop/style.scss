@@ -1,0 +1,9 @@
+#to-top {
+    width: 6em;
+    position: fixed;
+    z-index: 100;
+    bottom: 2.5rem;
+    right: 1rem;
+}
+
+@import "~bootstrap/scss/bootstrap";
