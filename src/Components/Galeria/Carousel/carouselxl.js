@@ -48,10 +48,9 @@ export const Carouselxl = (props) => {
 
     sortearCards(); */
 
-    /*     Object.values(props.productsArray).map((product, index) => {
-        console.log(product)
-    }) */
-    
+    //Retorna Carousel Items com dados do array retornado da api service
+
+
     return (
         <>
             {/* CARROSSEL LARGE 1 */}
@@ -61,11 +60,13 @@ export const Carouselxl = (props) => {
             <Carousel className="carousel-xl">
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
+
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 3){
                                 return (
                                     <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -75,7 +76,8 @@ export const Carouselxl = (props) => {
                            if(index < 3){
                             return (
                                 <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -89,8 +91,9 @@ export const Carouselxl = (props) => {
                         {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 3){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                                 <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -100,7 +103,8 @@ export const Carouselxl = (props) => {
                            if(index < 3){
                             return (
                                 <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
-                            )}
+                            )};
+                            return;
                         })}
                     </div>
                 </Carousel.Item>
