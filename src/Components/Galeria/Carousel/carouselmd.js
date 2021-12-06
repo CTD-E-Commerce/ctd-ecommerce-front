@@ -8,7 +8,7 @@ import { Item } from './item';
 
 export const Carouselmd = (props) => {
 
-/*     var produtos1=[];
+/*  var produtos1=[];
     var produtos2=[];
     var produtos3=[];
     var produtos4=[];
@@ -46,7 +46,7 @@ export const Carouselmd = (props) => {
     return (
         <>
             {/* CARROSSEL TELA MÉDIA 1 */}
-
+            <Col md={{ span: 6, offset: 2 }} className="carousel-md cabecalho"><h1>Novidades</h1></Col>
             <Carousel className="carousel-md">
                 <Carousel.Item >
                     <div className="container-card">
@@ -81,7 +81,7 @@ export const Carouselmd = (props) => {
             </Carousel>
 
             {/* CARROSSEL TELA MEDIA 2 */}
-
+            <Col md={{ span: 6, offset: 2 }} className="carousel-md cabecalho"><h1>Mais vendidos</h1></Col>                
             <Carousel className="carousel-md">
                 <Carousel.Item >
                     <div className="container-card">

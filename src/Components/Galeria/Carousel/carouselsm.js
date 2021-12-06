@@ -11,7 +11,7 @@ export const Carouselsm = (props) => {
     return (
         <>
             {/* CARROSSEL MOBILE 1 */}
-
+            <Col sm={{ span: 6, offset: 3 }} className="carousel-sm cabecalho"><h1>Novidades</h1></Col>
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
@@ -77,7 +77,7 @@ export const Carouselsm = (props) => {
 
 
             {/* CARROSSEL MOBILE 2 */}
-
+            <Col sm={{ span: 6, offset:3 }} className="carousel-sm cabecalho"><h1>Mais vendidos</h1></Col>
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
