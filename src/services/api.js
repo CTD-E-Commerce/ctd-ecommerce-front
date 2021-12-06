@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://ctd-ecommerce-back.herokuapp.com/'
+  baseURL: 'https://ctd-ecommerce-api.herokuapp.com/'
 });
 
 export default api;

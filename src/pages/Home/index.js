@@ -8,14 +8,18 @@ import Sobre from '../../Components/Sobre';
 import Swal from 'sweetalert2';
 
 const Home = () => {
+    
+    //Define states para produtos e categorias
   const[products, setProducts] = useState({});
   const[categories, setCategories] = useState({});
 
+    //Função para requisição de todos os produtos via api service
   const loadApiData = useCallback(async () => {
 
     try {
         const response = await api.get(`/products/buscartodos`,
         {
+            //Cabeçalhos de requisição para tráfego nos endpoints
             headers: {
             'Access-Control-Allow-Origin' : '*',
             'Access-Control-Allow-Credentials': true,
@@ -23,9 +27,12 @@ const Home = () => {
             },
         }
         );
+
+        //Retorno de êxito da requisição - 200
         setProducts(response.data)
     } catch (error) {
-        console.log(error)
+
+        //Retorno de falha da requisição - 400
         Swal.fire({
                 title: error.response.status,
                 icon: 'error',
@@ -34,6 +41,7 @@ const Home = () => {
     }
     }, [])
 
+    //Requisita produtos ao renderizar componente Home
   useEffect(() => {
      loadApiData();
   }, [loadApiData]);

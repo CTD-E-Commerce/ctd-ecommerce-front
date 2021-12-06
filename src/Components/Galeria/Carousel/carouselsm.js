@@ -8,67 +8,68 @@ import { Item } from './item';
 
 export const Carouselsm = (props) => {
 
+    //Retorna Carousel Items com dados array retornado da api service
     return (
         <>
             {/* CARROSSEL MOBILE 1 */}
-
+            <Col sm={{ span: 6, offset: 3 }} className="carousel-sm cabecalho"><h1>Novidades</h1></Col>
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
@@ -77,64 +78,64 @@ export const Carouselsm = (props) => {
 
 
             {/* CARROSSEL MOBILE 2 */}
-
+            <Col sm={{ span: 6, offset:3 }} className="carousel-sm cabecalho"><h1>Mais vendidos</h1></Col>
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(props.productsArray).map(({ id, title, description, price }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
                             if(index < 1){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} />
+                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
                             )}
                         })}
                     </div>
