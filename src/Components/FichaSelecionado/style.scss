@@ -1,26 +1,45 @@
 .ficha{
     flex-direction: row !important;
     flex-wrap: wrap;
-    margin: 5rem; //revisar com padrão estabelecido para a página como um todo
+    margin: 5% 10%; //revisar com padrão estabelecido para a página como um todo
+    border: none !important;
+    gap: 4rem;
 }
 
-.ficha img{
-    width: 33.3%; //não deveria ser definido aqui
-    //object-fit: contain;
-}
+// #produto-img{ //CONTAINER resolveu - atualmente sem efeito
+//     width: 33.3%; //não deveria ser definido aqui - responsividade tem sido um desafio
+//     object-fit: fill;
+// }
 
 .ficha-corpo{
-    font-family: 'Raleway', sans-serif;
-    padding: 3.5rem;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    gap: 4rem;
 }
 
 .ficha-titulo{
+    font-family: 'Raleway', sans-serif;
     font-size: 2.4rem !important;
 }
 
+.card-subtitle{
+    font-size: 2rem !important;
+}
+
+#avaliacao{
+    margin-top: -1.5rem;
+}
+
+#avaliacao img{
+    width: 2.5rem;
+}
+
 .ficha-corpo p{
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: 0.15rem;
 }
 
 
@@ -28,6 +47,7 @@
     background-color: #f9d1c6;
     border: none;
     color: #986D5A;
+    width: 20rem;
     font-size: 1.5rem;
 }
 

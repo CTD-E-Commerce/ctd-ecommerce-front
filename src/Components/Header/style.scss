@@ -12,29 +12,24 @@ header{
 }
 
 nav{
-    padding: 6.5rem; //reduzir no mobile
+    padding: 3.5%; //verificar no mobile
 }
+
 
 .navbar-nav{
     font-family: 'Raleway', sans-serif;
+    gap: 6.5% !important;
+    padding-right: 6rem; //para compensar gap no desktop
 }
 
 .nav-link {
     font-size: 1.8rem;
-    padding: 0 3rem 0 3rem !important;
+    //padding: 0 3rem 0 3rem !important; melhor investir em gap no elemento-pai por razões de responsividade
     color: #262322 !important; //gera conflitos com hover e focus
     font-weight: 500;
     letter-spacing: .25rem;
     // transition: font-size .5s ease-in-out !important;
 }
-
-//DECIDIR QUAIS COMPORTAMENTOS OS LINKS DA NAVBAR DEVERÃO TER QUANDO EM FOCO E/OU SELECIONADOS
-//.nav-link:hover,
-//.nav-link:focus{
-    // font-size: 2.2rem;
-    // color: red !important;
-    // background-color: blue !important;
-//}
 
 .dropdown-menu.show{
     margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile
@@ -63,15 +58,15 @@ nav{
 
 /* -------------------------------- LOGO -------------------------------- */
 
-.navbar-brand{
+.navbar-brand span{
+    font-family: 'Quentin', sans-serif;
     font-size: 3rem !important;
-    padding: 1.25rem !important; //revisar
-    font-family: 'Quentin';
+    padding-left: 2.5%;
 }
 
 #logo-img{
-    //height: 8rem;
-    width: 20%; //investi em % para responsividade. considerar se vw não seria melhor nesse caso
+    height: 20%;
+    width: 20%; //investi em % para responsividade; aumentar % conforme diminuir viewport
     align-self: center;
     border-radius:50%;
 }

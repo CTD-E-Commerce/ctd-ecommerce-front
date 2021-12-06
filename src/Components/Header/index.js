@@ -16,7 +16,7 @@ const Header = () => {
                 <Navbar bg="linen" expand="lg" collapseOnSelect>
                     <Navbar.Brand>
                         {logo} {''}
-                        Cosméticos
+                        <span>Cosméticos</span>
                     </Navbar.Brand>
 
                     <Navbar.Toggle />
