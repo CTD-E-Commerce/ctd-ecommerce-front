@@ -1,0 +1,37 @@
+/* .carrinho{
+    display: none;
+} */
+
+.container-carrinho{
+    margin-top: 10rem;
+    
+}
+
+.card-carrinho{
+    height: 200px;
+    //margin-bottom: 20px;
+    //border-radius: 1.2rem;
+    border: 1px solid rgba(0,0,0,.125);
+   
+}
+.card-carrinho+.card-carrinho{
+    border-top-width: 0;
+}
+
+.carrinho{
+    height: 500px;
+    margin-left: 2rem;
+    background-color: #f7f4f4;
+}
+
+.header-itens{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.2rem 0;
+    background-color: #f7f4f4;
+}
+
+
+
+
