@@ -14,7 +14,7 @@ const Header = () => {
         const {
             state: {cart},
             dispatch,
-         } = CartState();
+        } = CartState();
 
     const logo = <img id="logo-img" src={logo_img} alt="logomarca" />
 
@@ -35,20 +35,20 @@ const Header = () => {
                             <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
 
                             <NavDropdown title="PRODUTOS">
-                                <NavDropdown.Item as={Link} to={"/produtos"}>TODOS</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos"}>Todos as categorias</NavDropdown.Item>
                                 <NavDropdown.Divider/>
 
                                 {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
                                 <NavDropdown.Item as={Link} to={"/produtos/skincare"}>Skin care</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/makeup"}>Make up</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/haircare"}>Hair care</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/perfume"}>Perfume</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/vegano"}>Vegano</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/perfume"}>Perfumes</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/vegano"}>Veganos</NavDropdown.Item>
                             </NavDropdown>
 
                             <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
                             
-                            <Nav.Link href="/home#sobre">SOBRE</Nav.Link>
+                            <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
 
                             {/*Componente Carrinho*/}
                             <Dropdown alignRight>
