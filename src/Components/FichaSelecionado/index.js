@@ -46,10 +46,7 @@ const FichaSelecionado = ({prod}) => {
                                 payload: prod
                             })
                         }} className="item-btn">Add to cart</button>)
-                    }
-                    
-                    {/* <Button variant="primary">ADD AO CARRINHO</Button> */}
-                
+                    }                
                 </Card.Body>
             </Card>
         </>

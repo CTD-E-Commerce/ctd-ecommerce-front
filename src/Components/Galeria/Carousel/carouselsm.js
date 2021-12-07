@@ -5,7 +5,6 @@ import {CartState} from '../../../context/Context.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Item from './item.js';
 /* import {Produtos} from './produtos'; */
-
 export const Carouselsm = (props) => {
 
     const {state: {products}} = CartState();

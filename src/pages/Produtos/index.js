@@ -2,11 +2,9 @@ import React from 'react'
 import './style.scss';
 import { Container, Form, Row, Col, Card, Button } from 'react-bootstrap';
 import { Banner } from '../../Components/Banner';
-import { CartState } from '../../context/Context.js';
 
 
 const Produtos = () => {
-
 
     return (
         <>          

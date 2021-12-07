@@ -51,49 +51,48 @@ const Header = () => {
                             <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
 
                             {/*Componente Carrinho*/}
-                            <Dropdown alignRight>
-                                <Dropdown.Toggle variant="success">
-                                <FaShoppingCart color="white" fontSize="25px" />
+
+                            <Dropdown id="cart">
+                                <Dropdown.Toggle variant="dark">
+                                <FaShoppingCart color="white" fontSize="35px" />
                                 <Badge>{cart.length}</Badge>
                                 </Dropdown.Toggle>
 
-                                <Dropdown.Menu style={{minWidth: 370}}>
+                                <Dropdown.Menu id="subcart" style={{minWidth: 370}}>
                                     {cart.length > 0 ? (
                                         <>
-                                            {cart.map((prod) => {
+                                            {cart.map((prod) => (
                                                     <span className="cartitem" key={prod.id}>
-                                                        <img
-                                                            src={prod.image}
-                                                            className="cartItemImg"
-                                                            alt={prod.title}
-                                                        />
+                                                    <img
+                                                        src={prod.image}
+                                                        className="cartItemImg"
+                                                        alt={prod.title}
+                                                    />
 
-                                                        <div className="cartItemDetail">
-                                                            <span>{prod.title}</span>
-                                                            <span>{prod.price}</span>
-                                                        </div>
+                                                    <div className="cartItemDetail">
+                                                        <span>{prod.title}</span>
+                                                        <span>{prod.price}</span>
+                                                    </div>
 
-                                                        <AiFillDelete
-                                                            fontSize="20px"
-                                                            style={{cursor: "pointer" }}
+                                                    <AiFillDelete
+                                                        fontSize="20px"
+                                                        style={{cursor: "pointer" }}
 
-                                                            onClick={() => {
-                                                                dispatch({
-                                                                    type: "REMOVE_FROM_CART",
-                                                                    payload: prod,
-                                                                })
-                                                        }}
-                                                        
-                                                        />
-                                                    </span>
-                                                })
-                                            }
+                                                        onClick={() => {
+                                                            dispatch({
+                                                                type: "REMOVE_FROM_CART",
+                                                                payload: prod,
+                                                            })
+                                                        }}                                                        
+                                                    />
+                                                </span>
+                                            ))}
                                         </>
                                     ) : (
-                                        <span style={{padding: 10}}>Cart is empty!</span>
+                                        <span style={{padding: 10, color: 'white'}}>Cart is empty!</span>
                                     )}
                                 </Dropdown.Menu>
-                            </Dropdown>
+                        </Dropdown>                        
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
