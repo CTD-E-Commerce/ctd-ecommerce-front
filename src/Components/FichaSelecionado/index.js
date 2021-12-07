@@ -1,12 +1,16 @@
 import React from 'react';
-import "./style.scss";
+import { Card, Container, Button } from 'react-bootstrap';
 import imgProduto from "../../assets/img/produto-placeholder.png"
-import { Card, Container, Row, Col, Button } from 'react-bootstrap';
 import star from '../../assets/img/a-star-is-born.png';
+import "./style.scss";
+
 
 const FichaSelecionado = () => {
     return (
         <>
+
+        {/* ESPAÇO DO HELMET PARA DEFINIR HEAD>TITLE */}
+
             <Card className="ficha">
                 <Container className="col-lg-4">
                     <Card.Img id="produto-img" variant="top" src={imgProduto} />
@@ -19,29 +23,6 @@ const FichaSelecionado = () => {
                     <Button variant="primary">ADD AO CARRINHO</Button>
                 </Card.Body>
             </Card>
-
-
-        {/* <Container>
-                <Row>
-                    <Col>
-                        <img id="detalhes-img" src={imgProduto} alt="" />
-                    </Col>
-
-                    <Col>
-                        <div className="selecionado-resumo">
-                            <h1>TÍTULO PRODUTO</h1>
-                            <h3>AVALIAÇÃO</h3>
-                            <h3>PREÇO</h3>
-                            <Button type="submit">Adicionar ao carrinho</Button>{' '}
-                        </div>
-                    </Col>
-                </Row>
-
-                <Row>
-                    <h3>CATEGORIA PRODUTO</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae amet rerum dolor esse quidem totam ad quas repellat, et possimus! Itaque eius omnis expedita? Recusandae delectus asperiores error est nisi!</p>
-                </Row>
-        </Container> */}
         </>
     )
 }
