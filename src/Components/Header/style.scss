@@ -1,83 +1,55 @@
 /* lembrar que fixed demanda uso de margin-top de elementos seguintes, ao passo que sticky, por sua vez, não é suportado por todos os browsers 
 REALIZAR ADEQUAÇÕES AO USAR FIXED=TOP*/
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    ;
 }
 
-.bg-linen{
+.bg-linen {
     background-color: #F2E5D7;
 }
 
-nav{
-    padding: 6.5rem; //reduzir no mobile
+nav {
+    padding: 3.5%; //verificar no mobile
 }
 
-.navbar-nav{
+.navbar-nav {
     font-family: 'Raleway', sans-serif;
+    gap: 6.5% !important;
+    padding-right: 6rem; //para compensar gap no desktop
 }
 
 .nav-link {
     font-size: 1.8rem;
-    padding: 0 3rem 0 3rem !important;
+    //padding: 0 3rem 0 3rem !important; melhor investir em gap no elemento-pai por razões de responsividade
     color: #262322 !important; //gera conflitos com hover e focus
     font-weight: 500;
     letter-spacing: .25rem;
     // transition: font-size .5s ease-in-out !important;
 }
 
-.cartitem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-    margin-bottom: 20px;
-  }
-  
-  .cartItemImg {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-  }
-  
-  .cartItemDetail {
-    display: flex;
-    flex: 1;
-    padding: 0 20px;
-    flex-direction: column;
-  }
-
-//DECIDIR QUAIS COMPORTAMENTOS OS LINKS DA NAVBAR DEVERÃO TER QUANDO EM FOCO E/OU SELECIONADOS
-//.nav-link:hover,
-//.nav-link:focus{
-    // font-size: 2.2rem;
-    // color: red !important;
-    // background-color: blue !important;
-//}
-
-.dropdown-menu.show{
-    margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile
+.dropdown-menu.show {
+    margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile - alternativamente, eliminar o próprio dropdown no mobile
     font-size: 1.6rem;
     background-color: #262322;
     width: 20rem;
-    // padding: 1.5rem;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: #F2E5D7 !important; //important está gerando conflitos com hover e focus
     line-height: 3rem;
 }
 
 .dropdown-item:hover,
-.dropdown-item:focus{
+.dropdown-item:focus {
     color: #262322 !important;
     background-color: #F2E5D7 !important;
 }
 
-.dropdown-divider{
+.dropdown-divider {
     color: #EB6E92;
     height: .2rem;
 }
@@ -85,19 +57,17 @@ nav{
 
 /* -------------------------------- LOGO -------------------------------- */
 
-.navbar-brand{
+.navbar-brand span {
+    font-family: 'Quentin', sans-serif;
     font-size: 3rem !important;
-    padding: 1.25rem !important; //revisar
-    font-family: 'Quentin';
+    padding-left: 2.5%;
 }
 
-#logo-img{
-    //height: 8rem;
-    width: 20%; //investi em % para responsividade. considerar se vw não seria melhor nesse caso
+#logo-img {
+    width: 20%; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
-    border-radius:50%;
+    border-radius: 50%;
 }
-
 
 
 @import "~bootstrap/scss/bootstrap";

@@ -25,7 +25,7 @@ const Header = () => {
                 <Navbar bg="linen" expand="lg" collapseOnSelect>
                     <Navbar.Brand>
                         {logo} {''}
-                        Cosméticos
+                        <span>Cosméticos</span>
                     </Navbar.Brand>
 
                     <Navbar.Toggle />
@@ -39,11 +39,11 @@ const Header = () => {
                                 <NavDropdown.Divider/>
 
                                 {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
-                                <NavDropdown.Item href="#produtos/categoria01" target="_blank">Skin care</NavDropdown.Item>
-                                <NavDropdown.Item href="#produtos/categoria02" target="_blank">Make up</NavDropdown.Item>
-                                <NavDropdown.Item href="#produtos/categoria03" target="_blank">Hair care</NavDropdown.Item>
-                                <NavDropdown.Item href="#produtos/categoria04" target="_blank">Perfume</NavDropdown.Item>
-                                <NavDropdown.Item href="#produtos/categoria05" target="_blank">Hipoalergênico</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/skincare"}>Skin care</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/makeup"}>Make up</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/haircare"}>Hair care</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/perfume"}>Perfume</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/vegano"}>Vegano</NavDropdown.Item>
                             </NavDropdown>
 
                             <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>

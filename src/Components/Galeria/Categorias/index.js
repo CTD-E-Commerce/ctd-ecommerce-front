@@ -34,13 +34,13 @@ const Categorias = () => {
                     <Col sm className="item-categorias">
                         <a href="#">
                             <img src={perfume} alt="" />
-                            <p>Perfume</p>
+                            <p>Perfumes</p>
                         </a>
                     </Col>
                     <Col sm className="item-categorias">
                         <a href="#">
                             <img src={hipo} alt="" />
-                            <p>Hipoalergênico</p>
+                            <p>Veganos</p>
                         </a>
                     </Col>                 
                 </Row>

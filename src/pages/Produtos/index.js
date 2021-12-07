@@ -59,7 +59,7 @@ const Produtos = () => {
                                 <Card.Img variant="top" src="holder.js/219px292" />
                                 <Card.Body>
                                 <Card.Title>Card title</Card.Title>
-                                <Button type="submit">Adicionar ao carrinho</Button>{' '}
+                                <Button type="submit">Add ao carrinho</Button>{' '}
                                 </Card.Body>
                             </Card>
                             </Col>

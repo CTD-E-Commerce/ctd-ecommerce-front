@@ -1,0 +1,79 @@
+.footer {
+    background-color: #452d27;
+    color: #F2E5D7;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    padding: 4rem 2rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contato {
+    padding: 2rem;
+}
+
+.contato h3 {
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: #c97d60;
+}
+
+.contato img {
+    padding-right: 1.5rem;
+}
+
+.links {
+    padding-top: 2rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: #F2E5D7;
+    font-weight: bold;
+    padding: 3rem;
+}
+
+.links a:hover {
+    color: #c97d60;
+}
+
+.copy p {
+    text-align: center;
+    margin-top: 8rem;
+}
+
+.cartoes {
+    padding: 2rem;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.cartoes img {
+    padding: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .cartoes {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .links a {
+        padding: 1rem;
+    }
+}
+
+
+@import "~bootstrap/scss/bootstrap";
