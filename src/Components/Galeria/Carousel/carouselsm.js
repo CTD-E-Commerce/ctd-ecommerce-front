@@ -3,8 +3,13 @@ import './style.scss';
 import { Carousel, Col, Row } from 'react-bootstrap';
 import {CartState} from '../../../context/Context.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
 import  Item  from './item';
 
+=======
+import Item from './item.js';
+/* import {Produtos} from './produtos'; */
+>>>>>>> 816335609dbf9a467107b3ce2db4e11a1f557d2e
 
 export const Carouselsm = (props) => {
 

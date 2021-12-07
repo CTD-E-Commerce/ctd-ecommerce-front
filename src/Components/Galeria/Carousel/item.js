@@ -26,7 +26,7 @@ const Item = ({prod}) => {
                             type: "REMOVE_FROM_CART",
                             payload: prod
                         })
-                    }} className="item-btn">Remove</button>
+                    }} className="item-btn">Remover do carrinho</button>
                     ) : (<button onClick={() => {
                         dispatch({
                             type: "ADD_TO_CART",

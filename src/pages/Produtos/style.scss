@@ -13,14 +13,14 @@
     margin-bottom: 2rem;
 }
 
-.form-check-input:checked{
-    background-color: #d68c45;
-    border-color: #d68c45;
+.form-check-label {
+    font-size: 1.6rem;
 }
 
-.items-radios {
-    font-size: 1.6rem;
-    font-family: 'Raleway', sans-serif;
+.form-check-input:checked {
+    background-color: #d68c45 !important;
+    border-color: #d68c45 !important;
+    box-shadow: none !important;
 }
 
 .cards-produtos {
@@ -29,16 +29,18 @@
     font-size: 1.5rem;  
 }
 
-.cards-produtos button {
-    background-color: #f9d1c6;
-    border: none;
-    color: #986D5A;
-    font-size: 1.5rem;
+.btn-primary {
+    color: #986D5A !important;
+    background-color: #f9d1c6 !important;
+    border-color: none !important;
+    font-size: 1.5rem !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-.cards-produtos button:hover {
-    background-color: #986D5A;
-    color: #f9d1c6;
+.btn-primary:hover {
+    background-color: #986D5A !important;
+    color: #f9d1c6 !important;
 }
 
 .g-9 {
