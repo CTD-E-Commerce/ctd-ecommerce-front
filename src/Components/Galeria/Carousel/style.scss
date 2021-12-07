@@ -22,7 +22,7 @@
   margin:  5rem auto;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
 }
   
@@ -61,7 +61,7 @@
 /* botao de compra */
 .item-btn{
   font-size: 1.6rem;
-  width: 15rem;
+  width: 10rem;
   border-radius: 1rem;
   padding: 1rem;
   border: none;

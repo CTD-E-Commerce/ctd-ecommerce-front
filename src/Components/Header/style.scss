@@ -1,21 +1,22 @@
 /* lembrar que fixed demanda uso de margin-top de elementos seguintes, ao passo que sticky, por sua vez, não é suportado por todos os browsers 
 REALIZAR ADEQUAÇÕES AO USAR FIXED=TOP*/
-header{
+header {
     position: sticky;
     top: 0;
     z-index: 999;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    ;
 }
 
-.bg-linen{
+.bg-linen {
     background-color: #F2E5D7;
 }
 
-nav{
+nav {
     padding: 3.5%; //verificar no mobile
 }
 
-.navbar-nav{
+.navbar-nav {
     font-family: 'Raleway', sans-serif;
     gap: 6.5% !important;
     padding-right: 6rem; //para compensar gap no desktop
@@ -30,25 +31,25 @@ nav{
     // transition: font-size .5s ease-in-out !important;
 }
 
-.dropdown-menu.show{
+.dropdown-menu.show {
     margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile - alternativamente, eliminar o próprio dropdown no mobile
     font-size: 1.6rem;
     background-color: #262322;
     width: 20rem;
 }
 
-.dropdown-item{
+.dropdown-item {
     color: #F2E5D7 !important; //important está gerando conflitos com hover e focus
     line-height: 3rem;
 }
 
 .dropdown-item:hover,
-.dropdown-item:focus{
+.dropdown-item:focus {
     color: #262322 !important;
     background-color: #F2E5D7 !important;
 }
 
-.dropdown-divider{
+.dropdown-divider {
     color: #EB6E92;
     height: .2rem;
 }
@@ -56,16 +57,16 @@ nav{
 
 /* -------------------------------- LOGO -------------------------------- */
 
-.navbar-brand span{
+.navbar-brand span {
     font-family: 'Quentin', sans-serif;
     font-size: 3rem !important;
     padding-left: 2.5%;
 }
 
-#logo-img{
+#logo-img {
     width: 20%; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
-    border-radius:50%;
+    border-radius: 50%;
 }
 
 

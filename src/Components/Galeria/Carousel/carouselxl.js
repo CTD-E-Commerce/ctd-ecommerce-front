@@ -1,13 +1,16 @@
 import React from 'react';
 import './style.scss';
 import { Carousel, Col, Row } from 'react-bootstrap';
+import {CartState} from '../../../context/Context.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Item } from './item';
+import  Item  from './Item';
 /* import {Produtos} from './produtos'; */
 
 
-export const Carouselxl = (props) => {
+export const Carouselxl = () => {
 
+    const {state: {products}} = CartState();
+  /*   console.log(products); */
   
   /*var produtos1=[];
     var produtos2=[];
@@ -61,10 +64,11 @@ export const Carouselxl = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
 
-                    {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
+                    {Object.values(products).map((prod, index) => {
                             if(index < 3){
                                 return (
-                                    <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
+                                    <Item prod={prod} key={prod.id} />
+                                   /*  console.log(prod) */
                             )};
                             return;
                         })}
@@ -72,10 +76,10 @@ export const Carouselxl = (props) => {
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
-                           if(index>2 && index < 6){
+                        {Object.values(products).map((prod, index) => {
+                           if(index >= 3 && index < 6){
                             return (
-                                <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
+                                <Item prod={prod} key={prod.id}/>
                             )};
                             return;
                         })}
@@ -88,10 +92,10 @@ export const Carouselxl = (props) => {
             <Carousel className="carousel-xl">
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
-                            if(index>2 && index < 6){
+                        {Object.values(products).map((prod, index) => {
+                            if(index >= 6 && index < 9){
                                 return (
-                                 <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
+                                 <Item prod={prod} key={prod.id} />
                             )};
                             return;
                         })}
@@ -99,10 +103,10 @@ export const Carouselxl = (props) => {
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
-                           if(index < 3){
+                        {Object.values(products).map((prod, index) => {
+                           if(index >= 9){
                             return (
-                                <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
+                                <Item prod={prod} key={prod.id}/>
                             )};
                             return;
                         })}

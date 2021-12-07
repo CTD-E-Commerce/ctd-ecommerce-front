@@ -33,6 +33,12 @@
     width: 18rem;
 }
 
+#anchorSobre{ //Gambiarra way of life - resolvido header que comia topo do conteúdo com div falsa
+    display: block;
+    position: relative;
+    top: -200px;
+}
+
 @media (max-width: 380px) {
     .container-sobre h3 {
         font-size: 4rem;

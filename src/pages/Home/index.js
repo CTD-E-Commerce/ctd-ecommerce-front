@@ -4,7 +4,7 @@ import Categorias from '../../Components/Galeria/Categorias';
 import Sobre from '../../Components/Sobre';
 
 const Home = () => {
-    
+
      return (
         <>
             <Banner />

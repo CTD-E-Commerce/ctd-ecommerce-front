@@ -5,7 +5,7 @@ import api from '../services/api';
 const useAxios = (url) => {
 
   //Define states dos dados requisitados
-  const [data, setData] = useState({});
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     async function loadData() {
