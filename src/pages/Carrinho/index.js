@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 const Carrinho = () => {
+
     return (
         <>
-            <h1>TESTE CARRINHO</h1>
+            <h1>Teste carrinho</h1>
         </>
     )
 }
