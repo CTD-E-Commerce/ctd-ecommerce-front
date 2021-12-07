@@ -1,5 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {CartState} from '../../../context/Context.js';
+import { CartState} from '../../../context/Context.js';
+import { Link } from 'react-router-dom'
 import './style.scss'
 
 const Item = ({prod}) => {
@@ -13,7 +14,9 @@ const Item = ({prod}) => {
 
     return (
         <div className="card-produto shadow p-3 mb-5 rounded" key={prod.id}>
+            <Link to={"/produtos/"+prod.id}>
                 <img className="item-img" src={prod.image} alt="" />
+            </Link> 
                 <div>
                     <h1>{prod.title}</h1>
                     <p>{prod.shortdescription}</p>

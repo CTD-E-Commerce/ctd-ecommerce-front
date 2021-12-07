@@ -8,7 +8,7 @@ const Produtos = () => {
 
 
     return (
-        <>           
+        <>
             <Banner />
             <section id="produtos-categoria">
                 <Container fluid className="radios">
@@ -27,10 +27,10 @@ const Produtos = () => {
                         {Array.from({ length: 6 }).map((_, idx) => (
                             <Col>
                             <Card className="cards-produtos">
-                                <Card.Img variant="top" src={prod.image} />
+                                <Card.Img variant="top" src="" />
                                 <Card.Body>
-                                <Card.Title>{prod.title}</Card.Title>
-                                <Card.Text>R$ {prod.price},00</Card.Text>
+                                <Card.Title>{/*prod.title*/}</Card.Title>
+                                <Card.Text>R$ ,00</Card.Text>
                                 <Button type="submit">Add ao carrinho</Button>{' '}
                                 </Card.Body>
                             </Card>
