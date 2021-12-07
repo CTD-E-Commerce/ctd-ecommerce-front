@@ -61,10 +61,10 @@ export const Carouselxl = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
 
-                    {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
+                    {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
                             if(index < 3){
                                 return (
-                                    <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
+                                    <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
                             )};
                             return;
                         })}
@@ -72,10 +72,10 @@ export const Carouselxl = (props) => {
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
-                           if(index < 3){
+                        {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
+                           if(index>2 && index < 6){
                             return (
-                                <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
+                                <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
                             )};
                             return;
                         })}
@@ -88,10 +88,10 @@ export const Carouselxl = (props) => {
             <Carousel className="carousel-xl">
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
-                            if(index < 3){
+                        {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
+                            if(index>2 && index < 6){
                                 return (
-                                 <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
+                                 <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
                             )};
                             return;
                         })}
@@ -99,10 +99,10 @@ export const Carouselxl = (props) => {
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(props.productsArray).map(({ id, title, description, price, image }, index) => {
+                        {Object.values(props.productsArray).map(({ id, title, shortdescription, price, image }, index) => {
                            if(index < 3){
                             return (
-                                <Item id={id} produto={title} descricao={description} preco={price} imagem={image} />
+                                <Item id={id} produto={title} descricao={shortdescription} preco={price} imagem={image} />
                             )};
                             return;
                         })}
