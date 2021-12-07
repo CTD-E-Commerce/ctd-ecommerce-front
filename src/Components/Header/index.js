@@ -51,48 +51,47 @@ const Header = () => {
                             <Nav.Link href="/home#sobre">SOBRE</Nav.Link>
 
                             {/*Componente Carrinho*/}
-                            <Dropdown>
+                            <Dropdown alignRight>
                                 <Dropdown.Toggle variant="success">
                                 <FaShoppingCart color="white" fontSize="25px" />
-                                    <Badge>{cart.length}</Badge>
+                                <Badge>{cart.length}</Badge>
                                 </Dropdown.Toggle>
 
                                 <Dropdown.Menu style={{minWidth: 370}}>
+                                    {cart.length > 0 ? (
+                                        <>
+                                            {cart.map((prod) => {
+                                                    <span className="cartitem" key={prod.id}>
+                                                        <img
+                                                            src={prod.image}
+                                                            className="cartItemImg"
+                                                            alt={prod.title}
+                                                        />
 
-                                {cart.length > 0 ? (
-                                    <>
-                                        {
-                                            cart.map(prod => {
-                                                <>
-                                                <span className="cartitem" key={prod.id} />
-                                                <img
-                                                    src={prod.image}
-                                                    className="cartItemImg"
-                                                    alt={prod.title}
-                                                ></img>
+                                                        <div className="cartItemDetail">
+                                                            <span>{prod.title}</span>
+                                                            <span>{prod.price}</span>
+                                                        </div>
 
-                                                <div className="cartItemImg">
-                                                    <span>{prod.title}</span>
-                                                    <span>{prod.price[0]}</span>
-                                                </div>
-                                                <AiFillDelete
-                                                    fontSize="20px"
-                                                    style={{cursor: "pointer" }}
+                                                        <AiFillDelete
+                                                            fontSize="20px"
+                                                            style={{cursor: "pointer" }}
 
-                                                    onClick={() => {
-                                                        dispatch({
-                                                            type: "REMOVE_FROM_CART",
-                                                            payload: prod,
-                                                        })
-                                                    }}
-                                                />
-                                            </>
-                                            })
-                                        }
-                                    </>
-                                ) : (
-                                    <span style={{padding: 10}}>Cart is empty!</span>
-                                )}
+                                                            onClick={() => {
+                                                                dispatch({
+                                                                    type: "REMOVE_FROM_CART",
+                                                                    payload: prod,
+                                                                })
+                                                        }}
+                                                        
+                                                        />
+                                                    </span>
+                                                })
+                                            }
+                                        </>
+                                    ) : (
+                                        <span style={{padding: 10}}>Cart is empty!</span>
+                                    )}
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Nav>
