@@ -1,18 +1,41 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {CartState} from '../../../context/Context.js';
 import './style.scss'
 
-export const Item = ({ id, produto, descricao, preco, imagem }) => {
+const Item = ({prod}) => {
+
+    const {
+            state: {cart},
+            dispatch,
+         } = CartState();
+
+    console.log(cart);
+
     return (
-        <>
-            <div className="card-produto shadow p-3 mb-5 rounded" key={id}>
-                <img className="item-img" src={imagem} alt="" />
+        <div className="card-produto shadow p-3 mb-5 rounded" key={prod.id}>
+                <img className="item-img" src={prod.image} alt="" />
                 <div>
-                    <h1>{produto}</h1>
-                    <p>{descricao}</p>
-                    <span>R$ {preco}</span>
+                    <h1>{prod.title}</h1>
+                    <p>{prod.shortdescription}</p>
+                    <span>R$ {prod.price}</span>
                 </div>
-                <button className="item-btn">Add ao Carrinho</button>
+
+                {cart.some(p => p.id === prod.id) ? (
+                        <button onClick={() => {
+                        dispatch({
+                            type: "REMOVE_FROM_CART",
+                            payload: prod
+                        })
+                    }} className="item-btn">Remove</button>
+                    ) : (<button onClick={() => {
+                        dispatch({
+                            type: "ADD_TO_CART",
+                            payload: prod
+                        })
+                    }} className="item-btn">Add to cart</button>)
+                }                
             </div>
-        </>
     )
 }
+
+export default Item;

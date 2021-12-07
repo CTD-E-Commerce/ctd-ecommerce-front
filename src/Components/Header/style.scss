@@ -28,6 +28,28 @@ nav{
     // transition: font-size .5s ease-in-out !important;
 }
 
+.cartitem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  
+  .cartItemImg {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+  
+  .cartItemDetail {
+    display: flex;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+  }
+
 //DECIDIR QUAIS COMPORTAMENTOS OS LINKS DA NAVBAR DEVERÃO TER QUANDO EM FOCO E/OU SELECIONADOS
 //.nav-link:hover,
 //.nav-link:focus{
