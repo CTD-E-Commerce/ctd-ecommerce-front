@@ -18,18 +18,7 @@ const RouteList = () => (
         {/* rota teste para construir página-modelo para produto selecionado */}
         <Route path ="/produtos/teste" element={<ProdutoSelecionado />} />
 
-
     </Routes>
 );
 
 export default RouteList;
-
-
-//CÓDIGO DO RENAN para referência
-// <Routes>
-//   <Route path="/" element={<Home />} />
-//   <Route path=":repositoryOwner/:repositoryName" element={<Repository />} />
-//   <Route path="user" element={<UserDetails />} />
-//   <Route path="user/:userName" element={<UserDetails />} />
-//   <Route path="*" element={<NotFound />} />
-// </Routes>
