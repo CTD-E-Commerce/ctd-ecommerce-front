@@ -1,6 +1,6 @@
 import {createContext, useReducer, useContext} from 'react';
 import {cartReducer} from './Reducers'
-import useAxios from '../hooks/useAxios';
+/* import useAxios from '../hooks/useAxios'; */
 
 const Cart = createContext();
 

@@ -13,11 +13,11 @@ const Item = ({prod}) => {
     console.log(cart);
 
     return (
-        <div className="card-produto shadow p-3 mb-5 rounded" key={prod.id}>
+        <div className="card-produto" key={prod.id}>
             <Link to={"/produtos/"+prod.id}>
                 <img className="item-img" src={prod.image} alt="" />
-            </Link> 
-                <div>
+            </Link>
+                <div className="item-description">
                     <h1>{prod.title}</h1>
                     <p>{prod.shortdescription}</p>
                     <span>R$ {prod.price}</span>
@@ -29,13 +29,13 @@ const Item = ({prod}) => {
                             type: "REMOVE_FROM_CART",
                             payload: prod
                         })
-                    }} className="item-btn">Remove</button>
+                    }} className="item-btn">Remover do carrinho</button>
                     ) : (<button onClick={() => {
                         dispatch({
                             type: "ADD_TO_CART",
                             payload: prod
                         })
-                    }} className="item-btn">Add to cart</button>)
+                    }} className="item-btn">Add ao carrinho</button>)
                 }                
             </div>
     )

@@ -2,6 +2,7 @@ import React from 'react'
 import './style.scss';
 import { Container, Form, Row, Col, Card, Button } from 'react-bootstrap';
 import { Banner } from '../../Components/Banner';
+import { CartState } from '../../context/Context.js';
 
 
 const Produtos = () => {
@@ -27,10 +28,10 @@ const Produtos = () => {
                         {Array.from({ length: 6 }).map((_, idx) => (
                             <Col>
                             <Card className="cards-produtos">
-                                <Card.Img variant="top" src="" />
+                                <Card.Img variant="top" src={""} />
                                 <Card.Body>
-                                <Card.Title>{/*prod.title*/}</Card.Title>
-                                <Card.Text>R$ ,00</Card.Text>
+                                <Card.Title>{"Title"}</Card.Title>
+                                <Card.Text>R$ {"Price"},00</Card.Text>
                                 <Button type="submit">Add ao carrinho</Button>{' '}
                                 </Card.Body>
                             </Card>
