@@ -13,7 +13,7 @@ import useAxios from '../../../hooks/useAxios';
 export const Carrossel = () => {
 
 //Função para requisição de produtos de categoria especifica
-  let displayProducts = useAxios("/products/category/perfumaria");
+  let displayProducts = useAxios("/products/category/Hair Care");
 
     return (
         <>

@@ -1,7 +1,7 @@
 .ficha{
     flex-direction: row !important;
     flex-wrap: wrap;
-    margin: 5% 10%; //revisar com padrão estabelecido para a página como um todo
+    margin: 5% 10% 15% 10%; //revisar com padrão estabelecido para a página como um todo - aumentei margin-bottom para empurrar footer para baixo
     border: none !important;
     gap: 4rem;
 }
@@ -16,7 +16,8 @@
     display: flex;
     flex-direction: column;
     padding: 0 !important;
-    gap: 4rem;
+    gap: 3.5rem;
+    margin: 0 1rem;
 }
 
 .ficha-titulo{
