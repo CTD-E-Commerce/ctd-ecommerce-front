@@ -1,105 +1,111 @@
 import React from 'react'
-import {Navbar, Nav, NavDropdown, Dropdown, Badge} from 'react-bootstrap';
-import {FaShoppingCart} from 'react-icons/fa'
-import {BrowserRouter as Router, Link } from "react-router-dom";
-import {CartState} from '../../context/Context.js';
+import { Navbar, Nav, NavDropdown, Dropdown, Badge, Button } from 'react-bootstrap';
+import { FaShoppingCart } from 'react-icons/fa'
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { CartState } from '../../context/Context.js';
 import RouteList from '../../routes';
 import './style.scss';
 import logo_img from '../../assets/img/logo.png'
 
-import {AiFillDelete} from 'react-icons/ai';
+import { AiFillDelete } from 'react-icons/ai';
 
 const Header = () => {
 
-        const {
-            state: {cart},
-            dispatch,
-        } = CartState();
+    const {
+        state: { cart },
+        dispatch,
+    } = CartState();
 
     const logo = <img id="logo-img" src={logo_img} alt="logomarca" />
 
     return (
         <>
-        <Router>
-            <header>
-                <Navbar bg="linen" expand="lg" collapseOnSelect>
-                    <Navbar.Brand>
-                        {logo} {''}
-                        <span>Cosméticos</span>
-                    </Navbar.Brand>
+            <Router>
+                <header>
+                    <Navbar bg="linen" expand="lg" collapseOnSelect>
+                        <Navbar.Brand>
+                            {logo} {''}
+                            <span>Cosméticos</span>
+                        </Navbar.Brand>
 
-                    <Navbar.Toggle />
-                    <Navbar.Collapse className="justify-content-end">
-                        <Nav>
+                        <Navbar.Toggle />
+                        <Navbar.Collapse className="justify-content-center">
+                            <Nav>
 
-                            <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
+                                <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
 
-                            <NavDropdown title="PRODUTOS">
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias"}>Todas as categorias</NavDropdown.Item>
-                                <NavDropdown.Divider/>
+                                <NavDropdown title="PRODUTOS">
+                                    <NavDropdown.Item as={Link} to={"/produtos"}>Todas as categorias</NavDropdown.Item>
+                                    <NavDropdown.Divider />
 
-                                {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias/skincare"}>Skin care</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias/makeup"}>Make up</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias/haircare"}>Hair care</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias/perfume"}>Perfumes</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias/vegano"}>Veganos</NavDropdown.Item>
-                            </NavDropdown>
+                                    {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
+                                    <NavDropdown.Item as={Link} to={"/produtos/skincare"}>Skin care</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/makeup"}>Make up</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/haircare"}>Hair care</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/perfume"}>Perfumes</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/vegano"}>Veganos</NavDropdown.Item>
+                                </NavDropdown>
 
-                            <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
+                                <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
 
-                            <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
+                                <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
 
-                            {/*Componente Carrinho*/}
-                            <Dropdown alignRight>
-                                <Dropdown.Toggle variant="success">
-                                <FaShoppingCart color="white" fontSize="25px" />
-                                <Badge>{cart.length}</Badge>
-                                </Dropdown.Toggle>
 
-                                <Dropdown.Menu style={{minWidth: 370}}>
-                                    {cart.length > 0 ? (
-                                        <>
-                                            {cart.map((prod) => {
-                                                    <span className="cartitem" key={prod.id}>
-                                                        <img
-                                                            src={prod.image}
-                                                            className="cartItemImg"
-                                                            alt={prod.title}
-                                                        />
+                            </Nav>
+                        </Navbar.Collapse>
+                        {/*Componente Carrinho*/}
+                        <Dropdown id="cart" align="end">
+                            <Dropdown.Toggle variant="dark">
+                                <FaShoppingCart color="white" fontSize="35px" />
+                                <Badge bg="dark" style={{ fontSize: 12 }}>{cart.length}</Badge>
+                            </Dropdown.Toggle>
 
-                                                        <div className="cartItemDetail">
-                                                            <span>{prod.title}</span>
-                                                            <span>{prod.price}</span>
-                                                        </div>
+                            {/* Lista de itens do carrinho */}
+                            <Dropdown.Menu id="subcart" style={{ minWidth: 320 }}>
 
-                                                        <AiFillDelete
-                                                            fontSize="20px"
-                                                            style={{cursor: "pointer" }}
+                                {/* Verifica estado do carrinho e exibe lista de produtos ou mensagem de vazio */}
+                                {cart.length > 0 ? (
+                                    <>
+                                        {cart.map((prod) => (
+                                            <span className="cartitem" key={prod.id}>
+                                                <img
+                                                    src={prod.image}
+                                                    className="cartItemImg"
+                                                    alt={prod.title}
+                                                />
+                                                <div className="cartItemDetail">
+                                                    <span>{prod.title}</span>
+                                                    <span>{" R$" + prod.price}</span>
+                                                </div>
+                                                {/* Icone lixeira do carrinho */}
+                                                <AiFillDelete
+                                                    fontSize="20px"
+                                                    style={{ cursor: "pointer" }}
 
-                                                            onClick={() => {
-                                                                dispatch({
-                                                                    type: "REMOVE_FROM_CART",
-                                                                    payload: prod,
-                                                                })
-                                                        }}
-                                                        
-                                                        />
-                                                    </span>
-                                                })
-                                            }
-                                        </>
-                                    ) : (
-                                        <span style={{padding: 10}}>Cart is empty!</span>
-                                    )}
-                                </Dropdown.Menu>
-                            </Dropdown>
-                        </Nav>
-                    </Navbar.Collapse>
-                </Navbar>
-            </header>
-            <RouteList />
-        </Router>
+                                                    onClick={() => {
+                                                        dispatch({
+                                                            type: "REMOVE_FROM_CART",
+                                                            payload: prod,
+                                                        })
+                                                    }}
+                                                />
+                                            </span>
+                                        ))}
+                                        <Link to="/carrinho">
+                                            <Button style={{ width: "95%", margin: "0 10px", fontSize: "15px", backgroundColor: "#986D5A", border: "none" }}>
+                                                Ir para o carrinho
+                                            </Button>
+                                        </Link>
+                                    </>
+                                ) : (
+                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>
+                                )}
+                            </Dropdown.Menu>
+                        </Dropdown>
+                    </Navbar>
+                </header>
+                <RouteList />
+            </Router>
         </>
     )
 }
