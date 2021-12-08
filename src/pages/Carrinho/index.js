@@ -3,7 +3,15 @@ import './style.scss';
 import { Container, Row, Col, Form, Table, Button} from 'react-bootstrap';
 import { ImBin} from 'react-icons/im';
 import { CartState } from '../../context/Context.js';
+import Swal from 'sweetalert2';
 
+const swalWithBootstrapButtons = Swal.mixin({
+  customClass: {
+    confirmButton: 'btn btn-success',
+    cancelButton: 'btn btn-danger'
+  },
+  buttonsStyling: false
+})
 
 const Carrinho = () => {
 
@@ -108,7 +116,35 @@ const Carrinho = () => {
                                   </tr>
                                 </tbody>
                             </Table>
-                            <button className="cart-btn">Fechar Pedido</button>
+                            <button className="cart-btn" onClick={() => 
+                                swalWithBootstrapButtons.fire({
+                                    title:'Confirma o fechamendo do pedido?',
+                                    text: `\nEste pedido não poderá ser cancelado!`,
+                                    icon: 'warning',
+                                    showCancelButton: true,
+                                    confirmButtonText: 'Sim, confirmo!',
+                                    cancelButtonText: 'Não, cancele!',
+                                    reverseButtons: true
+                                    }).then((result) => {
+                                    if (result.isConfirmed) {
+                                        swalWithBootstrapButtons.fire(
+                                        'Pedido confirmado!',
+                                        'Avisaremos você quando ele estiver em rota de envio :)',
+                                        'success'
+                                        )
+                                    } else if (
+                                        /* Read more about handling dismissals below */
+                                        result.dismiss === Swal.DismissReason.cancel
+                                    ) {
+                                        swalWithBootstrapButtons.fire(
+                                        'Pedido cancelado!',
+                                        'Aproveite nossa loja e confira outros produtos :)',
+                                        'error'
+                                        )
+                                    }
+                                    })       
+                                    
+                            }>Fechar Pedido</button>
                         </div>
                     </Col>
                 </Row>
