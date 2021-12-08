@@ -1,8 +1,10 @@
 
 /* container geral da pagina carrinho*/
 .container-carrinho{
-    height: calc(100vh - 101px);
-    margin-top: 10rem;  
+    height: 100vh;
+    margin-top: 10rem !important;  
+    margin-bottom: 1rem;
+   
 }
 
 .col-gap{

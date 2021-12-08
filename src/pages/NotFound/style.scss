@@ -1,0 +1,21 @@
+.container {
+  margin-top: 25px;
+}
+
+.message {
+  width: 100%;
+  height: 90vh;
+  padding: 0;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.bg404 {
+  padding-top: 25px;
+  width: 100%;
+  height: 80vh;
+  padding: 0;
+  margin: 0 auto;
+  object-fit: cover;
+  z-index: 2;
+}
