@@ -10,14 +10,14 @@ const RouteList = () => (
     <Routes>
         <Route path ="/" element={<Home />} />
         <Route path ="/home" element={<Home />} />
-        <Route path ="/produtos" element={<Produtos />} />
-        <Route path ="/produtos/:category" element={<Produtos />} />
-        <Route path ="/produtos/:id" element={<ProdutoSelecionado />} /> {/* Ir para detalhes do produto */}
+
+        {/* Feitos ajustes no path de categorias para evitar conflitos com produtos. revisar demais partes da aplicação */}
+        <Route path ="/produtos/categorias" element={<Produtos />} />
+        <Route path ="/produtos/categorias/:category" element={<Produtos />} />
+
+
+        <Route path ="/produtos/:id" element={<ProdutoSelecionado />} />
         <Route path ="/carrinho" element={<Carrinho />} />
-
-        {/* rota teste para construir página-modelo para produto selecionado */}
-        <Route path ="/produtos/teste" element={<ProdutoSelecionado />} />
-
     </Routes>
 );
 

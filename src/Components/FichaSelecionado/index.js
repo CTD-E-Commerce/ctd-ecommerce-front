@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, Container } from 'react-bootstrap';
+import { Card, Container} from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { CartState } from '../../context/Context.js';
 
@@ -30,7 +30,7 @@ const FichaSelecionado = ({prod}) => {
                 <Card.Body className="ficha-corpo col-lg-6">
                     <Card.Title className="ficha-titulo">{prod.title}</Card.Title>
                     <Card.Subtitle id="avaliacao"><img src={star} alt="Estrela de avaliação"/>{' '} {prod.avaliacao}</Card.Subtitle>
-                    <Card.Subtitle>R$ {prod.price},00</Card.Subtitle>
+                    <Card.Subtitle>R$ {prod.price}</Card.Subtitle>
                     <Card.Text>{prod.fulldescription}</Card.Text>
 
                     {cart.some(p => p.id === prod.id) ? (
@@ -39,17 +39,14 @@ const FichaSelecionado = ({prod}) => {
                                 type: "REMOVE_FROM_CART",
                                 payload: prod
                             })
-                        }} className="item-btn">Remove</button>
+                        }}>Remover do carrinho</button>
                         ) : (<button onClick={() => {
                             dispatch({
                                 type: "ADD_TO_CART",
                                 payload: prod
                             })
-                        }} className="item-btn">Add to cart</button>)
-                    }
-                    
-                    {/* <Button variant="primary">ADD AO CARRINHO</Button> */}
-                
+                        }}>Add ao carrinho</button>)
+                    }                
                 </Card.Body>
             </Card>
         </>

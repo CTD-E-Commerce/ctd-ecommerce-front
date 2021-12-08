@@ -35,15 +35,15 @@ const Header = () => {
                             <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
 
                             <NavDropdown title="PRODUTOS">
-                                <NavDropdown.Item as={Link} to={"/produtos"}>Todas as categorias</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias"}>Todas as categorias</NavDropdown.Item>
                                 <NavDropdown.Divider/>
 
                                 {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
-                                <NavDropdown.Item as={Link} to={"/produtos/skincare"}>Skin care</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/makeup"}>Make up</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/haircare"}>Hair care</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/perfume"}>Perfumes</NavDropdown.Item>
-                                <NavDropdown.Item as={Link} to={"/produtos/vegano"}>Veganos</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias/skincare"}>Skin care</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias/makeup"}>Make up</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias/haircare"}>Hair care</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias/perfume"}>Perfumes</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias/vegano"}>Veganos</NavDropdown.Item>
                             </NavDropdown>
 
                             <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
