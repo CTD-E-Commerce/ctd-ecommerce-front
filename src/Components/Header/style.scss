@@ -54,6 +54,7 @@ nav {
     height: .2rem;
 }
 
+/* Lista de produtos do carrinho */
 #cart > #subcart > .cartitem {
     display: flex;
     justify-content: space-between;
@@ -63,13 +64,15 @@ nav {
     color: #ccc;
   }
   
+  //Imagem da lista de produtos do carrinho
   #cart > #subcart > .cartitem > .cartItemImg {
     border-radius: 50%;
     width: 50px;
     height: 50px;
-    /* object-fit: cover; */
+    object-fit: cover;
   }
   
+  //Descrição de cada produto da lista de produtos do carrinho
   #cart > #subcart > .cartitem > .cartItemDetail {
     display: block;
     flex: 1;

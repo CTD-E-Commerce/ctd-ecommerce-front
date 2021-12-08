@@ -58,7 +58,10 @@ const Header = () => {
                                 <Badge>{cart.length}</Badge>
                                 </Dropdown.Toggle>
 
+                                {/* Lista de itens do carrinho */}
                                 <Dropdown.Menu id="subcart" style={{minWidth: 370}}>
+                                    
+                                    {/* Verifica estado do carrinho e exibe lista de produtos ou mensagem de vazio */}
                                     {cart.length > 0 ? (
                                         <>
                                             {cart.map((prod) => (
@@ -73,7 +76,7 @@ const Header = () => {
                                                         <span>{prod.title}</span>
                                                         <span>{prod.price}</span>
                                                     </div>
-
+                                                    {/* Icone lixeira do carrinho */}
                                                     <AiFillDelete
                                                         fontSize="20px"
                                                         style={{cursor: "pointer" }}
