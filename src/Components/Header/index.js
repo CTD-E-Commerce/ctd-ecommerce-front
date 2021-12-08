@@ -57,7 +57,7 @@ const Header = () => {
                         <Dropdown id="cart" align="end">
                             <Dropdown.Toggle variant="dark">
                                 <FaShoppingCart color="white" fontSize="35px" />
-                                <Badge>{cart.length}</Badge>
+                                <Badge bg="dark" style={{ fontSize: 12 }}>{cart.length}</Badge>
                             </Dropdown.Toggle>
 
                             {/* Lista de itens do carrinho */}
