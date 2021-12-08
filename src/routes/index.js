@@ -1,22 +1,23 @@
-import { Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from "../pages/Home";
 import Produtos from "../pages/Produtos";
 import Carrinho from "../pages/Carrinho";
 import ProdutoSelecionado from "../pages/ProdutoSelecionado"
-
+import NotFound from '../pages/NotFound';
 
 const RouteList = () => (
 
     <Routes>
-        <Route path ="/" element={<Home />} />
-        <Route path ="/home" element={<Home />} />
-        <Route path ="/produtos" element={<Produtos />} />
-        <Route path ="/produtos/:category" element={<Produtos />} />
-        <Route path ="/produtos/:id" element={<ProdutoSelecionado />} /> {/* Ir para detalhes do produto */}
-        <Route path ="/carrinho" element={<Carrinho />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/produtos" element={<Produtos />} />
+        <Route path="/produtos/:category" element={<Produtos />} />
+        <Route path="/produtos/:id" element={<ProdutoSelecionado />} /> {/* Ir para detalhes do produto */}
+        <Route path="/carrinho" element={<Carrinho />} />
+        <Route path="*" element={<NotFound />} />
 
         {/* rota teste para construir página-modelo para produto selecionado */}
-        <Route path ="/produtos/teste" element={<ProdutoSelecionado />} />
+        <Route path="/produtos/teste" element={<ProdutoSelecionado />} />
 
     </Routes>
 );
