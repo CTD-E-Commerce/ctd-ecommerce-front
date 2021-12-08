@@ -39,7 +39,7 @@ const Header = () => {
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/perfumes"}>Perfumes</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/veganos"}>Veganos</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
+                            <Nav.Link as={Link} to={"/home#sobre"}>SOBRE</Nav.Link>
                             <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

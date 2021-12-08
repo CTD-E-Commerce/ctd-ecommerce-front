@@ -13,7 +13,6 @@ import linkedin from '../../assets/linkedin.svg';
 const Sobre = () => {
     return (
         <>
-            <div id="anchorSobre">{' '}</div> {/* TESTE */}
             <section id="sobre">
                 <Container fluid className="container-sobre">
                     <p>Conheça nossos</p>

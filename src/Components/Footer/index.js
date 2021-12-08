@@ -33,7 +33,7 @@ const Footer = () => {
                     <div className="links">
                         <Nav.Link className="footer-link" as={Link} to={"/home"}>HOME</Nav.Link>
                         <Nav.Link className="footer-link" as={Link} to={"/produtos/categorias/todas"}>PRODUTOS</Nav.Link>
-                        <Nav.Link className="footer-link" href="/home#anchorSobre">SOBRE</Nav.Link>
+                        <Nav.Link className="footer-link" as={Link} to={"/home#sobre"}>SOBRE</Nav.Link>
                         <Nav.Link className="footer-link" as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
                     </div>
                     <div className="copy">
