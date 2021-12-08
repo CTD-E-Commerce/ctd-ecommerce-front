@@ -98,7 +98,7 @@ const Header = () => {
                                         </Link>
                                     </>
                                 ) : (
-                                    <span style={{ padding: 10, margin: 15, color: 'white' }}>Cart is empty!</span>
+                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>
                                 )}
                             </Dropdown.Menu>
                         </Dropdown>
