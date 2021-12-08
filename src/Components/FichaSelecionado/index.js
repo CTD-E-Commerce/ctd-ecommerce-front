@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Card, Container, Button } from 'react-bootstrap';
+import { Card, Container } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { CartState } from '../../context/Context.js';
 

@@ -29,21 +29,21 @@
     font-size: 1.5rem;  
 }
 
-.btn-primary {
-    color: #986D5A !important;
-    background-color: #f9d1c6 !important;
-    border-color: none !important;
-    font-size: 1.5rem !important;
-    border: none !important;
-    box-shadow: none !important;
+.btn-prod {
+    color: #986D5A;
+    background-color: #f9d1c6;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: .5rem;
+    padding: .8rem;
 }
 
-.btn-primary:hover {
-    background-color: #986D5A !important;
-    color: #f9d1c6 !important;
+.btn-prod:hover {
+    background-color: #986D5A;
+    color: #f9d1c6;
 }
 
-.g-9 {
+.grid-cards {
     padding: 2rem;
 }
 

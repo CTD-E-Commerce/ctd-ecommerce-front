@@ -11,24 +11,14 @@ const RouteList = () => (
         <Route path ="/" element={<Home />} />
         <Route path ="/home" element={<Home />} />
         <Route path ="/produtos" element={<Produtos />} />
+        <Route path ="/produtos/:category" element={<Produtos />} />
         <Route path ="/produtos/:id" element={<ProdutoSelecionado />} /> {/* Ir para detalhes do produto */}
         <Route path ="/carrinho" element={<Carrinho />} />
 
         {/* rota teste para construir página-modelo para produto selecionado */}
         <Route path ="/produtos/teste" element={<ProdutoSelecionado />} />
 
-
     </Routes>
 );
 
 export default RouteList;
-
-
-//CÓDIGO DO RENAN para referência
-// <Routes>
-//   <Route path="/" element={<Home />} />
-//   <Route path=":repositoryOwner/:repositoryName" element={<Repository />} />
-//   <Route path="user" element={<UserDetails />} />
-//   <Route path="user/:userName" element={<UserDetails />} />
-//   <Route path="*" element={<NotFound />} />
-// </Routes>
