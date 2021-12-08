@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown, Dropdown, Badge, Button } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa'
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { CartState } from '../../context/Context.js';
 import RouteList from '../../routes';

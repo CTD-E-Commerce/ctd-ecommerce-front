@@ -11,7 +11,7 @@ const Produtos = () => {
     
     let path;
 
-    if( category == "todas"){
+    if( category === "todas"){
         path = `/products/buscartodos`;
     } else{
         path = `/products/category/${category}`;
