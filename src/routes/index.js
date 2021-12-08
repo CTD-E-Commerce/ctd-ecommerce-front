@@ -12,9 +12,7 @@ const RouteList = () => (
         <Route path ="/home" element={<Home />} />
 
         {/* Feitos ajustes no path de categorias para evitar conflitos com produtos. revisar demais partes da aplicação */}
-        <Route path ="/produtos/categorias" element={<Produtos />} />
         <Route path ="/produtos/categorias/:category" element={<Produtos />} />
-
 
         <Route path ="/produtos/:id" element={<ProdutoSelecionado />} />
         <Route path ="/carrinho" element={<Carrinho />} />
