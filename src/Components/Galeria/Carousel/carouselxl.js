@@ -69,7 +69,6 @@ export const Carouselxl = () => {
                                     /*  console.log(prod) */
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -81,7 +80,6 @@ export const Carouselxl = () => {
                                     <Item prod={prod} key={prod.id} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -98,7 +96,6 @@ export const Carouselxl = () => {
                                     <Item prod={prod} key={prod.id} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -110,7 +107,6 @@ export const Carouselxl = () => {
                                     <Item prod={prod} key={prod.id} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
