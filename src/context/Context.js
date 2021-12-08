@@ -7,9 +7,6 @@ const Cart = createContext();
 
 const Context = ({ children }) => {
 
-    /*     const [products, setProducts] = useState([]); */
-    const storeProducts = Object.values(useAxios("/products/buscartodos"));
-
     //Função para requisição de produtos de categoria especifica
     const products = [
         {

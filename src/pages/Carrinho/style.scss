@@ -1,44 +1,43 @@
-
 /* container geral da pagina carrinho*/
-.container-carrinho{
+.container-carrinho {
     height: 100vh;
-    margin-top: 10rem !important;  
+    margin-top: 10rem !important;
     margin-bottom: 1rem;
-   
+
 }
 
-.col-gap{
+.col-gap {
     gap: 10px;
 }
 
 /* card de cada item do carrinho */
-.card-carrinho{
+.card-carrinho {
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    border: 1px solid rgba(0,0,0,.125);
+    border: 1px solid rgba(0, 0, 0, .125);
     font-size: 16px;
 }
 
 
 /* junção das margins dos cards */
-.card-carrinho+.card-carrinho{
+.card-carrinho+.card-carrinho {
     border-top-width: 0;
 }
 
 /* imagem do produto */
-.img-cart{
+.img-cart {
     width: 120px;
     height: 120px;
 }
 
-.subtitulo-itens{
+.subtitulo-itens {
     color: rgba(0, 0, 0, 0.377);
     font-size: 1.4rem;
 }
 
 /* alinhamento dos itens dentro das colunas */
-.col-align-items-center{
+.col-align-items-center {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,7 +47,7 @@
 
 /* CARD DO FECHAMENTO DE PEDIDO ----------------------------------------------------------------*/
 
-.carrinho{
+.carrinho {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -59,7 +58,8 @@
     font-family: 'Raleway', sans-serif;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0.5rem;
-    h1{
+
+    h1 {
         text-align: center;
         font-size: 2rem;
         text-transform: uppercase;
@@ -70,20 +70,42 @@
     }
 }
 
+.carrinho-vazio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    //background-color: #faf0e6;
+    background-color: #452d27;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        color: #F2E5D7;
+        //font-weight:bold;
+        margin-top: 2rem;
+    }
+}
 
 /* margin bottom dos itens da tabela */
-.table > :not(caption) > * > *{
+.table> :not(caption)>*>* {
     border-bottom: 1px solid rgba(122, 122, 122, 0.164) !important;
     padding: 10px !important;
 }
 
 /* cor do texto da tabela */
-.table{
+.table {
     color: #F2E5D7 !important;
 }
 
 /* botão do card de resumo */
-.cart-btn{
+.cart-btn {
     font-size: 1.6rem;
     width: 50%;
     border-radius: 2rem;
@@ -92,14 +114,15 @@
     background-color: #c97d60;
     color: #faf0e6;
     margin: 2rem auto;
-    &:hover{
+
+    &:hover {
         background-color: #986D5A;
         color: #F2E5D7;
         transition: all .4s ease-in-out;
     }
-  }
+}
 
-  .col-align-items-end{
+.col-align-items-end {
     display: flex;
     justify-content: flex-end;
 }
