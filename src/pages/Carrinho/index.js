@@ -34,7 +34,8 @@ const Carrinho = () => {
                 <Row className="col-gap">
                     <Col md={7}>
                         {/* row com cada card de produto */}
-
+                    {cart.length > 0 ? (
+                        <>
                         {cart.map((prod) => (
                             <Row className="card-carrinho row align-items-center" key={prod.id}>
                                 <Col className="col-align-items-center" sm={2} xs={12}>
@@ -94,6 +95,15 @@ const Carrinho = () => {
                                 </Col>
                             </Row>
                         ))}
+                        </>
+                    ) : (
+                        <>
+                            <span style={{ padding: 20, margin: 15, color: 'white' }}>Seu carrinho está vazio!</span>
+                            <span style={{ padding: 20, margin: 15, color: 'white' }}>Aproveite as ofertas da nossa loja :)</span>
+                        </>
+                    )
+                    }
+                       
                     </Col>
 
                     {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO */}
