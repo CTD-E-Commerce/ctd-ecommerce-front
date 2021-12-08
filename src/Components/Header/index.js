@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar, Nav, NavDropdown, Dropdown, Badge, Button } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa'
 import { BrowserRouter as Router, Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { CartState } from '../../context/Context.js';
 import RouteList from '../../routes';
 import './style.scss';
@@ -39,7 +40,7 @@ const Header = () => {
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/perfumes"}>Perfumes</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/veganos"}>Veganos</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as={Link} to={"/home#sobre"}>SOBRE</Nav.Link>
+                            <Nav.Link as={HashLink} to={"/home#anchorSobre"}>SOBRE</Nav.Link>
                             <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

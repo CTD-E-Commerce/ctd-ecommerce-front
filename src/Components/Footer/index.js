@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.scss';
 import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import map from '../../assets/map.png';
 import email from '../../assets/email.png';
@@ -33,7 +34,7 @@ const Footer = () => {
                     <div className="links">
                         <Nav.Link className="footer-link" as={Link} to={"/home"}>HOME</Nav.Link>
                         <Nav.Link className="footer-link" as={Link} to={"/produtos/categorias/todas"}>PRODUTOS</Nav.Link>
-                        <Nav.Link className="footer-link" as={Link} to={"/home#sobre"}>SOBRE</Nav.Link>
+                        <Nav.Link className="footer-link" as={HashLink} to={"/home#anchorSobre"}>SOBRE</Nav.Link>
                         <Nav.Link className="footer-link" as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
                     </div>
                     <div className="copy">

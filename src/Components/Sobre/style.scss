@@ -33,6 +33,12 @@
     width: 18rem;
 }
 
+#anchorSobre {
+    display: block;
+    position: relative;
+    top: -200px;
+}
+
 @media (max-width: 380px) {
     .container-sobre h3 {
         font-size: 4rem;
