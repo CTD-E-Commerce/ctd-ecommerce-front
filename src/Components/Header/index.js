@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown, Dropdown, Badge, DropdownButton, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavDropdown, Dropdown, Badge, Button } from 'react-bootstrap';
 import { FaShoppingCart } from 'react-icons/fa'
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import { CartState } from '../../context/Context.js';
@@ -98,7 +98,7 @@ const Header = () => {
                                         </Link>
                                     </>
                                 ) : (
-                                    <span style={{ padding: 10, color: 'white' }}>Cart is empty!</span>
+                                    <span style={{ padding: 10, margin: 15, color: 'white' }}>Cart is empty!</span>
                                 )}
                             </Dropdown.Menu>
                         </Dropdown>
