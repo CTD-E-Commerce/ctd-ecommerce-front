@@ -55,9 +55,9 @@ const Header = () => {
                         </Navbar.Collapse>
                         {/*Componente Carrinho*/}
                         <Dropdown id="cart" align="end">
-                            <Dropdown.Toggle variant="dark">
-                                <FaShoppingCart color="white" fontSize="35px" />
-                                <Badge bg="dark" style={{ fontSize: 12 }}>{cart.length}</Badge>
+                            <Dropdown.Toggle variant="white">
+                                <FaShoppingCart color="black" fontSize="35px" /> {/* cor do carrinho */}
+                                <Badge bg="black" style={{ fontSize: 12 }}>{cart.length}</Badge>
                             </Dropdown.Toggle>
 
                             {/* Lista de itens do carrinho */}
