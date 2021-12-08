@@ -127,6 +127,9 @@ const Carrinho = () => {
                                     reverseButtons: true
                                     }).then((result) => {
                                     if (result.isConfirmed) {
+                                        dispatch({
+                                            type: "RESET_CART"
+                                        });                                        
                                         swalWithBootstrapButtons.fire(
                                         'Pedido confirmado!',
                                         'Avisaremos você quando ele estiver em rota de envio :)',
@@ -138,7 +141,7 @@ const Carrinho = () => {
                                     ) {
                                         swalWithBootstrapButtons.fire(
                                         'Pedido cancelado!',
-                                        'Aproveite nossa loja e confira outros produtos :)',
+                                        'Aproveite para ervisar seu pedido ou conferir outros produtos da nossa loja :)',
                                         'error'
                                         )
                                     }
