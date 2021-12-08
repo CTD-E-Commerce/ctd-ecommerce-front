@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.scss';
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from 'react-bootstrap';
 import map from '../../assets/map.png';
 import email from '../../assets/email.png';
@@ -30,13 +31,13 @@ const Footer = () => {
             <Row>
                 <Col sm className="footer-central">
                     <div className="links">
-                        <a href="/home">HOME</a>
-                        <a href="/produtos">PRODUTOS</a>
-                        <a href="/home#sobre">SOBRE</a>
-                        <a href="/carrinho">CARRINHO</a>
+                        <Link to={"/home"}>HOME</Link>
+                        <Link to={"/produtos/categorias/todas"}>PRODUTOS</Link>
+                        <Link to={"/home#anchorSobre"}>SOBRE</Link>
+                        <Link to={"/carrinho"}>CARRINHO</Link>
                     </div>
                     <div className="copy">
-                        <p>&copy;Copyright {generateDateString()}. All Right Reserved.</p> 
+                        <p>&copy;Copyright {generateDateString()}. All Rights Reserved.</p> 
                     </div>
                 </Col>
             </Row>
