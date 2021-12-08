@@ -1,37 +1,82 @@
-/* .carrinho{
-    display: none;
-} */
 
+/* container geral da pagina carrinho*/
 .container-carrinho{
-    margin-top: 10rem;
-    
+    height: calc(100vh - 101px);
+    margin-top: 10rem;  
 }
 
+/* card de cada item do carrinho */
 .card-carrinho{
-    height: 200px;
-    //margin-bottom: 20px;
-    //border-radius: 1.2rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
     border: 1px solid rgba(0,0,0,.125);
-   
+    font-size: 16px;
 }
+
+/* junção das margins dos cards */
 .card-carrinho+.card-carrinho{
     border-top-width: 0;
 }
 
-.carrinho{
-    height: 500px;
-    margin-left: 2rem;
-    background-color: #f7f4f4;
+/* imagem do produto */
+.img-cart{
+    width: 120px;
+    height: 120px;
 }
 
-.header-itens{
-    font-size: 1.6rem;
+/* alinhamento dos itens dentro das colunas */
+.col-align-items-center{
     display: flex;
-    justify-content: space-around;
-    padding: 1.2rem 0;
-    background-color: #f7f4f4;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
+/* CARD DO FECHAMENTO DE PEDIDO ----------------------------------------------------------------*/
+
+.carrinho{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem !important;
+    height: 400px;
+    background-color: #faf0e6;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
+    h1{
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        font-weight:bold;
+    }
+}
 
 
+/* margin bottom dos itens da tabela */
+.table > :not(caption) > * > *{
+    border-bottom: 1px solid rgba(122, 122, 122, 0.164) !important;
+    padding: 10px !important;
+}
+
+
+/* botão do card de resumo */
+.cart-btn{
+    font-size: 1.6rem;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    background-color: #d68c45;
+    color: #faf0e6;
+    margin: 0 auto;
+    &:hover{
+        background-color: #986D5A;
+        color: #faf0e6;
+        transition: all .4s ease-in-out;
+    }
+  }

@@ -7,13 +7,22 @@ import GridCategorias from '../../Components/GridCategorias';
 
 const Produtos = () => {
 
-    // const { category } = useParams();
-    // const categoriaSelecionada = useAxios(`/categories/${category}`);
+    const { category } = useParams();
+    
+    let path;
+
+    if( category == "todas"){
+        path = `/products/buscartodos`;
+    } else{
+        path = `/products/category/${category}`;
+    }
+
+    const categoriaSelecionada = useAxios(path);
 
     return (
-        <>         
+        <>
             <Banner />
-            <GridCategorias />
+            <GridCategorias categoryProd={categoriaSelecionada} />
         </>
     )
 }

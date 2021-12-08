@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from "react-router-dom";
 import './style.scss';
 import makeup from '../../../assets/makeup.png';
 import skinCare from '../../../assets/skin-care.png';
@@ -14,34 +15,34 @@ const Categorias = () => {
                 <h3 className="h3-categorias">Categorias</h3>
                 <Row className="row-categorias">
                     <Col sm className="item-categorias">
-                        <a href="">
+                        <Link to={"/produtos/categorias/skin care"}>
                             <img src={skinCare} alt="desenho de um tubo de creme" />
                             <p>Skin care</p>
-                        </a>
+                        </Link>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="">
+                        <Link to={"/produtos/categorias/make up"}>
                             <img src={makeup} alt="desenho de um batom" />
                             <p>Make up</p>
-                        </a>
+                        </Link>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="#">
+                        <Link to={"/produtos/categorias/hair care"}>
                             <img src={hair} alt="" />
                             <p>Hair care</p>
-                        </a>
+                        </Link>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="#">
+                        <Link to={"/produtos/categorias/perfumes"}>
                             <img src={perfume} alt="" />
                             <p>Perfumes</p>
-                        </a>
+                        </Link>
                     </Col>
                     <Col sm className="item-categorias">
-                        <a href="#">
+                        <Link to={"/produtos/categorias/veganos"}>
                             <img src={hipo} alt="" />
                             <p>Veganos</p>
-                        </a>
+                        </Link>
                     </Col>                 
                 </Row>
             </Container>            

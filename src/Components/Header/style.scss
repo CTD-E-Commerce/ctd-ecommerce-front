@@ -32,10 +32,11 @@ nav {
 }
 
 .dropdown-menu.show {
-    margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile - alternativamente, eliminar o próprio dropdown no mobile
+    //margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile - alternativamente, eliminar o próprio dropdown no mobile
     font-size: 1.6rem;
     background-color: #262322;
     width: 20rem;
+    right: 0;
 }
 
 .dropdown-item {
@@ -54,6 +55,38 @@ nav {
     height: .2rem;
 }
 
+/* carrinho */
+#cart {
+    margin-right: 20px;
+}
+
+/* Lista de produtos do carrinho */
+#cart>#subcart>.cartitem {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+    padding: 10px 0;
+    color: #ccc;
+}
+
+//Imagem da lista de produtos do carrinho
+#cart>#subcart>.cartitem>.cartItemImg {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+//Descrição de cada produto da lista de produtos do carrinho
+#cart>#subcart>.cartitem>.cartItemDetail {
+    display: block;
+    flex: 1;
+    padding: 0 20px;
+    flex-direction: column;
+    color: #ccc;
+}
 
 /* -------------------------------- LOGO -------------------------------- */
 
