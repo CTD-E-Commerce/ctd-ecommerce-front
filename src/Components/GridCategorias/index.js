@@ -23,29 +23,29 @@ const GridCategorias = ({categoryProd}) => {
                 <title>Amar e Cuidar | {pgTitle}</title>
             </Helmet>
             <section id="produtos-categoria">
-                <Container fluid>
-                    {/* SELETOR CATEGORIAS */}
+                {/* <Container fluid> */}
+                    {/* SELETOR CATEGORIAS
                     <Form.Select aria-label="Default select example">
                         <option>Categorias</option>
-                        <option value="1">Todas as categorias</option>
-                        <option value="2">Skin care</option>
-                        <option value="3">Make up</option>
+                        <option as={Link} to={"/produtos/categorias/todas"} value="todas">Todas as categorias</option>
+                        <option as={Link} to={"/produtos/categorias/skin care"} value="skin care">Skin care</option>
+                        <option as={Link} to={"/produtos/categorias/make up"} value="make up">Make up</option>
                         <option value="4">Hair care</option>
                         <option value="5">Perfumes</option>
                         <option value="6">Veganos</option>
-                    </Form.Select>
+                    </Form.Select> */}
                     
-                {/* <Container fluid className="radios"> */}
+                <Container fluid className="radios">
                     {/* RADIOS COM AS CATEGORIAS */}
-                    {/* <Form>
+                    <Form>
                         <h4>Categorias</h4>
-                        <Form.Check as={Link} to={"/produtos/categorias/todas"} type="radio" aria-label="radio 1" name="categorias" label="Todas as categorias" />
-                        <Form.Check as={Link} to={"/produtos/categorias/skin care"} type="radio" aria-label="radio 1" name="categorias" label="Skin care" />
-                        <Form.Check as={Link} to={"/produtos/categorias/make up"} type="radio" aria-label="radio 1" name="categorias" label="Make up" />
-                        <Form.Check as={Link} to={"/produtos/categorias/hair care"}  type="radio" aria-label="radio 1" name="categorias" label="Hair care" />
-                        <Form.Check as={Link} to={"/produtos/categorias/perfumes"}  type="radio" aria-label="radio 1" name="categorias" label="Perfumes" />
-                        <Form.Check as={Link} to={"/produtos/categorias/veganos"} type="radio" aria-label="radio 1" name="categorias" label="Veganos" />
-                    </Form> */}
+                        <Form.Check inline as={Link} to={"/produtos/categorias/todas"} type="radio" aria-label="radio 1" name="categorias" label="Todas as categorias" />
+                        <Form.Check inline as={Link} to={"/produtos/categorias/skin care"} type="radio" aria-label="radio 1" name="categorias" label="Skin care" />
+                        <Form.Check inline as={Link} to={"/produtos/categorias/make up"} type="radio" aria-label="radio 1" name="categorias" label="Make up" />
+                        <Form.Check inline as={Link} to={"/produtos/categorias/hair care"}  type="radio" aria-label="radio 1" name="categorias" label="Hair care" />
+                        <Form.Check inline as={Link} to={"/produtos/categorias/perfumes"}  type="radio" aria-label="radio 1" name="categorias" label="Perfumes" />
+                        <Form.Check inline as={Link} to={"/produtos/categorias/veganos"} type="radio" aria-label="radio 1" name="categorias" label="Veganos" />
+                    </Form>
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (

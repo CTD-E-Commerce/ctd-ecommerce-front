@@ -1,10 +1,24 @@
-.form-select {
-    font-size: 1.6rem !important;
-    font-family: 'Raleway', sans-serif !important;
-    width: 30rem !important;
-    margin-left: 6rem;
-    background-color: #F2E5D7 !important;
-    border: none !important;
+.radios {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+.radios h4 {
+    font-family: 'Quentin';
+    font-size: 4rem;
+    color: #EB6E92;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.form-check-label {
+    font-size: 1.6rem;
+}
+
+.form-check-input:checked {
+    background-color: #d68c45 !important;
+    border-color: #d68c45 !important;
+    box-shadow: none !important;
 }
 
 .form-select:focus {
