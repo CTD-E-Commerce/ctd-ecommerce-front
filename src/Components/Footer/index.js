@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss';
-import { Link } from "react-router-dom";
-import { Container, Row, Col } from 'react-bootstrap';
+import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Container, Row, Col, Nav } from 'react-bootstrap';
 import map from '../../assets/map.png';
 import email from '../../assets/email.png';
 import phone from '../../assets/phone.png';
@@ -30,12 +30,12 @@ const Footer = () => {
             </Row>
             <Row>
                 <Col sm className="footer-central">
-                    <div className="links">
+                    {/* <Router>
                         <Link to={"/home"}>HOME</Link>
                         <Link to={"/produtos/categorias/todas"}>PRODUTOS</Link>
-                        <Link to={"/home#anchorSobre"}>SOBRE</Link>
-                        <Link to={"/carrinho"}>CARRINHO</Link>
-                    </div>
+                        <Nav.Link as={Link} to={"/home#anchorSobre"}>SOBRE</Nav.Link>
+                        <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
+                    </Router> */}
                     <div className="copy">
                         <p>&copy;Copyright {generateDateString()}. All Rights Reserved.</p> 
                     </div>
