@@ -32,10 +32,11 @@ nav {
 }
 
 .dropdown-menu.show {
-    margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile - alternativamente, eliminar o próprio dropdown no mobile
+    //margin-top: 4.75rem !important; //reduzir ou eliminar margin-top em mobile - alternativamente, eliminar o próprio dropdown no mobile
     font-size: 1.6rem;
     background-color: #262322;
     width: 20rem;
+    right: 0;
 }
 
 .dropdown-item {
@@ -54,13 +55,18 @@ nav {
     height: .2rem;
 }
 
+/* carrinho */
+#cart{
+    margin-right: 20px;
+}
+
 /* Lista de produtos do carrinho */
 #cart > #subcart > .cartitem {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
-    margin-bottom: 20px;
+    padding: 10px 0;
     color: #ccc;
   }
   

@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Nav, NavDropdown, Dropdown, Badge} from 'react-bootstrap';
+import {Navbar, Nav, NavDropdown, Dropdown, Badge, DropdownButton} from 'react-bootstrap';
 import {FaShoppingCart} from 'react-icons/fa'
 import {BrowserRouter as Router, Link } from "react-router-dom";
 import {CartState} from '../../context/Context.js';
@@ -50,9 +50,8 @@ const Header = () => {
 
                             <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
 
-                            {/*Componente Carrinho*/}
-
-                            <Dropdown id="cart">
+                            {/*Componente Carrinho*/}    
+                            <Dropdown id="cart" align="end">
                                 <Dropdown.Toggle variant="dark">
                                 <FaShoppingCart color="white" fontSize="35px" />
                                 <Badge>{cart.length}</Badge>
@@ -65,16 +64,15 @@ const Header = () => {
                                     {cart.length > 0 ? (
                                         <>
                                             {cart.map((prod) => (
-                                                    <span className="cartitem" key={prod.id}>
+                                                <span className="cartitem" key={prod.id}>
                                                     <img
                                                         src={prod.image}
                                                         className="cartItemImg"
                                                         alt={prod.title}
                                                     />
-
                                                     <div className="cartItemDetail">
                                                         <span>{prod.title}</span>
-                                                        <span>{prod.price}</span>
+                                                        <span>{" R$" + prod.price}</span>
                                                     </div>
                                                     {/* Icone lixeira do carrinho */}
                                                     <AiFillDelete
