@@ -10,42 +10,47 @@ const Carrinho = () => {
         <>
             <Container className="container-carrinho">
                 <Row>
-                    <Col xl={8}>
-                        {/* row com cada card de produto */}
-                        <Row className="card-carrinho row align-items-center">
-                            <Col className="col-align-items-center">
-                            <img
-                                src="https://amarecuidar.s3.sa-east-1.amazonaws.com/hair_care/condicionador-kerastase.jpg"
-                                className="img-cart"
-                                alt="#"
-                            />
-                            </Col>
-                            <Col className="col-align-items-center">
-                                <span>Prduto</span>
-                                <span>Creme Elixir</span>
-                            </Col>
-                            <Col className="col-align-items-center">
-                                <span>Valor</span>
-                                <span>R$ 159,00</span> 
-                            </Col>
-                            <Col className="col-align-items-center">
-                                <span>Quantidade</span>
-                                <Form.Select aria-label="Default select example" >
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </Form.Select>
-                            </Col>
-                            <Col className="col-align-items-center">
-                                <span>Total</span> 
-                                <span>R$ 159,00</span> 
-                            </Col>
-                            <Col className="col-align-items-center">
-                                <ImBin />
-                            </Col>
-                        </Row>
+                <Col xl={8} className="card-carrinho">
+                            <div className="col-align-items-center">
+                                <img
+                                    src="https://amarecuidar.s3.sa-east-1.amazonaws.com/hair_care/condicionador-kerastase.jpg"
+                                    className="img-cart"
+                                    alt="#"
+                                />
+                            </div>
+                            
+                           
+                                <div className="col-align-items-center">
+                                    <span className="subtitulo-itens">Produto</span>
+                                    <span>Creme Elixir</span>
+                                </div>
+                          
+                
+                              <div className="col-align-items-center">
+                                    <span className="subtitulo-itens">Valor</span>
+                                    <span>R$ 159,00</span> 
+                              </div>
+                    
+                        
+                             <div className="col-align-items-center">
+                                    <span className="subtitulo-itens">Quantidade</span>
+                                    <Form.Select aria-label="Default select example" style={{width: "60px"}}>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </Form.Select>
+                             </div>
+                       
+                      
+                              <div className="col-align-items-center">
+                                    <span className="subtitulo-itens">Total</span> 
+                                    <span>R$ 159,00</span> 
+                              </div>
+                      
+    
+                               <div className="col-align-items-center"> <ImBin /></div>
                     </Col>
 
 
@@ -57,15 +62,15 @@ const Carrinho = () => {
                                 <tbody>
                                   <tr>
                                     <td colSpan="2">Subtotal</td>
-                                    <td>R$ </td>
+                                    <td className="col-align-items-end">R$ 00,00</td>
                                   </tr>
                                   <tr>
-                                    <td colSpan="2">Frete</td>
-                                    <td>R$ </td>
+                                    <td colSpan="2">Frete fixo</td>
+                                    <td className="col-align-items-end">R$ 29,90 </td>
                                   </tr>
                                   <tr>
                                     <td colSpan="2" style={{fontWeight:"bold"}}>Total</td>
-                                    <td style={{fontWeight:"bold"}}>R$ </td>
+                                    <td className="col-align-items-end" style={{fontWeight:"bold"}} >R$ 00,00</td>
                                   </tr>
                                 </tbody>
                             </Table>
