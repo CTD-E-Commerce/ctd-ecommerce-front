@@ -20,9 +20,16 @@ const Carrinho = () => {
                                 alt="#"
                             />
                             </Col>
-                            <Col className="col-align-items-center"><span>Creme Elixir</span></Col>
-                            <Col>R$ 159,00</Col>
                             <Col className="col-align-items-center">
+                                <span>Prduto</span>
+                                <span>Creme Elixir</span>
+                            </Col>
+                            <Col className="col-align-items-center">
+                                <span>Valor</span>
+                                <span>R$ 159,00</span> 
+                            </Col>
+                            <Col className="col-align-items-center">
+                                <span>Quantidade</span>
                                 <Form.Select aria-label="Default select example" >
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -31,15 +38,20 @@ const Carrinho = () => {
                                     <option value="5">5</option>
                                 </Form.Select>
                             </Col>
-                            <Col className="col-align-items-center">R$ 159,00</Col>
-                            <Col className="col-align-items-center"><ImBin /></Col>
+                            <Col className="col-align-items-center">
+                                <span>Total</span> 
+                                <span>R$ 159,00</span> 
+                            </Col>
+                            <Col className="col-align-items-center">
+                                <ImBin />
+                            </Col>
                         </Row>
                     </Col>
 
 
                     {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO */}
                     <Col xl={4} >
-                        <div className="carrinho shadow p-3 mb-5">
+                        <div className="carrinho p-3 mb-5">
                             <h1>Resumo do Pedido</h1>
                             <Table responsive="sm" size="sm">
                                 <tbody>
