@@ -1,8 +1,14 @@
 
 /* container geral da pagina carrinho*/
 .container-carrinho{
-    height: calc(100vh - 101px);
-    margin-top: 10rem;  
+    height: 100vh;
+    margin-top: 10rem !important;  
+    margin-bottom: 1rem;
+   
+}
+
+.col-gap{
+    gap: 10px;
 }
 
 /* card de cada item do carrinho */
@@ -14,6 +20,7 @@
     font-size: 16px;
 }
 
+
 /* junção das margins dos cards */
 .card-carrinho+.card-carrinho{
     border-top-width: 0;
@@ -23,6 +30,11 @@
 .img-cart{
     width: 120px;
     height: 120px;
+}
+
+.subtitulo-itens{
+    color: rgba(0, 0, 0, 0.377);
+    font-size: 1.4rem;
 }
 
 /* alinhamento dos itens dentro das colunas */
@@ -39,10 +51,10 @@
 .carrinho{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    padding: 5rem !important;
+    justify-content: space-between;
     height: 400px;
-    background-color: #faf0e6;
+    //background-color: #faf0e6;
+    background-color: #452d27;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
@@ -52,7 +64,9 @@
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: .3rem;
-        font-weight:bold;
+        color: #F2E5D7;
+        //font-weight:bold;
+        margin-top: 2rem;
     }
 }
 
@@ -63,6 +77,10 @@
     padding: 10px !important;
 }
 
+/* cor do texto da tabela */
+.table{
+    color: #F2E5D7 !important;
+}
 
 /* botão do card de resumo */
 .cart-btn{
@@ -71,12 +89,17 @@
     border-radius: 2rem;
     padding: 1rem;
     border: none;
-    background-color: #d68c45;
+    background-color: #c97d60;
     color: #faf0e6;
-    margin: 0 auto;
+    margin: 2rem auto;
     &:hover{
         background-color: #986D5A;
-        color: #faf0e6;
+        color: #F2E5D7;
         transition: all .4s ease-in-out;
     }
   }
+
+  .col-align-items-end{
+    display: flex;
+    justify-content: flex-end;
+}
