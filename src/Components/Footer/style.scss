@@ -25,17 +25,21 @@
 }
 
 .links {
+    display: flex;
+    flex-direction: row;
     padding-top: 2rem;
 }
 
-.links a {
+.footer-link {
     text-decoration: none;
-    color: #F2E5D7;
+    font-size: 1.5rem;
+    letter-spacing: normal;
+    color: #F2E5D7 !important;
     font-weight: bold;
-    padding: 3rem;
+    padding: 3rem !important;
 }
 
-.links a:hover {
+.footer-link:hover {
     color: #c97d60;
 }
 
@@ -70,7 +74,7 @@
         display: flex;
         flex-direction: column;
     }
-    .links a {
+    .footer-link {
         padding: 1rem;
     }
 }

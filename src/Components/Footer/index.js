@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Container, Row, Col, Nav } from 'react-bootstrap';
 import map from '../../assets/map.png';
 import email from '../../assets/email.png';
@@ -30,12 +30,12 @@ const Footer = () => {
             </Row>
             <Row>
                 <Col sm className="footer-central">
-                    {/* <Router>
-                        <Link to={"/home"}>HOME</Link>
-                        <Link to={"/produtos/categorias/todas"}>PRODUTOS</Link>
-                        <Nav.Link as={Link} to={"/home#anchorSobre"}>SOBRE</Nav.Link>
-                        <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
-                    </Router> */}
+                    <div className="links">
+                        <Nav.Link className="footer-link" as={Link} to={"/home"}>HOME</Nav.Link>
+                        <Nav.Link className="footer-link" as={Link} to={"/produtos/categorias/todas"}>PRODUTOS</Nav.Link>
+                        <Nav.Link className="footer-link" href="/home#anchorSobre">SOBRE</Nav.Link>
+                        <Nav.Link className="footer-link" as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
+                    </div>
                     <div className="copy">
                         <p>&copy;Copyright {generateDateString()}. All Rights Reserved.</p> 
                     </div>
