@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carouselsm } from './carouselsm';
 import { Carouselmd } from './carouselmd';
 import { Carouselxl } from './carouselxl';
-import useAxios from '../../../hooks/useAxios';
 
 export const Carrossel = () => {
     return (
