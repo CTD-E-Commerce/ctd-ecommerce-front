@@ -9,11 +9,10 @@ function NotFound() {
   const [seconds, setSeconds] = useState(5);
 
   useEffect(() => {
-
     const tick = () => {
          setSeconds(seconds - 1);
      }
-     
+
     let timer = setInterval(tick, 1000);
     return () => {
       if (seconds === 0) {
