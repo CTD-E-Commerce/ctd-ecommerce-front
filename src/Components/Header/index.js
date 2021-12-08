@@ -35,15 +35,15 @@ const Header = () => {
                                 <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
 
                                 <NavDropdown title="PRODUTOS">
-                                    <NavDropdown.Item as={Link} to={"/produtos"}>Todas as categorias</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/buscartodosname"}>Todas as categorias</NavDropdown.Item>
                                     <NavDropdown.Divider />
 
                                     {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
-                                    <NavDropdown.Item as={Link} to={"/produtos/skincare"}>Skin care</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to={"/produtos/makeup"}>Make up</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to={"/produtos/haircare"}>Hair care</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to={"/produtos/perfume"}>Perfumes</NavDropdown.Item>
-                                    <NavDropdown.Item as={Link} to={"/produtos/vegano"}>Veganos</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/skin care"}>Skin care</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/make up"}>Make up</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/hair care"}>Hair care</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/perfumes"}>Perfumes</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/veganos"}>Veganos</NavDropdown.Item>
                                 </NavDropdown>
 
                                 <Nav.Link href="/home#anchorSobre">SOBRE</Nav.Link> {/* TESTE para evitar header cortar conteúdo */}
@@ -55,9 +55,9 @@ const Header = () => {
                         </Navbar.Collapse>
                         {/*Componente Carrinho*/}
                         <Dropdown id="cart" align="end">
-                            <Dropdown.Toggle variant="dark">
-                                <FaShoppingCart color="white" fontSize="35px" />
-                                <Badge bg="dark" style={{ fontSize: 12 }}>{cart.length}</Badge>
+                            <Dropdown.Toggle variant="white">
+                                <FaShoppingCart color="black" fontSize="35px" /> {/* cor do carrinho */}
+                                <Badge bg="black" style={{ fontSize: 12 }}>{cart.length}</Badge>
                             </Dropdown.Toggle>
 
                             {/* Lista de itens do carrinho */}

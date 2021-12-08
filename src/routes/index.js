@@ -7,19 +7,16 @@ import NotFound from '../pages/NotFound';
 
 const RouteList = () => (
 
-    <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/produtos" element={<Produtos />} />
-        <Route path="/produtos/:category" element={<Produtos />} />
-        <Route path="/produtos/:id" element={<ProdutoSelecionado />} /> {/* Ir para detalhes do produto */}
-        <Route path="/carrinho" element={<Carrinho />} />
-        <Route path="*" element={<NotFound />} />
+        <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
 
-        {/* rota teste para construir página-modelo para produto selecionado */}
-        <Route path="/produtos/teste" element={<ProdutoSelecionado />} />
+                {/* Feitos ajustes no path de categorias para evitar conflitos com produtos. revisar demais partes da aplicação */}
+                <Route path="/produtos/categorias/:category" element={<Produtos />} />
 
-    </Routes>
+                <Route path="/produtos/:id" element={<ProdutoSelecionado />} />
+                <Route path="/carrinho" element={<Carrinho />} />
+        </Routes>
 );
 
 export default RouteList;
