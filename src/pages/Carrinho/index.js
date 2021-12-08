@@ -6,6 +6,9 @@ import { CartState } from '../../context/Context.js';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
+import ScrollToTop from '../../Components/ScrollToTop';
+
+
 const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
         confirmButton: 'btn btn-success',
@@ -31,6 +34,7 @@ const Carrinho = () => {
 
     return (
         <>
+        <ScrollToTop />
             <Container className="container-carrinho">
                 <Row className="col-gap">
                     <Col md={7}>
