@@ -8,10 +8,6 @@ import './style.scss';
 
 const GridCategorias = ({categoryProd}) => {
 
-    //const {state: {products}} = CartState(); UTILIZADO PARA TESTES LOCAIS
-
-    console.log(categoryProd);
-
     const {
         state: {cart},
         dispatch,
@@ -19,11 +15,11 @@ const GridCategorias = ({categoryProd}) => {
 
     // Para o head da página com o helmet
     const { category } = useParams();
-    const pgTitle = category; //alternativamente, poderia utilizar useParams e ver se ele extrai do path o nome da categoria desejada
+    const pgTitle = category;
 
     return (
         <>
-             <Helmet>
+            <Helmet>
                 <title>Amar e Cuidar | {pgTitle}</title>
             </Helmet>
             <section id="produtos-categoria">
