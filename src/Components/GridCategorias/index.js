@@ -26,17 +26,18 @@ const GridCategorias = ({prod}) => {
                 <title>Amar e Cuidar | {pgTitle}</title>
             </Helmet> */}
             <section id="produtos-categoria">
-                <Container fluid className="radios">
-                    {/* RADIOS COM AS CATEGORIAS */}
-                    <Form>
-                        <h4>Categorias</h4>
-                        <Form.Check as={Link} to={"/produtos"} type="radio" aria-label="radio 1" name="categorias" label="Todas as categorias" />
-                        <Form.Check as={Link} to={"/produtos/skincare"} type="radio" aria-label="radio 1" name="categorias" label="Skin care" />
-                        <Form.Check as={Link} to={"/produtos/makeup"} type="radio" aria-label="radio 1" name="categorias" label="Make up" />
-                        <Form.Check as={Link} to={"/produtos/haircare"}  type="radio" aria-label="radio 1" name="categorias" label="Hair care" />
-                        <Form.Check as={Link} to={"/produtos/perfume"}  type="radio" aria-label="radio 1" name="categorias" label="Perfumes" />
-                        <Form.Check as={Link} to={"/produtos/vegano"} type="radio" aria-label="radio 1" name="categorias" label="Veganos" />
-                    </Form>
+                <Container fluid>
+                    {/* SELETOR CATEGORIAS */}
+                    <Form.Select aria-label="Default select example">
+                        <option>Categorias</option>
+                        <option value="1">Todas as categorias</option>
+                        <option value="2">Skin care</option>
+                        <option value="3">Make up</option>
+                        <option value="4">Hair care</option>
+                        <option value="5">Perfumes</option>
+                        <option value="6">Veganos</option>
+                    </Form.Select>
+                    
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {products.map(({id, title, price, shortdescription, image}) => (
