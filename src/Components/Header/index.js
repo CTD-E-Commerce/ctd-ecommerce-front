@@ -35,7 +35,7 @@ const Header = () => {
                                 <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
 
                                 <NavDropdown title="PRODUTOS">
-                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/buscartodosname"}>Todas as categorias</NavDropdown.Item>
+                                    <NavDropdown.Item as={Link} to={"/produtos/categorias/todas"}>Todas as categorias</NavDropdown.Item>
                                     <NavDropdown.Divider />
 
                                     {/* <NavDropdown.Item as={Link} to={"/produtos/categoria01"}>CATEGORIA01</NavDropdown.Item> */}
