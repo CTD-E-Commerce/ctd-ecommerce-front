@@ -5,7 +5,7 @@ import { ImBin } from 'react-icons/im';
 import { CartState } from '../../context/Context.js';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import {CarouselSingle} from '../../Components/Galeria/Carousel/carouselsingle';
+import { CarouselSingle } from '../../Components/Galeria/Carousel/carouselsingle';
 
 
 import ScrollToTop from '../../Components/ScrollToTop';
@@ -20,12 +20,6 @@ const swalWithBootstrapButtons = Swal.mixin({
 })
 
 const Carrinho = () => {
-
-
-
-    const { state: { products } } = CartState();
-
-
 
     const {
         state: { cart },
@@ -103,7 +97,7 @@ const Carrinho = () => {
                                                     })
                                                 }
                                             >
-                                                <ImBin style={{fontSize:"18px"}}/>
+                                                <ImBin style={{ fontSize: "18px" }} />
                                             </Button>
                                         </Col>
                                     </Row>
@@ -169,7 +163,7 @@ const Carrinho = () => {
                                             showCancelButton: true,
                                             confirmButtonText: 'Sim, confirmo!',
                                             cancelButtonText: 'Não, cancele!',
-                                            reverseButtons: true
+                                            reverseButtons: false
                                         }).then((result) => {
                                             if (result.isConfirmed) {
                                                 dispatch({

@@ -21,7 +21,7 @@ export const CarouselSingle = (props) => {
                                         <Itemsingle prod={prod} key={prod.id} />
                                     )
                                 };
-                                return;
+                                return null;
                             }))}
                         </Col>
                         <Col xl={3} sm={6} className="d-none d-sm-block container-card-extra">
@@ -31,7 +31,7 @@ export const CarouselSingle = (props) => {
                                         <Itemsingle prod={prod} key={prod.id} />
                                     )
                                 };
-                                return;
+                                return null;
                             }))}
                         </Col>
                         <Col xl={3} sm={6} className="d-none d-xl-block container-card-extra">
@@ -41,7 +41,7 @@ export const CarouselSingle = (props) => {
                                         <Itemsingle prod={prod} key={prod.id} />
                                     )
                                 };
-                                return;
+                                return null;
                             }))}
                         </Col>
                     </Row>
@@ -56,7 +56,7 @@ export const CarouselSingle = (props) => {
                                             <Itemsingle prod={prod} key={prod.id} />
                                         )
                                     };
-                                    return;
+                                    return null;
                                 }))}
                             </div>
                         </Col>
@@ -67,7 +67,7 @@ export const CarouselSingle = (props) => {
                                         <Itemsingle prod={prod} key={prod.id} />
                                     )
                                 };
-                                return;
+                                return null;
                             }))}
                         </Col>
                         <Col xl={3} sm={6} className="d-none d-xl-block container-card-extra">
@@ -77,7 +77,7 @@ export const CarouselSingle = (props) => {
                                         <Itemsingle prod={prod} key={prod.id} />
                                     )
                                 };
-                                return;
+                                return null;
                             }))}
                         </Col>
                     </Row>

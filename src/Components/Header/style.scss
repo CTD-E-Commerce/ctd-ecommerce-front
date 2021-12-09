@@ -19,7 +19,7 @@ nav {
 .navbar-nav {
     font-family: 'Raleway', sans-serif;
     gap: 6.5% !important;
-    padding-right: 6rem; //para compensar gap no desktop
+    padding-right: 14rem; //para compensar gap no desktop
 }
 
 .nav-link {
@@ -28,8 +28,10 @@ nav {
     font-weight: 500;
     letter-spacing: .25rem;
     white-space: nowrap;
+    text-align: left;
+
     &:hover {
-        color: #EB6E92 !important;
+        color: #d68c45 !important;
         transition: all .4s ease-in-out;
     }
 }
@@ -40,6 +42,21 @@ nav {
     background-color: #262322;
     width: 20rem;
     right: 0;
+
+    .btn-produtos {
+        border-color: #D68C45 !important;
+
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(253 134 13 / 30%) !important;
+            transition: all .4s ease-in-out;
+        }
+
+        &:hover {
+            background-color: #D68C45 !important;
+            color: #FFFFFF !important;
+            transition: all .4s ease-in-out !important;
+        }
+    }
 }
 
 .dropdown-item {
@@ -60,7 +77,12 @@ nav {
 
 /* carrinho */
 #cart {
-    margin-right: 20px;
+    // margin-right: 20px;
+
+    //experimentando com posição fixa
+    position: fixed;
+    top: 14px;
+    right: 14px;
 }
 
 .btn .badge {
@@ -83,7 +105,7 @@ nav {
     color: #ccc;
 }
 
-#subcart{
+#subcart {
     width: fit-content;
     overflow-y: auto;
     overflow-x: hidden;
@@ -92,22 +114,22 @@ nav {
 
 #subcart::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  #subcart::-webkit-scrollbar-track {
+}
+
+#subcart::-webkit-scrollbar-track {
     background-color: #262322;
     border: 0;
-  }
-  
-  #subcart::-webkit-scrollbar-thumb {
+}
+
+#subcart::-webkit-scrollbar-thumb {
     border-radius: 100px;
     border-left: 0;
     border-right: 0;
     background-color: #000;
-  }
+}
 
 //Imagem da lista de produtos do carrinho
-#cart > #subcart > .cartitem>.cartItemImg {
+#cart>#subcart>.cartitem>.cartItemImg {
     border-radius: 50%;
     width: 50px;
     height: 50px;
@@ -131,10 +153,20 @@ nav {
     padding-left: 2.5%;
 }
 
+.navbar-brand {
+    padding-right: 30rem;
+}
+
+@media (max-width: 800px) {
+    .navbar-brand span {
+        display: none !important;
+    }
+}
+
 #logo-img {
-    width: 20%; //investi em % para responsividade; aumentar % conforme diminui o viewport
+    width: 10rem; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
-    border-radius: 50%;
+    border-radius: .5rem;
 }
 
 
