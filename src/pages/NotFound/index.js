@@ -8,11 +8,11 @@ function NotFound() {
   const navigate = useNavigate();
   const [seconds, setSeconds] = useState(5);
 
-  const tick = () => {
-    setSeconds(seconds - 1);
-  }
-
   useEffect(() => {
+    const tick = () => {
+         setSeconds(seconds - 1);
+     }
+
     let timer = setInterval(tick, 1000);
     return () => {
       if (seconds === 0) {
@@ -20,11 +20,11 @@ function NotFound() {
         navigate("/home")
       }
     };
-  }, [seconds])
+  }, [seconds, navigate])
 
   return (
     <div className="container d-flex flex-row">
-      <img className="bg404" src={BGNotFound} />
+      <img className="bg404" src={BGNotFound} alt="404 reference" />
     </div>
   )
 }

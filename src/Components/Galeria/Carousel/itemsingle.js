@@ -1,7 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartState } from '../../../context/Context.js';
 import { Link } from 'react-router-dom'
-import './style2.scss'
+import './single.scss'
 
 const Item = ({ prod }) => {
     const {

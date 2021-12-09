@@ -8,12 +8,12 @@ import GridCategorias from '../../Components/GridCategorias';
 const Produtos = () => {
 
     const { category } = useParams();
-    
+
     let path;
 
-    if( category == "todas"){
+    if (category === "todas") {
         path = `/products/buscartodos`;
-    } else{
+    } else {
         path = `/products/category/${category}`;
     }
 

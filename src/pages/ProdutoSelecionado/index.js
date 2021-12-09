@@ -2,6 +2,7 @@ import React from 'react'
 import FichaSelecionado from '../../Components/FichaSelecionado';
 import useAxios from '../../hooks/useAxios';
 import { useParams } from 'react-router-dom';
+import ScrollToTop from '../../Components/ScrollToTop';
 
 const ProdutoSelecionado = () => {
 
@@ -10,6 +11,7 @@ const ProdutoSelecionado = () => {
 
     return (
         <>
+            <ScrollToTop />
             <FichaSelecionado prod={produtoSelecionado} />
         </>
     )

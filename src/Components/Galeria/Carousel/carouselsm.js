@@ -1,13 +1,14 @@
 import React from 'react';
 import './style.scss';
-import { Carousel, Col, Row } from 'react-bootstrap';
-import {CartState} from '../../../context/Context.js';
+import { Carousel, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import useAxios from '../../../hooks/useAxios';
 import Item from './item.js';
-/* import {Produtos} from './produtos'; */
+
 export const Carouselsm = (props) => {
 
-    const {state: {products}} = CartState();
+    const newProducts = Object.values(useAxios("/products/novidades"));
+    const mostProducts = Object.values(useAxios("/products/maisvendidos"));
 
     //Retorna Carousel Items com dados array retornado da api service
     return (
@@ -17,140 +18,152 @@ export const Carouselsm = (props) => {
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 0){
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
+                            if (index === 0) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )};
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 1){
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
+                            if (index === 1) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )};
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 2){
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
+                            if (index === 2) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 3){
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
+                            if (index === 3) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 4){
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
+                            if (index === 4) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 5 ){
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
+                            if (index === 5) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
             </Carousel>
 
 
             {/* CARROSSEL MOBILE 2 */}
-            <Col sm={{ span: 6, offset:3 }} className="carousel-sm cabecalho"><h1>Mais vendidos</h1></Col>
+            <Col sm={{ span: 6, offset: 3 }} className="carousel-sm cabecalho"><h1>Mais vendidos</h1></Col>
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 6){
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
+                            if (index === 6) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 7){
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
+                            if (index === 7) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 8){
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
+                            if (index === 8) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 9){
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
+                            if (index === 9) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 10){
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
+                            if (index === 10) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                    {Object.values(products).map((prod, index) => {
-                            if(index === 11){
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
+                            if (index === 11) {
                                 return (
                                     <Item prod={prod} key={index} />
-                            )}
-                            return;
-                        })}
+                                )
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
             </Carousel>

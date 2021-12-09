@@ -3,15 +3,13 @@ import React from 'react';
 import { Card, Container} from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { CartState } from '../../context/Context.js';
-import {Carouselextra} from '../../Components/Galeria/Carousel/carouselextra';
-
+import {CarouselSingle} from '../Galeria/Carousel/carouselsingle';
 import star from '../../assets/img/a-star-is-born.png';
 import "./style.scss";
 
 
 const FichaSelecionado = ({prod}) => {
 
-    const { state: { products } } = CartState();
 
     const {
         state: {cart},
@@ -22,9 +20,8 @@ const FichaSelecionado = ({prod}) => {
     
     return (
         <>
-            {/* ESPAÇO DO HELMET PARA DEFINIR HEAD>TITLE */}
             <Helmet>
-                <title>Amar e Cuidar | {pgTitle}</title> {/* extrair propriedade título */}
+                <title>Amar e Cuidar | {pgTitle}</title>
             </Helmet>
             <Card className="ficha">
                 <Container className="col-lg-4">
@@ -49,12 +46,12 @@ const FichaSelecionado = ({prod}) => {
                                 payload: prod
                             })
                         }}>Adicionar ao carrinho</button>)
-                    }                
+                    }
                 </Card.Body>
             </Card>
 
-            <Carouselextra productsArray={products} />
-            <div></div>
+            {/* CAROUSEL */}
+            <CarouselSingle />
         </>
     )
 }

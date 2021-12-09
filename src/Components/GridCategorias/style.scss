@@ -1,54 +1,67 @@
-.radios {
-    text-align: left;
-    display: inline-flex;
-    font-size: 2rem;
+.categorias {
     font-family: 'Raleway', sans-serif;
 }
 
-.radios h4 {
+.categorias h4 {
     font-family: 'Quentin';
-    font-size: 4rem;
+    font-size: 5rem;
     color: #EB6E92;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
-.form-check-label {
-    font-size: 1.6rem;
-}
-
-.form-check-input:checked {
-    background-color: #d68c45 !important;
-    border-color: #d68c45 !important;
-    box-shadow: none !important;
+.btn-categorias {
+    background-color: #FFFFFF !important;
+    border-color: #D68C45 !important;
+    color: #212529 !important;
+    font-size: 2rem !important;
+    margin-right: 5rem;
+    &:focus {
+        box-shadow: 0 0 0 0.25rem rgb(253 134 13 / 30%) !important;
+        transition: all .4s ease-in-out;
+    }
+    &:hover {
+        background-color: #D68C45 !important;
+        color: #FFFFFF !important;
+        transition: all .4s ease-in-out;
+    }
 }
 
 .cards-produtos {
     text-align: center;
-    margin: 0 1rem 3rem 4rem; 
+    margin: 1.5rem 1rem 3rem 4rem; 
     font-size: 1.5rem;  
 }
 
-/*.card-img{
-    width: 70% !important;
-}*/
-
-.btn-prod {
-    color: #986D5A;
-    background-color: #f9d1c6;
-    border: none;
-    font-size: 1.5rem;
-    border-radius: .5rem;
-    padding: .8rem;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 5rem;
 }
 
-.btn-prod:hover {
-    background-color: #986D5A;
-    color: #f9d1c6;
+.btn-prod {
+    position: absolute;
+    font-size: 1.6rem;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    bottom: -4%;
+    left: 25%;
+    background-color: #f9d1c6;
+    color: #986D5A;
+    &:hover{
+        background-color: #986D5A;
+        color: #f9d1c6;
+        transition: all .4s ease-in-out;
+    }
 }
 
 .grid-cards {
     padding: 2rem;
 }
+
+
 
 @import "~bootstrap/scss/bootstrap";

@@ -16,6 +16,7 @@ const RouteList = () => (
 
                 <Route path="/produtos/:id" element={<ProdutoSelecionado />} />
                 <Route path="/carrinho" element={<Carrinho />} />
+                <Route path="*" element={<NotFound />} />
         </Routes>
 );
 

@@ -14,8 +14,10 @@ export const cartReducer = (state, action) => {
         ),
       };
 
+  //Função que esvazia o carrinho
     case "RESET_CART":
       return {
+        ...state,
         cart: []
       };
     default:

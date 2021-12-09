@@ -1,7 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { CartState } from '../../../context/Context.js';
-import { Link } from 'react-router-dom'
-import './style.scss'
+import { Link } from 'react-router-dom';
+import './style.scss';
 
 const Item = ({ prod }) => {
     const {
@@ -26,13 +25,13 @@ const Item = ({ prod }) => {
                         type: "REMOVE_FROM_CART",
                         payload: prod
                     })
-                }} className="item-btn">Remover do carrinho</button>
+                }} className="item-btn">Remover</button>
             ) : (<button onClick={() => {
                 dispatch({
                     type: "ADD_TO_CART",
                     payload: prod
                 })
-            }} className="item-btn">Add ao carrinho</button>)
+            }} className="item-btn">Comprar</button>)
             }
         </div>
     )
