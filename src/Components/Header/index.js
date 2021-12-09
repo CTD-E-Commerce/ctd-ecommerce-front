@@ -6,7 +6,7 @@ import { HashLink } from 'react-router-hash-link';
 import { CartState } from '../../context/Context.js';
 import RouteList from '../../routes';
 import './style.scss';
-import logo_img from '../../assets/img/logo.png'
+import logo_img from '../../assets/img/logo_v2.png'
 
 import { AiFillDelete } from 'react-icons/ai';
 import {BsCart3} from 'react-icons/bs';

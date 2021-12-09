@@ -6,4 +6,10 @@
     right: 1rem;
 }
 
+@media (max-width: 690px) {
+    #to-top {
+        display: none;
+    }
+}
+
 @import "~bootstrap/scss/bootstrap";
