@@ -39,7 +39,7 @@ const Carrinho = () => {
             <ScrollToTop />
             <Container className="container-carrinho">
                 <Row className="col-gap">
-                    <Col md={7}>
+                    <Col lg={7} >
                         {/* row com cada card de produto */}
                         {cart.length > 0 ? (
                             <>
@@ -101,16 +101,17 @@ const Carrinho = () => {
                                             </Button>
                                         </Col>
                                     </Row>
+                                
                                 ))}
                             </>
                         ) : null}
 
-                    </Col>
+                    </Col> 
 
                     {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO -> EXIBIDO APENAS QUANDO CARRINHO ESTÁ CHEIO*/}
                     {cart.length > 0 ? (
                         <>
-                            <Col md={4} >
+                            <Col lg={4} >
                                 <div className="carrinho p-3 mb-5">
                                     <h1>Resumo do Pedido</h1>
                                     <Table responsive="sm" size="sm">
@@ -129,6 +130,7 @@ const Carrinho = () => {
                                             </tr>
                                         </tbody>
                                     </Table>
+                                    <Link to={"/"}><button className="cart-btn-voltar">Continuar comprando</button></Link>
                                     <button className="cart-btn" onClick={() =>
                                         swalWithBootstrapButtons.fire({
                                             title: 'Confirma o fechamendo do pedido?',
@@ -161,23 +163,23 @@ const Carrinho = () => {
                                         })
 
                                     }>Fechar Pedido</button>
+                                    
                                 </div>
                             </Col>
                         </>
                     ) : (
 
                         /* Aviso de carrinho vazio */
-                        <Col md={8} >
-                            <div className="carrinho p-3 mb-5">
-                                <h1>Carrinho de compras</h1>
-                                <span style={{ padding: 20, margin: 15, color: 'white' }}>
+                        <Col md={{span:8, offset: 2}} sm={12} >
+                            <div className="carrinho-vazio">
+                                <span>
                                     Seu carrinho está vazio!
                                 </span>
-                                <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                    Aproveite as ofertas da nossa loja :)
+                                <span>
+                                    Aproveite as ofertas da nossa loja!
                                 </span>
                                 <Link to="/home">
-                                    <button className="cart-btn">Voltar à página inicial</button>
+                                    <button>Voltar para Home</button>
                                 </Link>
                             </div>
                         </Col>

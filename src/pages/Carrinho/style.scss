@@ -2,11 +2,10 @@
 .container-carrinho {
     margin-top: 10rem !important;
     margin-bottom: 1rem;
-
 }
 
 .col-gap {
-    gap: 10px;
+    gap: 15px;
 }
 
 /* card de cada item do carrinho */
@@ -14,26 +13,20 @@
     display: flex;
     justify-content: center;
     padding: 10px 0;
-    border: 1px solid rgba(0, 0, 0, .125);
+    border: 0.5px solid #986d5a5e;;
     font-size: 16px;
 }
 
-
-/* junção das margins dos cards */
+/* junção das margins top dos cards */
 .card-carrinho+.card-carrinho {
     border-top-width: 0;
 }
 
 /* imagem do produto */
 .img-cart {
-    width: 120px;
-    height: 120px;
+    width: 100%;
 }
 
-.subtitulo-itens {
-    color: rgba(0, 0, 0, 0.377);
-    font-size: 1.4rem;
-}
 
 /* alinhamento dos itens dentro das colunas */
 .col-align-items-center {
@@ -43,6 +36,8 @@
     justify-content: center;
 }
 
+
+
 /* CARD DO FECHAMENTO DE PEDIDO ----------------------------------------------------------------*/
 
 .carrinho {
@@ -50,46 +45,22 @@
     flex-direction: column;
     justify-content: space-between;
     height: 400px;
-    //background-color: #faf0e6;
-    background-color: #452d27;
+    background-color: white;
     font-size: 16px;
+    border: 0.5px solid #986d5a5e;
     font-family: 'Raleway', sans-serif;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
+    color: black;
 
     h1 {
         text-align: center;
         font-size: 2rem;
         text-transform: uppercase;
         letter-spacing: .3rem;
-        color: #F2E5D7;
-        //font-weight:bold;
+        color: black;
         margin-top: 2rem;
     }
 }
 
-.carrinho-vazio {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
-    //background-color: #faf0e6;
-    background-color: #452d27;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-
-    h1 {
-        text-align: center;
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: .3rem;
-        color: #F2E5D7;
-        //font-weight:bold;
-        margin-top: 2rem;
-    }
-}
 
 /* margin bottom dos itens da tabela */
 .table> :not(caption)>*>* {
@@ -97,22 +68,27 @@
     padding: 10px !important;
 }
 
-/* cor do texto da tabela */
+/*texto da tabela */
 .table {
-    color: #F2E5D7 !important;
+    color: black !important;
 }
 
-/* botão do card de resumo */
+/* segunda coluna da tabela (valores)*/
+.col-align-items-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* botão de fechamento do pedido*/
 .cart-btn {
     font-size: 1.6rem;
-    width: 50%;
+    width: 60%;
     border-radius: 2rem;
     padding: 1rem;
     border: none;
-    background-color: #c97d60;
-    color: #faf0e6;
-    margin: 2rem auto;
-
+    background-color: #f9d1c6;
+    color: #986D5A;
+    margin: 0 auto 1.5rem auto;
     &:hover {
         background-color: #986D5A;
         color: #F2E5D7;
@@ -120,10 +96,24 @@
     }
 }
 
-.col-align-items-end {
-    display: flex;
-    justify-content: flex-end;
+/* botao continuar comprando */
+.cart-btn-voltar{
+    font-size: 1.6rem;
+    width: 60%;
+    border-radius: 2rem;
+    padding: 0.8rem;
+    background-color: transparent;
+    color: #986D5A;
+    border: 1px solid #986D5A;
+    margin: 0.2rem auto 0 auto;
+    &:hover {
+        background-color: #986D5A;
+        border: 1px solid #986D5A;
+        color: #F2E5D7;
+        transition: all .4s ease-in-out;
+    }
 }
+
 
 
 .swal2-show {
@@ -170,12 +160,60 @@
     }
 }
 
-@media (min-width: 800px) {
 
+/* BANNER DO CARRINHO VAZIO*/
+
+.carrinho-vazio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.8rem;
+    border: 0.5px solid #986d5a5e;
+    padding: 15px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    
+    span{
+        text-align: center;
+        color: black;
+        margin-top: 2rem;
+    }
+    button{
+        font-size: 1.6rem;
+        width: 25%;
+        border-radius: 2rem;
+        margin-top: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: #f9d1c6;
+        color: #7c5747;
+        &:hover{
+            background-color: #986D5A;
+            color: #f9d1c6;
+            transition: all .4s ease-in-out;
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .carrinho-vazio {
+        button{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width: 800px) {
     //Estilos confirmação pagamento
-    .swal2-show {
-        width: 400px;
-        height: 300px;
+    .swal2-show,
+    .swal2-popup {
+        width: 600px;
+        height: 400px;
     }
 }
 
