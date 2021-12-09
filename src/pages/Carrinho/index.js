@@ -34,7 +34,7 @@ const Carrinho = () => {
 
     return (
         <>
-        <ScrollToTop />
+            <ScrollToTop />
             <Container className="container-carrinho">
                 <Row className="col-gap">
                     <Col md={7}>
@@ -147,7 +147,7 @@ const Carrinho = () => {
                                     <button className="cart-btn" onClick={() =>
                                         swalWithBootstrapButtons.fire({
                                             title: 'Confirma o fechamendo do pedido?',
-                                            text: `\nEste pedido não poderá ser cancelado!`,
+                                            html: `<p>Este pedido não poderá ser cancelado após efetivação!</p>`,
                                             icon: 'warning',
                                             showCancelButton: true,
                                             confirmButtonText: 'Sim, confirmo!',
@@ -160,7 +160,7 @@ const Carrinho = () => {
                                                 });
                                                 swalWithBootstrapButtons.fire(
                                                     'Pedido confirmado!',
-                                                    'Avisaremos você quando ele estiver em rota de envio :)',
+                                                    `<p>Avisaremos você quando ele estiver em rota de envio :)</p>`,
                                                     'success'
                                                 )
                                             } else if (
@@ -169,7 +169,7 @@ const Carrinho = () => {
                                             ) {
                                                 swalWithBootstrapButtons.fire(
                                                     'Pedido cancelado!',
-                                                    'Aproveite para ervisar seu pedido ou conferir outros produtos da nossa loja :)',
+                                                    `<p>Aproveite para revisar seu pedido ou conferir outros produtos da nossa loja :)</p>`,
                                                     'error'
                                                 )
                                             }
