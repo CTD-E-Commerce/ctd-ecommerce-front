@@ -1,6 +1,5 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown, Dropdown, Badge, Button } from 'react-bootstrap';
-import { FaShoppingCart } from 'react-icons/fa'
 import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 import { CartState } from '../../context/Context.js';
@@ -9,7 +8,7 @@ import './style.scss';
 import logo_img from '../../assets/img/logo_v2.png'
 
 import { AiFillDelete } from 'react-icons/ai';
-import {BsCart3} from 'react-icons/bs';
+import { BsCart3 } from 'react-icons/bs';
 
 const Header = () => {
 
@@ -48,7 +47,7 @@ const Header = () => {
                     <Dropdown id="cart" align="end">
                         <Dropdown.Toggle variant="white">
                             <BsCart3 color="black" fontSize="35px" /> {/* cor do carrinho */}
-                            <Badge bg="black" style={{ fontSize: 12, borderRadius:"50%" }}>{cart.length}</Badge>
+                            <Badge bg="black" style={{ fontSize: 12, borderRadius: "50%" }}>{cart.length}</Badge>
                         </Dropdown.Toggle>
 
                         {/* Lista de itens do carrinho */}
@@ -83,10 +82,10 @@ const Header = () => {
                                         </span>
                                     ))}
                                     <Link to="/carrinho">
-                                        <Button style={{ width: "95%", margin: "0 10px", fontSize: "15px", backgroundColor: "#986D5A", border: "none" }}>
+                                        <Button className="btn-produtos" style={{ width: "95%", margin: "0 10px", fontSize: "15px", backgroundColor: "#986D5A", border: "none" }}>
                                             Ir para o carrinho
                                         </Button>
-                                    </Link>
+                                    </Link> 
                                 </>
                             ) : (
                                 <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>

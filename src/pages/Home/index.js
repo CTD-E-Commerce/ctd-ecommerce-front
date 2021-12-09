@@ -8,13 +8,13 @@ import ScrollToTop from '../../Components/ScrollToTop';
 
 const Home = () => {
 
-     return (
+    return (
         <>
-        <ScrollToTop />
+            <ScrollToTop />
             <Banner />
             {/* <Galeria> */}
-                <Categorias />
-                <Carrossel/>
+            <Categorias />
+            <Carrossel />
             {/* </Galeria> */}
             <Sobre />
             {/* <Footer /> */}

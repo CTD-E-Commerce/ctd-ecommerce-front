@@ -9,10 +9,12 @@
     font-size: 2rem !important;
     margin-right: 1rem;
     margin-bottom: 1rem;
+
     &:focus {
         box-shadow: 0 0 0 0.25rem rgb(253 134 13 / 30%) !important;
         transition: all .4s ease-in-out;
     }
+
     &:hover {
         background-color: #D68C45 !important;
         color: #FFFFFF !important;
@@ -22,7 +24,7 @@
 
 .cards-produtos {
     text-align: center;
-    margin: 3rem; 
+    margin: 3rem;
     font-size: 1.5rem;
 }
 
@@ -44,7 +46,8 @@
     left: 25%;
     background-color: #f9d1c6;
     color: #986D5A;
-    &:hover{
+
+    &:hover {
         background-color: #986D5A;
         color: #f9d1c6;
         transition: all .4s ease-in-out;
