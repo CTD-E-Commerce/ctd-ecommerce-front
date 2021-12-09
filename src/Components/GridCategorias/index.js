@@ -6,10 +6,10 @@ import { CartState } from '../../context/Context.js';
 import './style.scss';
 
 
-const GridCategorias = ({categoryProd}) => {
+const GridCategorias = ({ categoryProd }) => {
 
     const {
-        state: {cart},
+        state: { cart },
         dispatch,
     } = CartState();
 
@@ -29,9 +29,9 @@ const GridCategorias = ({categoryProd}) => {
                         <Button as={Link} to={"/produtos/categorias/make up"} className="btn-categorias">Make up</Button>
                         <Button as={Link} to={"/produtos/categorias/hair care"} className="btn-categorias">Hair care</Button>
                         <Button as={Link} to={"/produtos/categorias/perfumes"} className="btn-categorias">Perfumes</Button>
-                        <Button as={Link} to={"/produtos/categorias/veganos"} className="btn-categorias">Veganos</Button> 
+                        <Button as={Link} to={"/produtos/categorias/veganos"} className="btn-categorias">Veganos</Button>
                     </div>
-                    
+
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (
@@ -47,26 +47,26 @@ const GridCategorias = ({categoryProd}) => {
                                         {/* BOTÃO ADD AO CARRINHO */}
                                         {cart.some(p => p.id === prod.id) ? (
                                             <button onClick={() => {
-                                            dispatch({
-                                                type: "REMOVE_FROM_CART",
-                                                payload: prod
-                                            })
-                                        }} className="btn-prod">Remover</button>
+                                                dispatch({
+                                                    type: "REMOVE_FROM_CART",
+                                                    payload: prod
+                                                })
+                                            }} className="btn-prod">Remover</button>
                                         ) : (<button onClick={() => {
                                             dispatch({
                                                 type: "ADD_TO_CART",
                                                 payload: prod
                                             })
                                         }} className="btn-prod">Add ao carrinho</button>)
-                                    }
-                                </Card.Body>
-                            </Card>
+                                        }
+                                    </Card.Body>
+                                </Card>
                             </Col>
                         ))}
                     </Row>
                 </Container>
             </section>
-        </>   
+        </>
     )
 }
 

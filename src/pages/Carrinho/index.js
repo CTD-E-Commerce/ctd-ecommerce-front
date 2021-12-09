@@ -13,8 +13,8 @@ import ScrollToTop from '../../Components/ScrollToTop';
 
 const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
-        confirmButton: 'btn btn-success',
-        cancelButton: 'btn btn-danger'
+        confirmButton: 'btn btn-light',
+        cancelButton: 'btn btn-warning'
     },
     buttonsStyling: false
 })
@@ -132,11 +132,11 @@ const Carrinho = () => {
                                     <button className="cart-btn" onClick={() =>
                                         swalWithBootstrapButtons.fire({
                                             title: 'Confirma o fechamendo do pedido?',
-                                            html: `<p>Este pedido não poderá ser cancelado após efetivação!</p>`,
+                                            html: `<h3>Este pedido não poderá ser cancelado!</h3>`,
                                             icon: 'warning',
                                             showCancelButton: true,
                                             confirmButtonText: 'Sim, confirmo!',
-                                            cancelButtonText: 'Não, cancele!',
+                                            cancelButtonText: 'Não, vou revisar!',
                                             reverseButtons: false
                                         }).then((result) => {
                                             if (result.isConfirmed) {
@@ -145,7 +145,7 @@ const Carrinho = () => {
                                                 });
                                                 swalWithBootstrapButtons.fire(
                                                     'Pedido confirmado!',
-                                                    `<p>Avisaremos você quando ele estiver em rota de envio :)</p>`,
+                                                    `<h4>Avisaremos quando estiver em rota de entrega :)</h4>`,
                                                     'success'
                                                 )
                                             } else if (
@@ -153,8 +153,8 @@ const Carrinho = () => {
                                                 result.dismiss === Swal.DismissReason.cancel
                                             ) {
                                                 swalWithBootstrapButtons.fire(
-                                                    'Pedido cancelado!',
-                                                    `<p>Aproveite para revisar seu pedido ou conferir outros produtos da nossa loja :)</p>`,
+                                                    'Pedido não confirmado!',
+                                                    `<h4>Aproveite para revisar seus itens :)</h4>`,
                                                     'error'
                                                 )
                                             }
@@ -182,6 +182,7 @@ const Carrinho = () => {
                             </div>
                         </Col>
                     )
+
                     }
                 </Row>
             </Container>

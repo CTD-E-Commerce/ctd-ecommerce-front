@@ -13,6 +13,7 @@ header {
 
 nav {
     padding: 3.5%; //verificar no mobile
+    padding-top: 1.8rem !important;
     min-height: 8rem;
 }
 
@@ -176,7 +177,6 @@ nav {
 }
 
 
-
 #logo-img {
     width: 10rem; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
@@ -185,6 +185,7 @@ nav {
 
 .navbar-toggler {
     border-width: 2px !important;
+    margin-bottom: 2rem;
 }
 
 .navbar-toggler-icon {

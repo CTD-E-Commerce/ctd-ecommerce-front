@@ -174,7 +174,9 @@
 
     //Estilos confirmação pagamento
     .swal2-show {
-        width: 50vw;
-        height: 50vh;
+        width: 400px;
+        height: 300px;
     }
 }
+
+@import "~bootstrap/scss/bootstrap";
