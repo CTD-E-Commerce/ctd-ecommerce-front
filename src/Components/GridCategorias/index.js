@@ -15,12 +15,11 @@ const GridCategorias = ({ categoryProd }) => {
 
     // Para o head da página com o helmet
     const { category } = useParams();
-    const pgTitle = category;
 
     return (
         <>
             <Helmet>
-                <title>Amar e Cuidar | {pgTitle}</title>
+                <title>Amar e Cuidar | {category}</title>
             </Helmet>
             <section id="produtos-categoria">
                 <Container fluid className="radios">
@@ -37,8 +36,8 @@ const GridCategorias = ({ categoryProd }) => {
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (
-                            <Col>
-                                <Card className="cards-produtos" key={prod.id}>
+                            <Col key={prod.id}>
+                                <Card className="cards-produtos">
                                     <Link to={"/produtos/" + prod.id}>
                                         <Card.Img variant="top" src={prod.image} />
                                     </Link>
