@@ -132,7 +132,7 @@ const Carrinho = () => {
                                     <button className="cart-btn" onClick={() =>
                                         swalWithBootstrapButtons.fire({
                                             title: 'Confirma o fechamendo do pedido?',
-                                            html: `Este pedido não poderá ser cancelado!`,
+                                            html: `<h3>Este pedido não poderá ser cancelado!</h3>`,
                                             icon: 'warning',
                                             showCancelButton: true,
                                             confirmButtonText: 'Sim, confirmo!',
