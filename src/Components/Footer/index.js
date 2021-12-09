@@ -26,7 +26,7 @@ const Footer = () => {
                     <h3>Contato</h3>
                     <p><img src={map} alt="" />Rua Travessa do meio, 99. São Paulo - SP</p>
                     <p><img src={email} alt="" />amarecuidar@email.com</p>
-                    <p><img src={phone} alt="" />+55 (11) 99922 0033</p>
+                    <p><img src={phone} alt="" />+55 (11) 99922 00XX</p>
                 </Col>
             </Row>
             <Row>
