@@ -23,11 +23,11 @@ const Header = () => {
         <>
             <header>
                 <Navbar bg="linen" expand="lg" collapseOnSelect>
+                    <Navbar.Toggle />
                     <Navbar.Brand>
                         {logo} {''}
                         <span>Cosméticos</span>
                     </Navbar.Brand>
-                    <Navbar.Toggle />
                     <Navbar.Collapse className="justify-content-center">
                         <Nav>
                             <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
@@ -40,8 +40,7 @@ const Header = () => {
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/perfumes"}>Perfumes</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/veganos"}>Veganos</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as={HashLink} to={"/home#anchorSobre"}>SOBRE</Nav.Link>
-                            <Nav.Link as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
+                            <Nav.Link as={HashLink} to={"/home#anchorSobre"}>SOBRE NÓS</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     {/*Componente Carrinho*/}
