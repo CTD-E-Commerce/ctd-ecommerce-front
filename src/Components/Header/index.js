@@ -29,7 +29,7 @@ const Header = () => {
                         {logo} {''}
                         <span>Cosméticos</span>
                     </Navbar.Brand>
-                    <Navbar.Collapse className="justify-content-center">
+                    <Navbar.Collapse className="justify-content-end">
                         <Nav>
                             <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
                             <NavDropdown title="PRODUTOS">
