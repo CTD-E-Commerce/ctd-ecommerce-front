@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BGNotFound from '../../assets/img/404.jpg';
 import './style.scss';
 
 function NotFound() {
