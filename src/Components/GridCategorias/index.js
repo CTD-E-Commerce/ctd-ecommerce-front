@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
-import { Container, Form, Row, Col, Card } from 'react-bootstrap';
+import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import { CartState } from '../../context/Context.js';
 import './style.scss';
 
@@ -23,29 +23,14 @@ const GridCategorias = ({categoryProd}) => {
                 <title>Amar e Cuidar | {pgTitle}</title>
             </Helmet>
             <section id="produtos-categoria">
-                {/* <Container fluid> */}
-                    {/* SELETOR CATEGORIAS
-                    <Form.Select aria-label="Default select example">
-                        <option>Categorias</option>
-                        <option as={Link} to={"/produtos/categorias/todas"} value="todas">Todas as categorias</option>
-                        <option as={Link} to={"/produtos/categorias/skin care"} value="skin care">Skin care</option>
-                        <option as={Link} to={"/produtos/categorias/make up"} value="make up">Make up</option>
-                        <option value="4">Hair care</option>
-                        <option value="5">Perfumes</option>
-                        <option value="6">Veganos</option>
-                    </Form.Select> */}
-                    
-                <Container fluid className="radios">
-                    {/* RADIOS COM AS CATEGORIAS */}
-                    <Form>
-                        <h4>Categorias</h4>
-                        <Form.Check inline as={Link} to={"/produtos/categorias/todas"} type="radio" aria-label="radio 1" name="categorias" label="Todas as categorias" />
-                        <Form.Check inline as={Link} to={"/produtos/categorias/skin care"} type="radio" aria-label="radio 1" name="categorias" label="Skin care" />
-                        <Form.Check inline as={Link} to={"/produtos/categorias/make up"} type="radio" aria-label="radio 1" name="categorias" label="Make up" />
-                        <Form.Check inline as={Link} to={"/produtos/categorias/hair care"}  type="radio" aria-label="radio 1" name="categorias" label="Hair care" />
-                        <Form.Check inline as={Link} to={"/produtos/categorias/perfumes"}  type="radio" aria-label="radio 1" name="categorias" label="Perfumes" />
-                        <Form.Check inline as={Link} to={"/produtos/categorias/veganos"} type="radio" aria-label="radio 1" name="categorias" label="Veganos" />
-                    </Form>
+                <Container fluid className="categorias">
+                    <h4>Categorias</h4>
+                    <Button as={Link} to={"/produtos/categorias/todas"} className="btn-categorias">Todas</Button>
+                    <Button as={Link} to={"/produtos/categorias/skin care"} className="btn-categorias">Skin care</Button>
+                    <Button as={Link} to={"/produtos/categorias/make up"} className="btn-categorias">Make up</Button>
+                    <Button as={Link} to={"/produtos/categorias/hair care"} className="btn-categorias">Hair care</Button>
+                    <Button as={Link} to={"/produtos/categorias/perfumes"} className="btn-categorias">Perfumes</Button>
+                    <Button as={Link} to={"/produtos/categorias/veganos"} className="btn-categorias">Veganos</Button>
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (
@@ -73,7 +58,6 @@ const GridCategorias = ({categoryProd}) => {
                                             })
                                         }} className="btn-prod">Add ao carrinho</button>)
                                     }
-                                    
                                 </Card.Body>
                             </Card>
                             </Col>

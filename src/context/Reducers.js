@@ -13,6 +13,13 @@ export const cartReducer = (state, action) => {
           c.id === action.payload.id ? (c.qty = action.payload.qty) : c.qty
         ),
       };
+
+  //Função que esvazia o carrinho
+    case "RESET_CART":
+      return {
+        ...state,
+        cart: []
+      };
     default:
       return state;
   }
