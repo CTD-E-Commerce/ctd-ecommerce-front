@@ -5,7 +5,7 @@ import { ImBin } from 'react-icons/im';
 import { CartState } from '../../context/Context.js';
 import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import {CarouselSingle} from '../../Components/Galeria/Carousel/carouselsingle';
+import { CarouselSingle } from '../../Components/Galeria/Carousel/carouselsingle';
 
 
 import ScrollToTop from '../../Components/ScrollToTop';
@@ -20,12 +20,6 @@ const swalWithBootstrapButtons = Swal.mixin({
 })
 
 const Carrinho = () => {
-
-
-
-    const { state: { products } } = CartState();
-
-
 
     const {
         state: { cart },
@@ -103,30 +97,13 @@ const Carrinho = () => {
                                                     })
                                                 }
                                             >
-                                                <ImBin style={{fontSize:"18px"}}/>
+                                                <ImBin style={{ fontSize: "18px" }} />
                                             </Button>
                                         </Col>
                                     </Row>
                                 ))}
                             </>
-                        ) : (
-
-                            /* Aviso de carrinho vazio */
-                            <Col md={8} >
-                                <div className="carrinho p-3 mb-5">
-                                    <h1>Carrinho de compras</h1>
-                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                        Seu carrinho está vazio!
-                                    </span>
-                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                        Aproveite as ofertas da nossa loja :)
-                                    </span>
-                                    <Link to="/home">
-                                        <button className="cart-btn">Voltar à página inicial</button>
-                                    </Link>
-                                </div>
-                            </Col>
-                        )}
+                        ) : null}
 
                     </Col>
 
@@ -160,7 +137,7 @@ const Carrinho = () => {
                                             showCancelButton: true,
                                             confirmButtonText: 'Sim, confirmo!',
                                             cancelButtonText: 'Não, cancele!',
-                                            reverseButtons: true
+                                            reverseButtons: false
                                         }).then((result) => {
                                             if (result.isConfirmed) {
                                                 dispatch({
@@ -187,7 +164,25 @@ const Carrinho = () => {
                                 </div>
                             </Col>
                         </>
-                    ) : null}
+                    ) : (
+
+                        /* Aviso de carrinho vazio */
+                        <Col md={8} >
+                            <div className="carrinho p-3 mb-5">
+                                <h1>Carrinho de compras</h1>
+                                <span style={{ padding: 20, margin: 15, color: 'white' }}>
+                                    Seu carrinho está vazio!
+                                </span>
+                                <span style={{ padding: 20, margin: 15, color: 'white' }}>
+                                    Aproveite as ofertas da nossa loja :)
+                                </span>
+                                <Link to="/home">
+                                    <button className="cart-btn">Voltar à página inicial</button>
+                                </Link>
+                            </div>
+                        </Col>
+                    )
+                    }
                 </Row>
             </Container>
             <CarouselSingle />
