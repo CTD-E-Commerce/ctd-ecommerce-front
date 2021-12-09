@@ -34,7 +34,7 @@ const Carrinho = () => {
 
     return (
         <>
-        <ScrollToTop />
+            <ScrollToTop />
             <Container className="container-carrinho">
                 <Row className="col-gap">
                     <Col md={7}>
@@ -147,7 +147,7 @@ const Carrinho = () => {
                                     <button className="cart-btn" onClick={() =>
                                         swalWithBootstrapButtons.fire({
                                             title: 'Confirma o fechamendo do pedido?',
-                                            text: `\nEste pedido não poderá ser cancelado!`,
+                                            text: 'Este pedido não poderá ser cancelado após efetivação!',
                                             icon: 'warning',
                                             showCancelButton: true,
                                             confirmButtonText: 'Sim, confirmo!',
@@ -169,7 +169,7 @@ const Carrinho = () => {
                                             ) {
                                                 swalWithBootstrapButtons.fire(
                                                     'Pedido cancelado!',
-                                                    'Aproveite para ervisar seu pedido ou conferir outros produtos da nossa loja :)',
+                                                    'Aproveite para revisar seu pedido ou conferir outros produtos da nossa loja :)',
                                                     'error'
                                                 )
                                             }
