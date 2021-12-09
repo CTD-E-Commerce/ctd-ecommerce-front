@@ -1,7 +1,6 @@
 import React from 'react';
 import './style.scss';
 import { Carousel, Col } from 'react-bootstrap';
-import { CartState } from '../../../context/Context.js';
 import useAxios from '../../../hooks/useAxios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Item from './item.js';
@@ -62,7 +61,6 @@ export const Carouselmd = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -74,7 +72,6 @@ export const Carouselmd = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -86,7 +83,6 @@ export const Carouselmd = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -103,7 +99,6 @@ export const Carouselmd = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -115,7 +110,6 @@ export const Carouselmd = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -127,7 +121,6 @@ export const Carouselmd = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>

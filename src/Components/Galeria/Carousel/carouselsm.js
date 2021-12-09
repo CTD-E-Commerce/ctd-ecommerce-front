@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.scss';
-import { Carousel, Col, Row } from 'react-bootstrap';
+import { Carousel, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import useAxios from '../../../hooks/useAxios';
 import Item from './item.js';
@@ -24,7 +24,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -36,7 +35,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -48,7 +46,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -60,7 +57,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -72,7 +68,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -84,7 +79,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -102,7 +96,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -114,7 +107,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -126,7 +118,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -138,7 +129,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -150,7 +140,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
@@ -162,7 +151,6 @@ export const Carouselsm = (props) => {
                                     <Item prod={prod} key={index} />
                                 )
                             }
-                            return;
                         })}
                     </div>
                 </Carousel.Item>
