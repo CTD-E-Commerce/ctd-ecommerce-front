@@ -45,7 +45,7 @@ const Carrinho = () => {
             <ScrollToTop />
             <Container className="container-carrinho">
                 <Row className="col-gap">
-                    <Col md={7}>
+                    <Col md={7} >
                         {/* row com cada card de produto */}
                         {cart.length > 0 ? (
                             <>
@@ -107,28 +107,37 @@ const Carrinho = () => {
                                             </Button>
                                         </Col>
                                     </Row>
+                                
                                 ))}
                             </>
-                        ) : (
+                             
+                        ) 
+                       : (
 
                             /* Aviso de carrinho vazio */
-                            <Col md={8} >
-                                <div className="carrinho p-3 mb-5">
-                                    <h1>Carrinho de compras</h1>
-                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                        Seu carrinho está vazio!
-                                    </span>
-                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                        Aproveite as ofertas da nossa loja :)
-                                    </span>
-                                    <Link to="/home">
-                                        <button className="cart-btn">Voltar à página inicial</button>
-                                    </Link>
-                                </div>
-                            </Col>
+                            
+                            <Col md={7} className="container-carrinho-vazio">
+                        
+                                    <div className="carrinho-vazio">
+                                      {/*   <div className="carrinho-vazio"> */}
+                                            <span style={{ padding: 20, margin: 15, color: 'black' }}>
+                                                Seu carrinho está vazio!
+                                            </span>
+                                            <span style={{ padding: 20, margin: 15, color: 'black' }}>
+                                                Aproveite as ofertas da nossa loja! 
+                                            </span>
+                                            <Link to="/home">
+                                                <button className="cart-btn-vazio">Voltar à página inicial</button>
+                                            </Link>
+                                       {/*  </div> */}
+                                    </div>
+                                   
+                               </Col>
+                            
+                           
                         )}
 
-                    </Col>
+                    </Col> 
 
                     {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO -> EXIBIDO APENAS QUANDO CARRINHO ESTÁ CHEIO*/}
                     {cart.length > 0 ? (

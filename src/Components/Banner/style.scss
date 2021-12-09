@@ -42,15 +42,15 @@
     font-size: 1.6rem;
     border: 1px solid #d68c45;
     border-radius: 5px;
-    background-color: transparent;
-    color: #d68c45;
+    background-color: #d68c45;
+    color: white;
     margin-top: 7rem;
     text-transform: uppercase;
     letter-spacing: .3rem;
     font-weight: bold;
     &:hover{
-        background-color: #d68c45;
-        color:white;
+        background-color: white;
+        color:#d68c45;
         transition: all .4s ease-in-out;
     }
 }

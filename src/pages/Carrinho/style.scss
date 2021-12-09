@@ -44,6 +44,53 @@
 }
 
 
+
+
+/* BANNER DO CARRINHO VAZIO*/
+
+/* .container-carrinho-vazio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+} */
+
+.carrinho-vazio {
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    height: 400px;
+    background-color: transparent;
+    font-size: 16px;
+    border: 0.5px solid #986d5a5e;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 0.5rem;
+    span{
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+        color: black;
+        margin-top: 2rem;
+    }
+    button{
+        font-size: 1.6rem;
+        width: 40%;
+        border-radius: 2rem;
+        padding: 1rem;
+        border: none;
+        background-color: #f9d1c6;
+        color: #986D5A;
+        &:hover{
+            background-color: #986D5A;
+            color: #f9d1c6;
+            transition: all .4s ease-in-out;
+          }
+    }
+}
+
+
 /* CARD DO FECHAMENTO DE PEDIDO ----------------------------------------------------------------*/
 
 .carrinho {
@@ -69,28 +116,6 @@
     }
 }
 
-.carrinho-vazio {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
-    //background-color: #faf0e6;
-    background-color: #452d27;
-    font-size: 16px;
-    font-family: 'Raleway', sans-serif;
-    box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0.5rem;
-
-    h1 {
-        text-align: center;
-        font-size: 2rem;
-        text-transform: uppercase;
-        letter-spacing: .3rem;
-        color: #F2E5D7;
-        //font-weight:bold;
-        margin-top: 2rem;
-    }
-}
 
 /* margin bottom dos itens da tabela */
 .table> :not(caption)>*>* {
