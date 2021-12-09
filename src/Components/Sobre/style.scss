@@ -1,21 +1,21 @@
 .container-sobre {
-    padding-bottom: 10rem;
+    padding: 8rem;
+    text-align: center;
 }
 
 .container-sobre p {
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-transform: uppercase;
-    letter-spacing: .6rem;
+    letter-spacing: .8rem;
     color: #63372c;
     margin-top: 2rem;
-    white-space: nowrap;
 }
 
 .container-sobre h3 {
     font-family: 'Quentin';
     color: #c97d60;
-    font-size: 5rem;
+    font-size: 6.5rem;
     font-weight: 600;
     margin-bottom: 6rem;
 }
@@ -30,22 +30,29 @@
 }
 
 .row-sobre {
-    gap: 4rem;
+    padding: 0 10rem;
+    gap: 10rem;
+    align-items: center;
+}
+
+.row-sobre p {
+    font-size: 1.6rem;
 }
 
 .img-sobre {
     width: 18rem;
 }
 
-#anchorSobre {
-    display: block;
-    position: relative;
-    top: -10rem;
-}
-
-@media (max-width: 380px) {
+@media (max-width: 500px) {
     .container-sobre h3 {
-        font-size: 4rem;
+        font-size: 4.5rem;
+    }
+    .container-sobre p {
+        font-size: 1.6rem;
+    }
+    .row-sobre {
+        padding: 0rem;
+        gap: 6rem;
     }
 }
 

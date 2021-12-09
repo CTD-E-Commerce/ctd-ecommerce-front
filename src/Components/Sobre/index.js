@@ -14,7 +14,6 @@ import linkedin from '../../assets/linkedin.svg';
 const Sobre = () => {
     return (
         <>
-             <div id="anchorSobre">{' '}</div> {/* situa âncora acima da seção e compensa largura do header */}
             <section id="sobre">
                 <Container fluid className="container-sobre">
                     <p>Conheça nossos</p>

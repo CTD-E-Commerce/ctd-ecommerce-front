@@ -82,13 +82,14 @@ nav {
 
     //experimentando com posição fixa
     position: fixed;     
-    top: 16px;     
+    top: 24px;     
     right: 14px; 
 }
 
 .btn .badge {
     top: -10px !important;
     right: 15px;
+    background-color: #DD5D1E !important;
 }
 
 /* Lista de produtos do carrinho */
@@ -150,11 +151,20 @@ nav {
     padding-left: 2.5%;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+    .navbar-brand {
+        top: 8px;
+    }
+}
+
+@media (max-width: 991px) {
     .navbar-brand {
         position: fixed;
-        top: 10px;
+        top: 8px;
         left: 12.5%;
+    }
+    #cart {
+        top: 16px; 
     }
 }
 
