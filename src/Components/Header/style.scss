@@ -24,11 +24,14 @@ nav {
 
 .nav-link {
     font-size: 1.8rem;
-    //padding: 0 3rem 0 3rem !important; melhor investir em gap no elemento-pai por razões de responsividade
-    color: #262322 !important; //gera conflitos com hover e focus
+    color: #262322 !important;
     font-weight: 500;
     letter-spacing: .25rem;
-    // transition: font-size .5s ease-in-out !important;
+    white-space: nowrap;
+    &:hover {
+        color: #EB6E92 !important;
+        transition: all .4s ease-in-out;
+    }
 }
 
 .dropdown-menu.show {
