@@ -24,7 +24,7 @@ const Header = () => {
             <header>
                 <Navbar bg="linen" expand="lg" collapseOnSelect>
                     <Navbar.Toggle />
-                    <Navbar.Brand>
+                    <Navbar.Brand as={Link} to={"/home"}>
                         {logo} {''}
                         <span>Cosméticos</span>
                     </Navbar.Brand>
