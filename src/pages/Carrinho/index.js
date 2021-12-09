@@ -182,6 +182,7 @@ const Carrinho = () => {
                             </div>
                         </Col>
                     )
+
                     }
                 </Row>
             </Container>
