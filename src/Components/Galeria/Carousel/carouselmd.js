@@ -61,7 +61,7 @@ export const Carouselmd = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index >= 6 && index < 8) {
+                            if (index >= 0 && index < 2) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -73,7 +73,7 @@ export const Carouselmd = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index >= 8 && index < 10) {
+                            if (index >= 2 && index < 4) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -85,7 +85,7 @@ export const Carouselmd = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index >= 10 && index < 12) {
+                            if (index >= 4 && index < 6) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )

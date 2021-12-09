@@ -47,6 +47,7 @@ export const Carouselxl = () => {
 
             {/* CARROSSEL 2 */}
             <Col xl={{ span: 2, offset: 2 }} className="carousel-xl cabecalho"><h1>Mais vendidos</h1></Col>
+            
             <Carousel className="carousel-xl">
                 <Carousel.Item >
                     <div className="container-card">
