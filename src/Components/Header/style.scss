@@ -5,7 +5,6 @@ header {
     top: 0;
     z-index: 999;
     box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.2);
-    ;
 }
 
 .bg-linen {
@@ -14,6 +13,7 @@ header {
 
 nav {
     padding: 3.5%; //verificar no mobile
+    min-height: 8rem;
 }
 
 .navbar-nav {
@@ -80,9 +80,9 @@ nav {
     // margin-right: 20px;
 
     //experimentando com posição fixa
-    position: fixed;
-    top: 14px;
-    right: 14px;
+    position: fixed;     
+    top: 16px;     
+    right: 14px; 
 }
 
 .btn .badge {
@@ -149,8 +149,12 @@ nav {
     padding-left: 2.5%;
 }
 
-.navbar-brand {
-    padding-right: 30rem;
+@media (max-width: 992px) {
+    .navbar-brand {
+        position: fixed;
+        top: 10px;
+        left: 12.5%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -159,11 +163,33 @@ nav {
     }
 }
 
+@media (max-width: 600px) {
+    .navbar-brand {
+        left: 15%;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar-brand {
+        left: 20%;
+    }
+}
+
+
+
 #logo-img {
     width: 10rem; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
     border-radius: .5rem;
 }
 
+.navbar-toggler {
+    border-width: 2px !important;
+}
+
+.navbar-toggler-icon {
+    width: 3rem !important;
+    height: 3rem !important;
+}
 
 @import "~bootstrap/scss/bootstrap";
