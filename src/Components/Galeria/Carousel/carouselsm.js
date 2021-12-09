@@ -18,68 +18,74 @@ export const Carouselsm = (props) => {
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(newProducts).map((prod, index) => {
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
                             if (index === 0) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                        })}
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(newProducts).map((prod, index) => {
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
                             if (index === 1) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
                             };
-                        })}
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(newProducts).map((prod, index) => {
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
                             if (index === 2) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(newProducts).map((prod, index) => {
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
                             if (index === 3) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(newProducts).map((prod, index) => {
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
                             if (index === 4) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(newProducts).map((prod, index) => {
+                        {newProducts.length !== 0 && (newProducts.map((prod, index) => {
                             if (index === 5) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
             </Carousel>
@@ -90,68 +96,74 @@ export const Carouselsm = (props) => {
             <Carousel className="carousel-sm">
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(mostProducts).map((prod, index) => {
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
                             if (index === 6) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(mostProducts).map((prod, index) => {
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
                             if (index === 7) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(mostProducts).map((prod, index) => {
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
                             if (index === 8) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(mostProducts).map((prod, index) => {
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
                             if (index === 9) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(mostProducts).map((prod, index) => {
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
                             if (index === 10) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
                 <Carousel.Item >
                     <div className="container-card">
-                        {Object.values(mostProducts).map((prod, index) => {
+                        {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
                             if (index === 11) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
-                            }
-                        })}
+                            };
+                            return null;
+                        }))}
                     </div>
                 </Carousel.Item>
             </Carousel>
