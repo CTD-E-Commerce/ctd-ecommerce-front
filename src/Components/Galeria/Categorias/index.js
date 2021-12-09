@@ -12,7 +12,6 @@ const Categorias = () => {
     return (
         <section id="categorias">
             <Container fluid>
-                <h3 className="h3-categorias">Categorias</h3>
                 <Row className="row-categorias">
                     <Col sm className="item-categorias">
                         <Link to={"/produtos/categorias/skin care"}>

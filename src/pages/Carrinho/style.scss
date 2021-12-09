@@ -43,7 +43,6 @@
     justify-content: center;
 }
 
-
 /* CARD DO FECHAMENTO DE PEDIDO ----------------------------------------------------------------*/
 
 .carrinho {
@@ -124,4 +123,58 @@
 .col-align-items-end {
     display: flex;
     justify-content: flex-end;
+}
+
+
+.swal2-show {
+    width: 90vw;
+
+    .swal2-actions {
+        display: flex;
+        flex-flow: column wrap;
+
+        button {
+            width: fit-content;
+            height: fit-content;
+            font-size: 2rem;
+            margin: 5px;
+            color: #212529 !important;
+            font-size: 2rem !important;
+            margin-right: 1rem;
+            margin-bottom: 1rem;
+
+            border-color: #D68C45 !important;
+
+
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgb(253 134 13 / 30%) !important;
+                transition: all .4s ease-in-out;
+            }
+
+            &:hover {
+                background-color: #D68C45 !important;
+                color: #FFFFFF !important;
+                transition: all .4s ease-in-out !important;
+            }
+        }
+
+        .swal2-cancel {
+            background-color: #D68C45 !important;
+            border-color: #FFFFFF !important;
+        }
+
+        .swal2-confirm {
+            background-color: #FFFFFF !important;
+            border-color: #D68C45 !important;
+        }
+    }
+}
+
+@media (min-width: 800px) {
+
+    //Estilos confirmação pagamento
+    .swal2-show {
+        width: 50vw;
+        height: 50vh;
+    }
 }

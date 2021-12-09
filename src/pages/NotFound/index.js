@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import BGNotFound from '../../assets/img/404.jpg'
 import './style.scss';
 
 function NotFound() {
@@ -10,10 +9,11 @@ function NotFound() {
 
   useEffect(() => {
     const tick = () => {
-         setSeconds(seconds - 1);
-     }
+      setSeconds(seconds - 1);
+    }
 
     let timer = setInterval(tick, 1000);
+
     return () => {
       if (seconds === 0) {
         clearInterval(timer);
@@ -23,8 +23,13 @@ function NotFound() {
   }, [seconds, navigate])
 
   return (
-    <div className="container d-flex flex-row">
-      <img className="bg404" src={BGNotFound} alt="404 reference" />
+    <div className="error container-fluid d-flex flex-row">
+      <div className="container-message">
+        <h1>Oops!</h1>
+        <h2>404: Nada por aqui!</h2>
+        <p>Você será redirecionada(o)</p>
+        <p>em {seconds} sedundos :)</p>
+      </div>
     </div>
   )
 }

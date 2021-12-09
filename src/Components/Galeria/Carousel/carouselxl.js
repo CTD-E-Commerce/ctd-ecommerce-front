@@ -7,7 +7,7 @@ import Item from './item.js';
 
 
 export const Carouselxl = () => {
-    
+
     const newProducts = useAxios("/products/novidades");
     const mostProducts = useAxios("/products/maisvendidos");
 
