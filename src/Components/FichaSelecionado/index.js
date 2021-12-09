@@ -19,9 +19,8 @@ const FichaSelecionado = ({prod}) => {
     
     return (
         <>
-            {/* ESPAÇO DO HELMET PARA DEFINIR HEAD>TITLE */}
             <Helmet>
-                <title>Amar e Cuidar | {pgTitle}</title> {/* extrair propriedade título */}
+                <title>Amar e Cuidar | {pgTitle}</title>
             </Helmet>
             <Card className="ficha">
                 <Container className="col-lg-4">
@@ -46,7 +45,7 @@ const FichaSelecionado = ({prod}) => {
                                 payload: prod
                             })
                         }}>Adicionar ao carrinho</button>)
-                    }                
+                    }
                 </Card.Body>
             </Card>
         </>

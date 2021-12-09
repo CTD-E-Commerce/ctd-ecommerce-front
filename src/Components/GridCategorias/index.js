@@ -15,12 +15,11 @@ const GridCategorias = ({categoryProd}) => {
 
     // Para o head da página com o helmet
     const { category } = useParams();
-    const pgTitle = category;
 
     return (
         <>
             <Helmet>
-                <title>Amar e Cuidar | {pgTitle}</title>
+                <title>Amar e Cuidar | {category}</title>
             </Helmet>
             <section id="produtos-categoria">
                 <Container fluid className="categorias">
@@ -34,17 +33,17 @@ const GridCategorias = ({categoryProd}) => {
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (
-                            <Col>
-                            <Card className="cards-produtos" key={prod.id}>
-                                <Link to={"/produtos/"+prod.id}>
-                                    <Card.Img variant="top" src={prod.image} />
-                                </Link> 
-                                <Card.Body>
-                                    <Card.Title>{prod.title}</Card.Title>
-                                    <Card.Subtitle>R$ {prod.price}</Card.Subtitle>
-                                    <Card.Text>{prod.shortdescription}</Card.Text>
-                                    {/* BOTÃO ADD AO CARRINHO */}
-                                    {cart.some(p => p.id === prod.id) ? (
+                            <Col key={prod.id}>
+                                <Card className="cards-produtos">
+                                    <Link to={"/produtos/" + prod.id}>
+                                        <Card.Img variant="top" src={prod.image} />
+                                    </Link>
+                                    <Card.Body>
+                                        <Card.Title>{prod.title}</Card.Title>
+                                        <Card.Subtitle>R$ {prod.price}</Card.Subtitle>
+                                        <Card.Text>{prod.shortdescription}</Card.Text>
+                                        {/* BOTÃO ADD AO CARRINHO */}
+                                        {cart.some(p => p.id === prod.id) ? (
                                             <button onClick={() => {
                                             dispatch({
                                                 type: "REMOVE_FROM_CART",

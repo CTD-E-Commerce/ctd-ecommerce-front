@@ -102,11 +102,15 @@ const Carrinho = () => {
                                 ))}
                             </>
                         ) : (
+
+                            /* Aviso de carrinho vazio */
                             <Col md={8} >
                                 <div className="carrinho p-3 mb-5">
                                     <h1>Carrinho de compras</h1>
                                     <span style={{ padding: 20, margin: 15, color: 'white' }}>
                                         Seu carrinho está vazio!
+                                    </span>
+                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
                                         Aproveite as ofertas da nossa loja :)
                                     </span>
                                     <Link to="/home">
@@ -118,7 +122,7 @@ const Carrinho = () => {
 
                     </Col>
 
-                    {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO -> EXIBIDO APENAS QUANDO CARRINHO NÃO ESTÁ CHEIO*/}
+                    {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO -> EXIBIDO APENAS QUANDO CARRINHO ESTÁ CHEIO*/}
                     {cart.length > 0 ? (
                         <>
                             <Col md={4} >
