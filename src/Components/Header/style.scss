@@ -19,7 +19,7 @@ nav {
 .navbar-nav {
     font-family: 'Raleway', sans-serif;
     gap: 6.5% !important;
-    padding-right: 6rem; //para compensar gap no desktop
+    padding-right: 14rem; //para compensar gap no desktop
 }
 
 .nav-link {
@@ -28,8 +28,9 @@ nav {
     font-weight: 500;
     letter-spacing: .25rem;
     white-space: nowrap;
+    text-align: left;
     &:hover {
-        color: #EB6E92 !important;
+        color: #d68c45 !important;
         transition: all .4s ease-in-out;
     }
 }
@@ -60,7 +61,12 @@ nav {
 
 /* carrinho */
 #cart {
-    margin-right: 20px;
+    // margin-right: 20px;
+
+    //experimentando com posição fixa
+    position: fixed;     
+    top: 14px;     
+    right: 14px; 
 }
 
 .btn .badge {
@@ -127,10 +133,20 @@ nav {
     padding-left: 2.5%;
 }
 
+.navbar-brand {
+    padding-right: 30rem;
+}
+
+@media (max-width: 800px) {
+    .navbar-brand span {
+        display: none !important;
+    }
+}
+
 #logo-img {
-    width: 20%; //investi em % para responsividade; aumentar % conforme diminui o viewport
+    width: 10rem; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
-    border-radius: 50%;
+    border-radius: .5rem;
 }
 
 
