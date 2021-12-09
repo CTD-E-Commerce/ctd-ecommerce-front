@@ -4,6 +4,8 @@ import { Container, Row, Col, Form, Table, Button} from 'react-bootstrap';
 import { ImBin} from 'react-icons/im';
 import { CartState } from '../../context/Context.js';
 import Swal from 'sweetalert2';
+import {Carouselextra} from '../../Components/Galeria/Carousel/carouselextra';
+
 
 const swalWithBootstrapButtons = Swal.mixin({
   customClass: {
@@ -14,6 +16,12 @@ const swalWithBootstrapButtons = Swal.mixin({
 })
 
 const Carrinho = () => {
+
+
+
+    const { state: { products } } = CartState();
+
+
 
     const {
         state: { cart },
@@ -45,7 +53,7 @@ const Carrinho = () => {
                                 />
                                 </Col>
                                 <Col className="col-align-items-center" sm={3} xs={12}>
-                                    <span className="subtitulo-itens">Prduto</span>
+                                    <span className="subtitulo-itens">Produto</span>
                                     <span>{prod.title}</span>
                                 </Col>
                                 <Col className="col-align-items-center" sm={2} xs={12}>
@@ -89,7 +97,7 @@ const Carrinho = () => {
                                     })
                                     }
                                 >
-                                    <ImBin />
+                                    <ImBin style={{fontSize:"18px"}}/>
                                 </Button>
                                 </Col>
                             </Row>
@@ -107,7 +115,7 @@ const Carrinho = () => {
                                     <td className="col-align-items-end">{parseFloat(total).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td>
                                   </tr>
                                   <tr>
-                                    <td colSpan="2">Frete</td>
+                                    <td colSpan="2">Frete fixo</td>
                                     <td className="col-align-items-end">{(total * 0.05).toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}</td> {/* Calculo do frete ficticio -> 5% do total */}
                                   </tr>
                                   <tr>
@@ -152,6 +160,7 @@ const Carrinho = () => {
                     </Col>
                 </Row>
             </Container>
+            <Carouselextra productsArray={products} />
         </>
     )
 }

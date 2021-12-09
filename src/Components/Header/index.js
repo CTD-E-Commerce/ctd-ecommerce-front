@@ -8,6 +8,7 @@ import './style.scss';
 import logo_img from '../../assets/img/logo.png'
 
 import { AiFillDelete } from 'react-icons/ai';
+import {BsCart3} from 'react-icons/bs';
 
 const Header = () => {
 
@@ -56,8 +57,8 @@ const Header = () => {
                         {/*Componente Carrinho*/}
                         <Dropdown id="cart" align="end">
                             <Dropdown.Toggle variant="white">
-                                <FaShoppingCart color="black" fontSize="35px" /> {/* cor do carrinho */}
-                                <Badge bg="black" style={{ fontSize: 12 }}>{cart.length}</Badge>
+                                <BsCart3 color="black" fontSize="32px" />
+                                <Badge bg="black" style={{ fontSize: 11, borderRadius:"50%"}}>{cart.length}</Badge>
                             </Dropdown.Toggle>
 
                             {/* Lista de itens do carrinho */}
