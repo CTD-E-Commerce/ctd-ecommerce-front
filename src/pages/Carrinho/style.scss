@@ -210,11 +210,11 @@
 
 @media (min-width: 800px) {
     //Estilos confirmação pagamento
-    .swal2-show {
-        width: 50vw;
-        height: 50vh;
+    .swal2-show,
+    .swal2-popup {
+        width: 600px;
+        height: 400px;
     }
 }
 
-
-
+@import "~bootstrap/scss/bootstrap";
