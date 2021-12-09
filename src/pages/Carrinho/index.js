@@ -103,24 +103,7 @@ const Carrinho = () => {
                                     </Row>
                                 ))}
                             </>
-                        ) : (
-
-                            /* Aviso de carrinho vazio */
-                            <Col md={8} >
-                                <div className="carrinho p-3 mb-5">
-                                    <h1>Carrinho de compras</h1>
-                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                        Seu carrinho está vazio!
-                                    </span>
-                                    <span style={{ padding: 20, margin: 15, color: 'white' }}>
-                                        Aproveite as ofertas da nossa loja :)
-                                    </span>
-                                    <Link to="/home">
-                                        <button className="cart-btn">Voltar à página inicial</button>
-                                    </Link>
-                                </div>
-                            </Col>
-                        )}
+                        ) : null}
 
                     </Col>
 
@@ -181,7 +164,25 @@ const Carrinho = () => {
                                 </div>
                             </Col>
                         </>
-                    ) : null}
+                    ) : (
+
+                        /* Aviso de carrinho vazio */
+                        <Col md={8} >
+                            <div className="carrinho p-3 mb-5">
+                                <h1>Carrinho de compras</h1>
+                                <span style={{ padding: 20, margin: 15, color: 'white' }}>
+                                    Seu carrinho está vazio!
+                                </span>
+                                <span style={{ padding: 20, margin: 15, color: 'white' }}>
+                                    Aproveite as ofertas da nossa loja :)
+                                </span>
+                                <Link to="/home">
+                                    <button className="cart-btn">Voltar à página inicial</button>
+                                </Link>
+                            </div>
+                        </Col>
+                    )
+                    }
                 </Row>
             </Container>
             <CarouselSingle />
