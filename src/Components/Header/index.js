@@ -65,7 +65,7 @@ const Header = () => {
                                             />
                                             <div className="cartItemDetail">
                                                 <span>{prod.title}</span>
-                                                <span>{" R$" + prod.price}</span>
+                                                <span> {parseFloat(prod.price).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</span>
                                             </div>
                                             {/* Icone lixeira do carrinho */}
                                             <AiFillDelete
