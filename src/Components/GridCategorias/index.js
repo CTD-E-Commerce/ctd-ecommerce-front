@@ -23,13 +23,15 @@ const GridCategorias = ({categoryProd}) => {
             </Helmet>
             <section id="produtos-categoria">
                 <Container fluid className="categorias">
-                    <h4>Categorias</h4>
-                    <Button as={Link} to={"/produtos/categorias/todas"} className="btn-categorias">Todas</Button>
-                    <Button as={Link} to={"/produtos/categorias/skin care"} className="btn-categorias">Skin care</Button>
-                    <Button as={Link} to={"/produtos/categorias/make up"} className="btn-categorias">Make up</Button>
-                    <Button as={Link} to={"/produtos/categorias/hair care"} className="btn-categorias">Hair care</Button>
-                    <Button as={Link} to={"/produtos/categorias/perfumes"} className="btn-categorias">Perfumes</Button>
-                    <Button as={Link} to={"/produtos/categorias/veganos"} className="btn-categorias">Veganos</Button>
+                    <div className='div-btn'>
+                        <Button as={Link} to={"/produtos/categorias/todas"} className="btn-categorias">Todas</Button>
+                        <Button as={Link} to={"/produtos/categorias/skin care"} className="btn-categorias">Skin care</Button>
+                        <Button as={Link} to={"/produtos/categorias/make up"} className="btn-categorias">Make up</Button>
+                        <Button as={Link} to={"/produtos/categorias/hair care"} className="btn-categorias">Hair care</Button>
+                        <Button as={Link} to={"/produtos/categorias/perfumes"} className="btn-categorias">Perfumes</Button>
+                        <Button as={Link} to={"/produtos/categorias/veganos"} className="btn-categorias">Veganos</Button> 
+                    </div>
+                    
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (
@@ -49,7 +51,7 @@ const GridCategorias = ({categoryProd}) => {
                                                 type: "REMOVE_FROM_CART",
                                                 payload: prod
                                             })
-                                        }} className="btn-prod">Remover do carrinho</button>
+                                        }} className="btn-prod">Remover</button>
                                         ) : (<button onClick={() => {
                                             dispatch({
                                                 type: "ADD_TO_CART",

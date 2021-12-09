@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Carouselsm } from './carouselsm';
 import { Carouselmd } from './carouselmd';
 import { Carouselxl } from './carouselxl';
+
 
 export const Carrossel = () => {
     return (

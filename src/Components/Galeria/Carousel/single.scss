@@ -1,0 +1,104 @@
+  /* titulo acima do carrossel */
+  .cabecalho-extra{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .6rem;
+    color: #63372c;
+    margin-top: 6rem;
+  }
+    
+
+
+  /* row */
+  .item-extra{
+    width: 85% !important;
+    margin:  15rem auto !important;  
+  }
+
+/* div de cada item*/
+.container-card-extra{
+    //width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:auto;
+}
+
+  /* DIV DE CADA CARD */
+  .card-produto-extra{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 1rem;
+    border: 0.5px solid #986d5a5e;
+    font-family: 'Raleway', sans-serif;
+    div{
+      padding: 1.5rem;
+      h1{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        font-weight:bold;
+      }
+      p{
+        font-size: 1.3rem;
+      }
+      span{
+        font-weight: bold;
+        font-size: 1.5rem;
+      }
+    }
+  }
+  
+  /* imagem do produto */
+  .item-img-extra{
+    width: 80%;
+    margin: auto;
+  }
+  
+  /* link das imagens */
+  a{
+    text-align: center;
+  }
+  
+  /* descrição do produto */
+  .item-description-extra{
+    margin-bottom:7rem;
+    height: 100px;
+  }
+  
+  /* botao de compra */
+  .item-btn-extra{
+    position: absolute;
+    font-size: 1.6rem;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 1rem;
+    border: none;
+    bottom: -4%;
+    left: 25%;
+    //background-color: #c97d60;
+    //color: #faf0e6;
+    background-color: #f9d1c6;
+    color: #986D5A;
+    &:hover{
+      background-color: #986D5A;
+      color: #f9d1c6;
+      transition: all .4s ease-in-out;
+    }
+  }
+  
+  
+/* MEDIA QUERIES */
+@media screen and (max-width: 1279px) {
+  .item-extra{
+    width: 80% !important;  
+  }
+    .item-btn-extra{
+        width: 60%;
+        left: 20%;
+    }
+  }

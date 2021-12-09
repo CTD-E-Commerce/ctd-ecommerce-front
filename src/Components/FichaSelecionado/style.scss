@@ -1,7 +1,8 @@
 .ficha{
     flex-direction: row !important;
     flex-wrap: wrap;
-    margin: 5% 10% 15% 10%; //revisar com padrão estabelecido para a página como um todo - aumentei margin-bottom para empurrar footer para baixo
+    align-items: center;
+    margin: 5% 10% 5% 10%; //revisar com padrão estabelecido para a página como um todo - aumentei margin-bottom para empurrar footer para baixo
     border: none !important;
     gap: 4rem;
 }

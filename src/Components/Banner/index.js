@@ -1,10 +1,11 @@
 import React from 'react'
 import './style.scss';
 import Carousel from 'react-bootstrap/Carousel';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import slide1 from '../../assets/img/banner-slide1.jpg';
 import slide2 from '../../assets/img/banner-slide2.jpg';
-import slide5 from '../../assets/img/banner-slide5.jpg';
+import slide3 from '../../assets/img/banner-slide3.jpg';
 
 
 export const Banner = () => {
@@ -19,8 +20,8 @@ export const Banner = () => {
                     />
                     <Carousel.Caption>
                         <h3>O Poder da Natureza</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                        <button className="btn-banner">Conferir</button>
+                        <p>Venha conhecer nossos produtos veganos!</p>
+                        <Link to={"/produtos/categorias/veganos"}><button  className="btn-banner">Conferir</button></Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item interval={2000}>
@@ -30,21 +31,21 @@ export const Banner = () => {
                         alt="Second slide"
                     />
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <button className="btn-banner">Conferir</button>
+                        <h3>Você em 1º lugar</h3>
+                        <p>Confira nossas ofertas de cuidados com a pele!</p>
+                        <Link to={"/produtos/categorias/skin care"}><button  className="btn-banner">Conferir</button></Link>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                     <img
                         className="img-responsive"
-                        src={slide5}
+                        src={slide3}
                         alt="Third slide"
                     />
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                        <button className="btn-banner">Conferir</button>
+                        <h3>Makes de qualidade</h3>
+                        <p>Não deixe de ver nossas Makes maravilhosas!</p>
+                        <Link to={"/produtos/categorias/make up"}><button  className="btn-banner">Conferir</button></Link>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

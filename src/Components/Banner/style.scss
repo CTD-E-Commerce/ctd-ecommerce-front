@@ -9,7 +9,7 @@
     }
 }
 
-/* ESSAS SÃO AS CLASSES DAS SETAS DE ROLAGEM DO CARROSSEL */
+/* SETAS DE ROLAGEM DO CARROSSEL */
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     filter: invert(1);
@@ -40,18 +40,21 @@
 /* botao */
 .btn-banner {
     font-family: 'Raleway', sans-serif;
-    width: 180px;
+    width: 170px;
     padding: 1.2rem;
-    font-size: 2rem;
-    border: none;
+    font-size: 1.6rem;
+    border: 1px solid #d68c45;
     border-radius: 5px;
-    background-color: #d68c45;
-    color: white;
+    background-color: transparent;
+    color: #d68c45;
     margin-top: 7rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: bold;
 
     &:hover {
-        background-color: white;
-        color: #d68c45;
+        background-color: #d68c45;
+        color: white;
         transition: all .4s ease-in-out;
     }
 }
@@ -86,11 +89,5 @@
         }
     }
 }
-
-
-
-
-
-
 
 @import "~bootstrap/scss/bootstrap";

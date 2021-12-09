@@ -3,12 +3,13 @@ import React from 'react';
 import { Card, Container} from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import { CartState } from '../../context/Context.js';
-
+import {CarouselSingle} from '../Galeria/Carousel/carouselsingle';
 import star from '../../assets/img/a-star-is-born.png';
 import "./style.scss";
 
 
 const FichaSelecionado = ({prod}) => {
+
 
     const {
         state: {cart},
@@ -48,6 +49,9 @@ const FichaSelecionado = ({prod}) => {
                     }
                 </Card.Body>
             </Card>
+
+            {/* CAROUSEL */}
+            <CarouselSingle />
         </>
     )
 }

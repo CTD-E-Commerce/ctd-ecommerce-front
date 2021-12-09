@@ -19,16 +19,20 @@ nav {
 .navbar-nav {
     font-family: 'Raleway', sans-serif;
     gap: 6.5% !important;
-    padding-right: 6rem; //para compensar gap no desktop
+    padding-right: 14rem; //para compensar gap no desktop
 }
 
 .nav-link {
     font-size: 1.8rem;
-    //padding: 0 3rem 0 3rem !important; melhor investir em gap no elemento-pai por razões de responsividade
-    color: #262322 !important; //gera conflitos com hover e focus
+    color: #262322 !important;
     font-weight: 500;
     letter-spacing: .25rem;
-    // transition: font-size .5s ease-in-out !important;
+    white-space: nowrap;
+    text-align: left;
+    &:hover {
+        color: #d68c45 !important;
+        transition: all .4s ease-in-out;
+    }
 }
 
 .dropdown-menu.show {
@@ -57,7 +61,17 @@ nav {
 
 /* carrinho */
 #cart {
-    margin-right: 20px;
+    // margin-right: 20px;
+
+    //experimentando com posição fixa
+    position: fixed;     
+    top: 14px;     
+    right: 14px; 
+}
+
+.btn .badge {
+    top: -10px !important;
+    right: 15px;
 }
 
 /* Lista de produtos do carrinho */
@@ -119,10 +133,20 @@ nav {
     padding-left: 2.5%;
 }
 
+.navbar-brand {
+    padding-right: 30rem;
+}
+
+@media (max-width: 800px) {
+    .navbar-brand span {
+        display: none !important;
+    }
+}
+
 #logo-img {
-    width: 20%; //investi em % para responsividade; aumentar % conforme diminui o viewport
+    width: 10rem; //investi em % para responsividade; aumentar % conforme diminui o viewport
     align-self: center;
-    border-radius: 50%;
+    border-radius: .5rem;
 }
 
 
