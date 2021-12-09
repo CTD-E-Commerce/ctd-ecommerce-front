@@ -1,15 +1,15 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { Link, useParams } from 'react-router-dom';
-import { Container, Form, Row, Col, Card } from 'react-bootstrap';
+import { Container, Button, Row, Col, Card } from 'react-bootstrap';
 import { CartState } from '../../context/Context.js';
 import './style.scss';
 
 
-const GridCategorias = ({ categoryProd }) => {
+const GridCategorias = ({categoryProd}) => {
 
     const {
-        state: { cart },
+        state: {cart},
         dispatch,
     } = CartState();
 
@@ -22,17 +22,14 @@ const GridCategorias = ({ categoryProd }) => {
                 <title>Amar e Cuidar | {category}</title>
             </Helmet>
             <section id="produtos-categoria">
-                <Container fluid className="radios">
-                    {/* RADIOS COM AS CATEGORIAS */}
-                    <Form>
-                        <h4>Categorias</h4>
-                        <Form.Check as={Link} to={"/produtos/categorias/todas"} type="radio" aria-label="radio 1" name="categorias" label="Todas as categorias" />
-                        <Form.Check as={Link} to={"/produtos/categorias/skin care"} type="radio" aria-label="radio 1" name="categorias" label="Skin care" />
-                        <Form.Check as={Link} to={"/produtos/categorias/make up"} type="radio" aria-label="radio 1" name="categorias" label="Make up" />
-                        <Form.Check as={Link} to={"/produtos/categorias/hair care"} type="radio" aria-label="radio 1" name="categorias" label="Hair care" />
-                        <Form.Check as={Link} to={"/produtos/categorias/perfumes"} type="radio" aria-label="radio 1" name="categorias" label="Perfumes" />
-                        <Form.Check as={Link} to={"/produtos/categorias/veganos"} type="radio" aria-label="radio 1" name="categorias" label="Veganos" />
-                    </Form>
+                <Container fluid className="categorias">
+                    <h4>Categorias</h4>
+                    <Button as={Link} to={"/produtos/categorias/todas"} className="btn-categorias">Todas</Button>
+                    <Button as={Link} to={"/produtos/categorias/skin care"} className="btn-categorias">Skin care</Button>
+                    <Button as={Link} to={"/produtos/categorias/make up"} className="btn-categorias">Make up</Button>
+                    <Button as={Link} to={"/produtos/categorias/hair care"} className="btn-categorias">Hair care</Button>
+                    <Button as={Link} to={"/produtos/categorias/perfumes"} className="btn-categorias">Perfumes</Button>
+                    <Button as={Link} to={"/produtos/categorias/veganos"} className="btn-categorias">Veganos</Button>
                     {/* CARDS DE PRODUTOS */}
                     <Row xs={1} md={2} xl={3} className="grid-cards">
                         {categoryProd.map((prod) => (
@@ -48,27 +45,26 @@ const GridCategorias = ({ categoryProd }) => {
                                         {/* BOTÃO ADD AO CARRINHO */}
                                         {cart.some(p => p.id === prod.id) ? (
                                             <button onClick={() => {
-                                                dispatch({
-                                                    type: "REMOVE_FROM_CART",
-                                                    payload: prod
-                                                })
-                                            }} className="btn-prod">Remover do carrinho</button>
+                                            dispatch({
+                                                type: "REMOVE_FROM_CART",
+                                                payload: prod
+                                            })
+                                        }} className="btn-prod">Remover do carrinho</button>
                                         ) : (<button onClick={() => {
                                             dispatch({
                                                 type: "ADD_TO_CART",
                                                 payload: prod
                                             })
                                         }} className="btn-prod">Add ao carrinho</button>)
-                                        }
-
-                                    </Card.Body>
-                                </Card>
+                                    }
+                                </Card.Body>
+                            </Card>
                             </Col>
                         ))}
                     </Row>
                 </Container>
             </section>
-        </>
+        </>   
     )
 }
 
