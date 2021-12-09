@@ -97,7 +97,7 @@ export const Carouselsm = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index === 6) {
+                            if (index === 0) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -109,7 +109,7 @@ export const Carouselsm = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index === 7) {
+                            if (index === 1) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -121,7 +121,7 @@ export const Carouselsm = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index === 8) {
+                            if (index === 2) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -133,7 +133,7 @@ export const Carouselsm = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index === 9) {
+                            if (index === 3) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -145,7 +145,7 @@ export const Carouselsm = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index === 10) {
+                            if (index === 4) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
@@ -157,7 +157,7 @@ export const Carouselsm = (props) => {
                 <Carousel.Item >
                     <div className="container-card">
                         {mostProducts.length !== 0 && (mostProducts.map((prod, index) => {
-                            if (index === 11) {
+                            if (index === 5) {
                                 return (
                                     <Item prod={prod} key={index} />
                                 )
