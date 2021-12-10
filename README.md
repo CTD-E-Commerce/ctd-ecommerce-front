@@ -44,3 +44,16 @@ npm start
 
 - IDE: VSCode
 
+
+
+## 🌐Acesse a aplicação
+
+**Link principal:**
+
+ [Amar e Cuidar | Cosméticos (amar-e-cuidar.vercel.app)](https://amar-e-cuidar.vercel.app/)
+
+**Links alternativos:**
+
+[Amar e Cuidar | Cosméticos (ctd-ecommerce-front.herokuapp.com)](https://ctd-ecommerce-front.herokuapp.com/)
+
+[Amar e Cuidar | Cosméticos (ctd-ecommerce-front.pages.dev)](https://ctd-ecommerce-front.pages.dev/)
