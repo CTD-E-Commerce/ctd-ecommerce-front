@@ -26,7 +26,7 @@ const GridCategorias = ({ categoryProd }) => {
                     <p className='p-title'>O autocuidado em todas as</p>
                     <h3>Categorias</h3>
                     <div className='div-btn'>
-                        <Button as={Link} to={"/produtos/categorias/todas"} className="btn-categorias">Todas</Button>
+                        <Button as={Link} to={"/produtos/categorias/todas categorias"} className="btn-categorias">Todas</Button>
                         <Button as={Link} to={"/produtos/categorias/skin care"} className="btn-categorias">Skin care</Button>
                         <Button as={Link} to={"/produtos/categorias/make up"} className="btn-categorias">Make up</Button>
                         <Button as={Link} to={"/produtos/categorias/hair care"} className="btn-categorias">Hair care</Button>

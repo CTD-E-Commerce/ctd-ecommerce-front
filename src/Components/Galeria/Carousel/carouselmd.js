@@ -6,10 +6,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Item from './item.js';
 
 
-export const Carouselmd = (props) => {
+export const Carouselmd = () => {
 
-    const newProducts = Object.values(useAxios("/products/novidades"));
-    const mostProducts = Object.values(useAxios("/products/maisvendidos"));
+    const newProducts = useAxios("/products/novidades");
+    const mostProducts = useAxios("/products/maisvendidos");
 
     //Retorna Carousel Items com dados array retornado da api service
     return (

@@ -5,10 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import useAxios from '../../../hooks/useAxios';
 import Item from './item.js';
 
-export const Carouselsm = (props) => {
+export const Carouselsm = () => {
 
-    const newProducts = Object.values(useAxios("/products/novidades"));
-    const mostProducts = Object.values(useAxios("/products/maisvendidos"));
+    const newProducts = useAxios("/products/novidades");
+    const mostProducts = useAxios("/products/maisvendidos");
 
     //Retorna Carousel Items com dados array retornado da api service
     return (
