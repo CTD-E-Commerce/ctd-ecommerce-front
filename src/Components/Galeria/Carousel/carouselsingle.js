@@ -5,9 +5,9 @@ import useAxios from '../../../hooks/useAxios';
 import Itemsingle from './itemsingle.js';
 
 
-export const CarouselSingle = (props) => {
+export const CarouselSingle = () => {
 
-    const mostProducts = Object.values(useAxios("/products/maisvendidos"));
+    const mostProducts = useAxios("/products/maisvendidos");
 
     return (
         <>
