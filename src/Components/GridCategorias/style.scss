@@ -7,6 +7,24 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.p-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .8rem;
+    color: #63372c;
+    margin-top: 2rem;
+}
+
+.grid-categorias h3 {
+    font-family: 'Quentin';
+    color: #EB6E92;   
+    ;
+    font-size: 6.5rem;
+    font-weight: 600;
+    margin-bottom: 6rem;
+}
+
 .btn-categorias {
     background-color: #FFFFFF !important;
     border-color: #D68C45 !important;
@@ -28,13 +46,19 @@
 .cards-produtos {
     text-align: center;
     margin: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 
 @media (max-width: 450px) {
     .cards-produtos {
         width: 100%;
         margin-left: 0;
+    }
+    .grid-categorias h3 {
+        font-size: 4.2rem;
+    }
+    .p-title {
+        font-size: 1.4rem;
     }
 }
 

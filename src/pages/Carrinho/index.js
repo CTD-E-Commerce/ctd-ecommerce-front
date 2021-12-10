@@ -58,7 +58,7 @@ const Carrinho = () => {
                                         </Col>
                                         <Col className="col-align-items-center" sm={2} xs={12}>
                                             <span className="subtitulo-itens">Valor</span>
-                                            <span>{(prod.price).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</span>
+                                            <span>{parseFloat(prod.price).toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}</span>
                                         </Col>
                                         <Col className="col-align-items-center" sm={2} xs={12}>
                                             <span className="subtitulo-itens">Quantidade</span>
@@ -101,12 +101,12 @@ const Carrinho = () => {
                                             </Button>
                                         </Col>
                                     </Row>
-                                
+
                                 ))}
                             </>
                         ) : null}
 
-                    </Col> 
+                    </Col>
 
                     {/* CARD DO RESUMO E FECHAMENTO DO PEDIDO -> EXIBIDO APENAS QUANDO CARRINHO ESTÁ CHEIO*/}
                     {cart.length > 0 ? (
@@ -163,14 +163,14 @@ const Carrinho = () => {
                                         })
 
                                     }>Fechar Pedido</button>
-                                    
+
                                 </div>
                             </Col>
                         </>
                     ) : (
 
                         /* Aviso de carrinho vazio */
-                        <Col md={{span:8, offset: 2}} sm={12} >
+                        <Col md={{ span: 8, offset: 2 }} sm={12} >
                             <div className="carrinho-vazio">
                                 <span>
                                     Seu carrinho está vazio!
