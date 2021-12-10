@@ -59,7 +59,7 @@ const GridCategorias = ({ categoryProd }) => {
                                                 type: "ADD_TO_CART",
                                                 payload: prod
                                             })
-                                        }} className="btn-prod">Add ao carrinho</button>)
+                                        }} className="btn-prod">Comprar</button>)
                                         }
                                     </Card.Body>
                                 </Card>

@@ -1,11 +1,9 @@
 import React from 'react'
 import './style.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Carousel from 'react-bootstrap/Carousel';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import slide1 from '../../assets/img/banner-slide1.jpg';
-import slide2 from '../../assets/img/banner-slide2.jpg';
-import slide3 from '../../assets/img/banner-slide3.jpg';
+
 
 
 export const Banner = () => {
@@ -15,7 +13,7 @@ export const Banner = () => {
                 <Carousel.Item interval={1000}>
                     <img
                         className="img-responsive"
-                        src={slide1}
+                        src="https://amarecuidar.s3.sa-east-1.amazonaws.com/banner/banner-slide1.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -27,7 +25,7 @@ export const Banner = () => {
                 <Carousel.Item interval={2000}>
                     <img
                         className="img-responsive"
-                        src={slide2}
+                        src="https://amarecuidar.s3.sa-east-1.amazonaws.com/banner/banner-slide2.jpg"
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -39,7 +37,7 @@ export const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="img-responsive"
-                        src={slide3}
+                        src="https://amarecuidar.s3.sa-east-1.amazonaws.com/banner/banner-slide3.jpg"
                         alt="Third slide"
                     />
                     <Carousel.Caption>

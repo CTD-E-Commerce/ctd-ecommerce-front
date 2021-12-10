@@ -39,13 +39,13 @@ const FichaSelecionado = ({prod}) => {
                                 type: "REMOVE_FROM_CART",
                                 payload: prod
                             })
-                        }}>Remover do carrinho</button>
+                        }}>Remover</button>
                         ) : (<button onClick={() => {
                             dispatch({
                                 type: "ADD_TO_CART",
                                 payload: prod
                             })
-                        }}>Adicionar ao carrinho</button>)
+                        }}>Comprar</button>)
                     }
                 </Card.Body>
             </Card>
