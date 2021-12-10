@@ -23,6 +23,8 @@ const GridCategorias = ({ categoryProd }) => {
             </Helmet>
             <section id="produtos-categoria">
                 <Container fluid className="grid-categorias">
+                    <p className='p-title'>O autocuidado em todas as</p>
+                    <h3>Categorias</h3>
                     <div className='div-btn'>
                         <Button as={Link} to={"/produtos/categorias/todas categorias"} className="btn-categorias">Todas</Button>
                         <Button as={Link} to={"/produtos/categorias/skin care"} className="btn-categorias">Skin care</Button>

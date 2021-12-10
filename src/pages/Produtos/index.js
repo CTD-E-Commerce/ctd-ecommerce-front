@@ -1,7 +1,6 @@
 import React from 'react'
 import useAxios from '../../hooks/useAxios';
 import { useParams } from 'react-router';
-import { Banner } from '../../Components/Banner';
 import GridCategorias from '../../Components/GridCategorias';
 
 
@@ -21,7 +20,6 @@ const Produtos = () => {
 
     return (
         <>
-            <Banner />
             <GridCategorias categoryProd={categoriaSelecionada} />
         </>
     )
