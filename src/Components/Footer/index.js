@@ -32,7 +32,7 @@ const Footer = () => {
                 <Col sm className="footer-central">
                     <div className="links">
                         <Nav.Link className="footer-link" as={Link} to={"/home"}>HOME</Nav.Link>
-                        <Nav.Link className="footer-link" as={Link} to={"/produtos/categorias/todas"}>PRODUTOS</Nav.Link>
+                        <Nav.Link className="footer-link" as={Link} to={"/produtos/categorias/todas categorias"}>PRODUTOS</Nav.Link>
                         <Nav.Link className="footer-link" as={Link} to={"/sobrenos"}>SOBRE NÓS</Nav.Link>
                         <Nav.Link className="footer-link" as={Link} to={"/carrinho"}>CARRINHO</Nav.Link>
                     </div>
