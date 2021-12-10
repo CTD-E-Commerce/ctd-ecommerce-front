@@ -47,7 +47,7 @@ const Header = () => {
                     <Dropdown id="cart" align="end">
                         <Dropdown.Toggle variant="white">
                             <BsCart3 color="black" fontSize="35px" /> {/* cor do carrinho */}
-                            <Badge bg="black" style={{ fontSize: 12, borderRadius: "50%" }}>{cart.length}</Badge>
+                            <Badge style={{ fontSize: 12, borderRadius: "50%" }}>{cart.length}</Badge>
                         </Dropdown.Toggle>
 
                         {/* Lista de itens do carrinho */}
