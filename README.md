@@ -50,10 +50,11 @@ npm start
 
 **Link principal:**
 
- [Amar e Cuidar | Cosméticos (amar-e-cuidar.vercel.app)](https://amar-e-cuidar.vercel.app/)
+**[Amar e Cuidar | Cosméticos - Vercel](https://amar-e-cuidar.vercel.app/)**
 
 **Links alternativos:**
 
-[Amar e Cuidar | Cosméticos (ctd-ecommerce-front.herokuapp.com)](https://ctd-ecommerce-front.herokuapp.com/)
+**[Amar e Cuidar | Cosméticos - Heroku](https://ctd-ecommerce-front.herokuapp.com/)** 
 
-[Amar e Cuidar | Cosméticos (ctd-ecommerce-front.pages.dev)](https://ctd-ecommerce-front.pages.dev/)
+**[Amar e Cuidar | Cosméticos - CloudFlare](https://ctd-ecommerce-front.pages.dev/)**
+
