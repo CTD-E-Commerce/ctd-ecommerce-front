@@ -1,6 +1,8 @@
 #produtos-categoria {
     padding: 10rem 4rem 4rem 4rem;
     text-align: center;
+    width: 85%;
+    margin: auto;
 }
 
 .grid-categorias {
@@ -48,6 +50,10 @@
     font-size: 1.5rem !important;
 }
 
+.img-produtos{
+    width: 70% !important;
+}
+
 @media (max-width: 450px) {
     .cards-produtos {
         width: 100%;
@@ -92,5 +98,12 @@
 }
 
 
+/* MEDIA QUERIE */
+@media screen and (max-width: 1279px) {
+    #produtos-categoria {
+        width: 100%;
+    }
+  }
+  
 
 @import "~bootstrap/scss/bootstrap";

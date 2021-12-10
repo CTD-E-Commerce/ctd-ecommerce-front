@@ -28,7 +28,7 @@ function NotFound() {
         <h1>Oops!</h1>
         <h2>404: Nada por aqui!</h2>
         <p>Você será redirecionada(o)</p>
-        <p>em {seconds} sedundos :)</p>
+        <p>em {seconds} segundos :)</p>
       </div>
     </div>
   )

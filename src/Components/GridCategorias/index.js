@@ -40,7 +40,7 @@ const GridCategorias = ({ categoryProd }) => {
                             <Col key={prod.id}>
                                 <Card className="cards-produtos">
                                     <Link to={"/produtos/" + prod.id}>
-                                        <Card.Img variant="top" src={prod.image} />
+                                        <Card.Img className="img-produtos" variant="top" src={prod.image} />
                                     </Link>
                                     <Card.Body>
                                         <Card.Title>{prod.title}</Card.Title>
