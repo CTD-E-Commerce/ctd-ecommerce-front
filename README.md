@@ -6,30 +6,41 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 
 ### 📋 Pré-requisitos
 
-1. Instalação do node.js
-2. Instação do react
-3. Instalação do sass
+- Primeiro, instale o Node.js e Npm - https://nodejs.org/en/
 
-etc...
+- Uma vez que você tenha ambos em sua máquina e clonado o repositório, instale as dependências que se encontram no arquivo package.json, utilizando o seguinte comando:
 
 ```
-npm i node
+npm install
+```
 
-npm install react
+- As seguintes dependências serão instaladas:
 
-npm i sass
+1. Axios
+2. Bootstrap
+3. React
+4. React-bootstrap
+5. React-dom
+6. React-helmet
+7. React-icons
+8. React-router-dom
+9. React-router-hash-link
+10. React-scripts
+11. Sass
+12. Sweetalert2
 
+- Após a instalação, insira o seguinte comando para iniciar a aplicação:
+
+```
+npm start
 ```
 
 ## 🛠️ Tecnologias utilizadas
 
-As seguintes ferramentas/linguagens foram usadas na construção do projeto:
-
-* SASS
-* REACT BOOTSTRAP
-* REACT
+* REACT.JS
 * HTML
-* CSS
 * JAVASCRIPT
-* IDE: VSCode
+* SASS
+
+- IDE: VSCode
 
