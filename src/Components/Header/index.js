@@ -1,12 +1,10 @@
 import React from 'react'
 import { Navbar, Nav, NavDropdown, Dropdown, Badge, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
 import { CartState } from '../../context/Context.js';
 import RouteList from '../../routes';
 import './style.scss';
 import logo_img from '../../assets/img/logo_v2.png'
-
 import { AiFillDelete } from 'react-icons/ai';
 import { BsCart3 } from 'react-icons/bs';
 
@@ -40,7 +38,7 @@ const Header = () => {
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/perfumes"}>Perfumes</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/veganos"}>Veganos</NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link as={HashLink} to={"/home#anchorSobre"}>SOBRE NÓS</Nav.Link>
+                            <Nav.Link as={Link} to={"/sobrenos"}>SOBRE NÓS</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     {/*Componente Carrinho*/}
@@ -82,10 +80,10 @@ const Header = () => {
                                         </span>
                                     ))}
                                     <Link to="/carrinho">
-                                        <Button className="btn-produtos" style={{ width: "95%", margin: "0 10px", fontSize: "15px", backgroundColor: "#986D5A", border: "none" }}>
+                                        <button className="btn-produtos">
                                             Ir para o carrinho
-                                        </Button>
-                                    </Link>
+                                        </button>
+                                    </Link> 
                                 </>
                             ) : (
                                 <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>

@@ -43,17 +43,24 @@ nav {
     background-color: #262322;
     width: 20rem;
     right: 0;
+    text-align: center;
 
     .btn-produtos {
-        border-color: #D68C45 !important;
+        background-color: #f9d1c6;
+        color: black;
+        margin: 2.5rem auto 0.5rem auto;
+        width: 90%;
+        padding: 0.5rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 15px;
 
         &:focus {
             box-shadow: 0 0 0 0.25rem rgb(253 134 13 / 30%) !important;
             transition: all .4s ease-in-out;
         }
-
         &:hover {
-            background-color: #D68C45 !important;
+            background-color: #986D5A !important;
             color: #FFFFFF !important;
             transition: all .4s ease-in-out !important;
         }
@@ -82,13 +89,18 @@ nav {
 
     //experimentando com posição fixa
     position: fixed;     
-    top: 16px;     
+    top: 24px;     
     right: 14px; 
 }
 
 .btn .badge {
     top: -10px !important;
     right: 15px;
+    background-color: #DD5D1E !important;
+}
+
+.btn:focus {
+    box-shadow: none !important;
 }
 
 /* Lista de produtos do carrinho */
@@ -98,6 +110,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 20px;
+    border-bottom: 0.4px solid #f9d1c63b;
     padding: 10px 0;
     color: #ccc;
 }
@@ -150,11 +163,20 @@ nav {
     padding-left: 2.5%;
 }
 
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+    .navbar-brand {
+        top: 8px;
+    }
+}
+
+@media (max-width: 991px) {
     .navbar-brand {
         position: fixed;
-        top: 10px;
+        top: 8px;
         left: 12.5%;
+    }
+    #cart {
+        top: 16px; 
     }
 }
 

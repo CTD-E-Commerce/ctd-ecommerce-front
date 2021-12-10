@@ -1,4 +1,4 @@
-section {
+#categorias {
     background-color: #FFFFFF;
     padding: 10rem 4rem 4rem 4rem;
     text-align: center;
@@ -11,13 +11,13 @@ section {
 .item-categorias a {
     text-decoration: none;
     font-family: "Quentin";
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #000000;
 }
 
 .item-categorias:hover, 
 .item-categorias a:hover {
-    color: #EB6E92;    
+    color: #EB6E92;   
 }
 
 .item-categorias p {

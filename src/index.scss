@@ -27,15 +27,32 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-html{
+html {
   font-size: 10px;
+}
+
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: rgba($color: #000, $alpha: .9);
+  border: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border-left: 0;
+  border-right: 0;
+  background-color: #000;
 }
 
 $dark: #262322;
