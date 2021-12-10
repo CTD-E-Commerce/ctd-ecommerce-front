@@ -30,7 +30,7 @@ const Header = () => {
                         <Nav>
                             <Nav.Link as={Link} to={"/home"}>HOME</Nav.Link>
                             <NavDropdown title="PRODUTOS">
-                                <NavDropdown.Item as={Link} to={"/produtos/categorias/todas"}>Todas as categorias</NavDropdown.Item>
+                                <NavDropdown.Item as={Link} to={"/produtos/categorias/todas categorias"}>Todas as categorias</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/skin care"}>Skin care</NavDropdown.Item>
                                 <NavDropdown.Item as={Link} to={"/produtos/categorias/make up"}>Make up</NavDropdown.Item>
