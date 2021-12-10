@@ -21,7 +21,6 @@ const Produtos = () => {
 
     return (
         <>
-            <Banner />
             <GridCategorias categoryProd={categoriaSelecionada} />
         </>
     )
