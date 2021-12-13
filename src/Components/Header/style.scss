@@ -105,55 +105,65 @@ nav {
 }
 
 /* Lista de produtos do carrinho */
-#cart>#subcart>.cartitem {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-    border-bottom: 0.4px solid #f9d1c63b;
-    padding: 10px 0;
-    color: #ccc;
-}
 
 #subcart {
     width: fit-content;
-    overflow-y: auto;
-    overflow-x: hidden;
-    max-height: 400px;
+
+    //Estilos somente para a lista de produtos
+    #cartList {
+        overflow-y: auto;
+        overflow-x: hidden;
+        max-height: 400px;
+
+        .btn-produtos {
+            position: relative;
+        }
+
+        //Estilos para cada item da lista
+        .cartitem {
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+            border-bottom: 0.4px solid #f9d1c63b;
+            padding: 10px 0;
+            color: #ccc;
+
+            //Descrição de cada produto da lista de produtos do carrinho
+            .cartItemDetail {
+                display: block;
+                flex: 1;
+                padding: 0 20px;
+                flex-direction: column;
+                color: #ccc;
+            }
+        }
+
+        //Imagem da lista de produtos do carrinho
+        .cartItemImg {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+    }
 }
 
-#subcart::-webkit-scrollbar {
+#subcart>#cartList::-webkit-scrollbar {
     width: 10px;
 }
 
-#subcart::-webkit-scrollbar-track {
+#subcart>#cartList::-webkit-scrollbar-track {
     background-color: #262322;
     border: 0;
 }
 
-#subcart::-webkit-scrollbar-thumb {
+#subcart>#cartList::-webkit-scrollbar-thumb {
     border-radius: 100px;
     border-left: 0;
     border-right: 0;
     background-color: #000;
-}
-
-//Imagem da lista de produtos do carrinho
-#cart>#subcart>.cartitem>.cartItemImg {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-
-//Descrição de cada produto da lista de produtos do carrinho
-#cart>#subcart>.cartitem>.cartItemDetail {
-    display: block;
-    flex: 1;
-    padding: 0 20px;
-    flex-direction: column;
-    color: #ccc;
 }
 
 /* -------------------------------- LOGO -------------------------------- */
@@ -162,6 +172,11 @@ nav {
     font-family: 'Quentin', sans-serif;
     font-size: 3rem !important;
     padding-left: 2.5%;
+}
+
+.btCarrinho {
+    position: relative;
+    width: 500px;
 }
 
 @media (min-width: 992px) {

@@ -53,7 +53,7 @@ const Header = () => {
 
                             {/* Verifica estado do carrinho e exibe lista de produtos ou mensagem de vazio */}
                             {cart.length > 0 ? (
-                                <>
+                                <div id="cartList">
                                     {cart.map((prod) => (
                                         <span className="cartitem" key={prod.id}>
                                             <img
@@ -79,15 +79,17 @@ const Header = () => {
                                             />
                                         </span>
                                     ))}
-                                    <Link to="/carrinho">
-                                        <button className="btn-produtos">
-                                            Ir para o carrinho
-                                        </button>
-                                    </Link>
-                                </>
+                                </div>
                             ) : (
                                 <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>
                             )}
+                            {cart.length > 0 ? (
+                                <Link to="/carrinho">
+                                    <button className="btn-produtos">
+                                        Ir para o carrinho
+                                    </button>
+                                </Link>
+                            ) : null}
                         </Dropdown.Menu>
                     </Dropdown>
                 </Navbar>
