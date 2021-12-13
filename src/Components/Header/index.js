@@ -83,7 +83,7 @@ const Header = () => {
                                         <button className="btn-produtos">
                                             Ir para o carrinho
                                         </button>
-                                    </Link> 
+                                    </Link>
                                 </>
                             ) : (
                                 <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>

@@ -59,6 +59,7 @@ nav {
             box-shadow: 0 0 0 0.25rem rgb(253 134 13 / 30%) !important;
             transition: all .4s ease-in-out;
         }
+
         &:hover {
             background-color: #986D5A !important;
             color: #FFFFFF !important;
@@ -88,9 +89,9 @@ nav {
     // margin-right: 20px;
 
     //experimentando com posição fixa
-    position: fixed;     
-    top: 24px;     
-    right: 14px; 
+    position: fixed;
+    top: 24px;
+    right: 14px;
 }
 
 .btn .badge {
@@ -175,8 +176,9 @@ nav {
         top: 8px;
         left: 12.5%;
     }
+
     #cart {
-        top: 16px; 
+        top: 16px;
     }
 }
 
