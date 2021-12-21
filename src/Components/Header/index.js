@@ -84,11 +84,11 @@ const Header = () => {
                                 <span style={{ padding: 20, margin: 15, color: 'white' }}>Carrinho vazio!</span>
                             )}
                             {cart.length > 0 ? (
-                                <Link to="/carrinho">
-                                    <button className="btn-produtos">
-                                        Ir para o carrinho
-                                    </button>
-                                </Link>
+                                <NavDropdown.Item as={Link} to={"/carrinho"} className="btn-produtos text-dark">
+                                    {/*    <button className="btn-produtos"> */}
+                                    Ir para o carrinho
+                                    {/*         </button> */}
+                                </NavDropdown.Item >
                             ) : null}
                         </Dropdown.Menu>
                     </Dropdown>
