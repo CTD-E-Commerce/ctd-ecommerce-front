@@ -85,9 +85,7 @@ const Header = () => {
                             )}
                             {cart.length > 0 ? (
                                 <NavDropdown.Item as={Link} to={"/carrinho"} className="btn-produtos text-dark">
-                                    {/*    <button className="btn-produtos"> */}
                                     Ir para o carrinho
-                                    {/*         </button> */}
                                 </NavDropdown.Item >
                             ) : null}
                         </Dropdown.Menu>
